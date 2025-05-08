@@ -25,6 +25,13 @@
     <link rel="stylesheet" href="./assets/css/main.css">
     <link rel="stylesheet" href="./assets/css/m_style.css">
 
+
+    <style>
+        .header_top {
+            background: var(--dark-h, #162222);
+        }
+    </style>
+
 </head>
 
 <body>
@@ -328,24 +335,247 @@
         </div>
     </header>
 
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
+    <section class="dashboard_page">
+        <div class="dashboard_main">
+            <img src="./assets/img/cl1.png" alt="" class="img-fluid cl1">
+            <img src="./assets/img/cl2.png" alt="" class="img-fluid cl2">
+            <div class="dash_left">
+                <div class="dash_left_outer">
+                    <div class="dash_left_inner">
+                        <div class="dash_content">
+                            <h1 class="dash_title">Welcome Back <br class="desktop_none">John Smith</h1>
+                            <p class="dash_subtitle">Hello <span>John Smith</span> (not John Smith? <a href="">Log out</a>)</p>
+                        </div>
+                        <p class="dash_subtitle mo_text_center">From your dashboard, update account
+                            info, password, billing, and view past orders.</p>
+                        <div class="dash_tab_btn_div mobile_none" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                            
+                                <button class="btn btn_dash active" id="v-pills-home-tab" data-bs-toggle="pill" data-bs-target="#v-pills-home" type="button" role="tab" aria-controls="v-pills-home" aria-selected="true">
+                                    Account Details
+                                    <img src="./assets/img/di1.png" alt="" class="img-fluid dash_btn_logo">
+                                </button>
+                                <button class="btn btn_dash" id="v-pills-profile-tab" data-bs-toggle="pill" data-bs-target="#v-pills-profile" type="button" role="tab" aria-controls="v-pills-profile" aria-selected="false">
+                                    Billing Details
+                                    <img src="./assets/img/di2.png" alt="" class="img-fluid dash_btn_logo">
+                                </button>
+                                <button class="btn btn_dash" id="v-pills-disabled-tab" data-bs-toggle="pill" data-bs-target="#v-pills-disabled" type="button" role="tab" aria-controls="v-pills-disabled" aria-selected="false">
+                                    Order history
+                                    <img src="./assets/img/di3.png" alt="" class="img-fluid dash_btn_logo">
+                                </button>
+                                <button class="btn btn_dash">
+                                    Sign out
+                                    <img src="./assets/img/di4.png" alt="" class="img-fluid dash_btn_logo">
+                                </button>
+                                
+                        </div>
+                        <div class="mob_dash_tab_drop desktop_none" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                            <button class="btn btn_dash_menu_drop" onclick="justDrop('account_dash_drop', 'roter6', this)">
+                                <div class="d-flex gap-3 align-items-center">
+                                    <img src="./assets/img/di1.png" alt="" class="img-fluid dash_btn_logo" id="dashMoboDrop">
+                                    <p class="dash_tc" id="dashtc">Account Details</p>
+                                </div>
+                                <svg xmlns="http://www.w3.org/2000/svg" id="roter6" width="24" height="24"
+                                    viewBox="0 0 24 24" fill="none">
+                                    <path d="M18 9L12 15L6 9" stroke="#162222" stroke-width="2" />
+                                </svg>
+                                <img src="./assets/img/currency_bar.svg" alt="" class="img-fluid active_underline">
+                            </button>
+                            <div class="dropped_div_dash_menu d-none" id="account_dash_drop">
+                                <button class="btn btn_dash active" id="v-pills-home-tab" data-bs-toggle="pill" data-bs-target="#v-pills-home" type="button" role="tab" aria-controls="v-pills-home" aria-selected="true" onclick="dashMoboDrop('account_dash_drop', 'roter6', 'Account Details', 'di1')">
+                                    <img src="./assets/img/di1.png" alt="" class="img-fluid dash_btn_logo">
+                                    Account Details
+                                </button>
+                                <button class="btn btn_dash" id="v-pills-profile-tab" data-bs-toggle="pill" data-bs-target="#v-pills-profile" type="button" role="tab" aria-controls="v-pills-profile" aria-selected="false" onclick="dashMoboDrop('account_dash_drop', 'roter6', 'Billing Details', 'di2')">
+                                    <img src="./assets/img/di2.png" alt="" class="img-fluid dash_btn_logo">
+                                    Billing Details
+                                </button>
+                                <button class="btn btn_dash" id="v-pills-disabled-tab" data-bs-toggle="pill" data-bs-target="#v-pills-disabled" type="button" role="tab" aria-controls="v-pills-disabled" aria-selected="false" onclick="dashMoboDrop('account_dash_drop', 'roter6', 'Order history', 'di3')">
+                                    <img src="./assets/img/di3.png" alt="" class="img-fluid dash_btn_logo">
+                                    Order history
+                                </button>
+                                <button class="btn btn_dash">
+                                    <img src="./assets/img/di4.png" alt="" class="img-fluid dash_btn_logo">
+                                    Sign out
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="dash_right">
+                <div class="dash_right_inner">
+                    <div class="tab-content" id="v-pills-tabContent">
+                        <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab" tabindex="0">
+                            <div class="account_tab">
+                                <form class="dash_acc_form">
+                                    <div class="account_input_div">
+                                        <div class="main_input_div">
+                                            <div class="input_div_main_outer">
+                                                <div class="input_div_main">
+                                                    <input type="text" class="input_global" name="text" autocomplete="off" required />
+                                                    <label for="text" class="label-name">
+                                                        <span class="content-name">
+                                                            First Name
+                                                        </span>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="main_input_div">
+                                            <div class="input_div_main_outer">
+                                                <div class="input_div_main">
+                                                    <input type="text" class="input_global" name="text" autocomplete="off" required />
+                                                    <label for="text" class="label-name">
+                                                        <span class="content-name">
+                                                            Last Name
+                                                        </span>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="main_input_div">
+                                            <div class="input_div_main_outer">
+                                                <div class="input_div_main">
+                                                    <input type="text" class="input_global" name="text" autocomplete="off" required />
+                                                    <label for="text" class="label-name">
+                                                        <span class="content-name">
+                                                            Email Address
+                                                        </span>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="main_input_div">
+                                            <div class="input_div_main_outer">
+                                                <div class="input_div_main">
+                                                    <input type="text" class="input_global" name="text" autocomplete="off" required />
+                                                    <label for="text" class="label-name">
+                                                        <span class="content-name">
+                                                            Phone Number
+                                                        </span>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="main_input_div">
+                                            <div class="input_div_main_outer">
+                                                <div class="input_div_main">
+                                                    <input type="password" class="input_global" id="password_m1" name="text" autocomplete="off" required />
+                                                    <label for="text" class="label-name">
+                                                        <span class="content-name">
+                                                            Password
+                                                        </span>
+                                                    </label>
+                                                    <img src="./assets/img/close_eye.svg" alt="" type="button" class="img-fluid eye_icon" onclick="togglePassword('password_m1', this)">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="main_input_div">
+                                            <div class="input_div_main_outer">
+                                                <div class="input_div_main">
+                                                    <input type="password" class="input_global" id="password_m2" name="text" autocomplete="off" required />
+                                                    <label for="text" class="label-name">
+                                                        <span class="content-name">
+                                                            Confirm New Password
+                                                        </span>
+                                                    </label>
+                                                    <img src="./assets/img/close_eye.svg" alt="" type="button" class="img-fluid eye_icon" onclick="togglePassword('password_m2', this)">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button class="btn btn_global w-100">Update Account Details</button> 
+                                </form>  
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab" tabindex="0">
+                            <div class="account_tab">
+                                <form class="dash_acc_form">
+                                    <div class="account_input_div">
+                                        <div class="main_input_div">
+                                            <div class="input_div_main_outer">
+                                                <div class="input_div_main">
+                                                    <input type="text" class="input_global" name="text" autocomplete="off" required />
+                                                    <label for="text" class="label-name">
+                                                        <span class="content-name">
+                                                            Address Line 1
+                                                        </span>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="main_input_div">
+                                            <div class="input_div_main_outer">
+                                                <div class="input_div_main">
+                                                    <input type="text" class="input_global" name="text" autocomplete="off" required />
+                                                    <label for="text" class="label-name">
+                                                        <span class="content-name">
+                                                            Address Line 2
+                                                        </span>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="main_input_div">
+                                            <div class="input_div_main_outer">
+                                                <div class="input_div_main">
+                                                    <input type="text" class="input_global" name="text" autocomplete="off" required />
+                                                    <label for="text" class="label-name">
+                                                        <span class="content-name">
+                                                            City/Town
+                                                        </span>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="main_input_div">
+                                            <div class="input_div_main_outer">
+                                                <div class="input_div_main">
+                                                    <input type="text" class="input_global" name="text" autocomplete="off" required />
+                                                    <label for="text" class="label-name">
+                                                        <span class="content-name">
+                                                            Country/State/Province
+                                                        </span>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="main_input_div">
+                                            <div class="select_div_main_outer">
+                                                <div class="select_div_main">
+                                                    <p class="inp_drop_label">Country</p>
+                                                    <select class="form-select input_select" aria-label="Default select example">
+                                                        <option selected>Open this select menu</option>
+                                                        <option value="1">One</option>
+                                                        <option value="2">Two</option>
+                                                        <option value="3">Three</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="main_input_div">
+                                            <div class="input_div_main_outer">
+                                                <div class="input_div_main">
+                                                    <input type="text" class="input_global" name="text" autocomplete="off" required />
+                                                    <label for="text" class="label-name">
+                                                        <span class="content-name">
+                                                            Zip Code/Postal Code
+                                                        </span>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button class="btn btn_global w-100">Update Account Details</button> 
+                                </form>  
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="v-pills-disabled" role="tabpanel" aria-labelledby="v-pills-disabled-tab" tabindex="0">3</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <footer class="footer">
         <div class="container">

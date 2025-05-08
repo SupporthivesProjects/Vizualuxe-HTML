@@ -95,3 +95,42 @@ $(document).ready(function () {
         }
     })
 })
+
+// const togglePassword = document.querySelector('#togglePassword');
+//   const password = document.querySelector('#id_password');
+
+//   togglePassword.addEventListener('click', function (e) {
+//     // toggle the type attribute
+//     const type = password.getAttribute('type') === 'password' ? 'text' : 'password';
+//     password.setAttribute('type', type);
+//     // toggle the eye slash icon
+//     this.classList.toggle('fa-eye-slash');
+// });
+
+function togglePassword(input_id, input_eye_image) {
+    const inputField = document.getElementById(input_id);
+    const inputFieldType = inputField.getAttribute('type');
+    if (inputFieldType === "password") {
+        inputField.setAttribute('type', 'text');
+        input_eye_image.src = "./assets/img/open_eye.svg"
+    } else {
+        inputField.setAttribute('type', 'password');
+        input_eye_image.src = "./assets/img/close_eye.svg"
+    }
+}
+function dashMoboDrop(droperId, roterId, changed_text, img_name) {
+    const theId = document.getElementById(droperId);
+    const theId2 = document.getElementById(roterId);
+    let img_src = "./assets/img/" + img_name + ".png";
+    
+    if (theId.classList.contains('d-none')) {
+        theId.classList.remove('d-none');
+        theId2.style.rotate = '180deg';
+    } else {
+        theId.classList.add('d-none');
+        theId2.style.rotate = '0deg';
+        $("#dashtc").text(changed_text);
+        $("#dashMoboDrop").attr("src", img_src);
+
+    }
+}
