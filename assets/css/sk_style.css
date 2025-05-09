@@ -10,6 +10,10 @@
     background: var(--dark-h, #162222);
 }
 
+.register {
+    margin-top: 88px;
+}
+
 .c-checkbox input[type='checkbox']:checked~label:after,
 .c-checkbox input[type='checkbox']:checked~.label:after {
     transform: scale(1);
@@ -28,11 +32,12 @@
     height: 24px;
     margin-right: 10px;
     background: transparent;
-    border: 3px solid var(--Gold, #BA8B4A);;
+    border: 3px solid var(--Gold, #BA8B4A);
+    ;
     box-sizing: border-box;
     /* box-shadow: inset 0px 4px 4px rgb(0 0 0 / 5%); */
     border-radius: 2px;
-    top: 16px;
+    top: 0px;
     left: 8px;
 }
 
@@ -61,7 +66,7 @@ input[type=radio] {
     height: 1px;
     width: 1px;
     left: 8px;
-    top: 16px;
+    top: 0px;
     transform-origin: 50% 50%;
     -webkit-transform-origin: 50% 50%;
     -ms-transform-origin: 50% 50%;
@@ -86,31 +91,142 @@ input[type=radio] {
 .login_strong {
     color: var(--pine-p, #36574A);
 
-/* Desktop/Body/P */
-font-family: "Afacad";
-font-size: 18px;
-font-style: normal;
-font-weight: 400;
-line-height: normal;
-margin-bottom: 0%;
-margin-top: 14px;
+    /* Desktop/Body/P */
+    font-family: "Afacad";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 0%;
 }
 
 .login_strong a {
     color: var(--Functional-Info-Blue, #518CFF);
 
-/* Desktop/Body/P */
-font-family: "Afacad";
-font-size: 18px;
-font-style: normal;
-font-weight: 400;
-line-height: normal;
-text-decoration: none;
+    /* Desktop/Body/P */
+    font-family: "Afacad";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-decoration: none;
 }
 
 .c-text {
     margin-left: 35px;
 }
+
+
+
+
+.c-checkbox_s2 input[type='checkbox']:checked~label:after,
+.c-checkbox_s2 input[type='checkbox']:checked~.label:after {
+    transform: scale(1);
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    opacity: 1;
+    visibility: visible;
+}
+
+.c-checkbox_s2>.c-div_s2>label:before,
+.c-checkbox_s2>.c-div_s2>.label:before {
+    content: "";
+    position: absolute;
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+    background: transparent;
+    border: 3px solid var(--Gold, #BA8B4A);
+    ;
+    box-sizing: border-box;
+    /* box-shadow: inset 0px 4px 4px rgb(0 0 0 / 5%); */
+    border-radius: 2px;
+    top: 12px;
+    left: 8px;
+}
+
+input[type=checkbox],
+input[type=radio] {
+    box-sizing: border-box;
+    padding: 0;
+}
+
+.c-checkbox_s2 input[type='checkbox'] {
+    display: none;
+}
+
+.c-checkbox_s2 input[type='checkbox']~label:after,
+.c-checkbox_s2 input[type='checkbox']~.label:after {
+    content: url(../img/Chcek_select_.svg);
+    display: block;
+    position: absolute;
+    color: #1BBC97;
+    border-radius: 0;
+    border: 0;
+    font-family: 'Poppins';
+    font-size: 18px;
+    text-align: center;
+    line-height: 12px;
+    height: 1px;
+    width: 1px;
+    left: 8px;
+    top: 12px;
+    transform-origin: 50% 50%;
+    -webkit-transform-origin: 50% 50%;
+    -ms-transform-origin: 50% 50%;
+    transform: scale(0);
+    -webkit-transform: scale(0);
+    -ms-transform: scale(0);
+    -webkit-transition: all .15s ease;
+    -ms-transition: all .15s ease;
+    transition: all .15s ease;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+}
+
+.c-checkbox_s2 {
+    display: flex;
+    position: relative;
+    margin-bottom: 0px;
+    gap: 16px;
+}
+
+.login_strong_s2 {
+    color: var(--pine-p, #36574A);
+
+    /* Desktop/Body/P */
+    font-family: "Afacad";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 0%;
+}
+
+.login_strong_s2 a {
+    color: var(--Functional-Info-Blue, #518CFF);
+
+    /* Desktop/Body/P */
+    font-family: "Afacad";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-decoration: none;
+}
+
+.c-text_s2 {
+    margin-left: 35px;
+}
+
+
+
+
+
+
+
 .for_check_reg {
     display: flex;
     flex-direction: column;
@@ -197,95 +313,509 @@ text-decoration: none;
     line-height: normal;
     margin-bottom: 0%;
 }
-.registe_maindiv{
+
+.registe_maindiv {
     display: flex;
     flex-direction: row;
+    justify-content: center;
+    align-items: stretch;
 }
-.register_div1 {
-    display: flex;
-padding: 148px 220px;
-flex-direction: column;
-align-items: center;
-gap: 40px;
-width: 53%;
 
+.register_div1 {
+    padding: 148px 220px;
+    width: 54%;
 }
-.div_reg_or {
-    background-image: url(../img/Lineor.png);
-    background-position: center;
+
+.register_div2 {
+    width: 46%;
+    background-image: url(../img/Register_img.png);
+    background-size: cover;
+    background-position: center center;
     background-repeat: no-repeat;
+    border-radius: 45px 0px 0px 45px;
 }
+
+.div_reg_or {
+    position: relative;
+}
+
+.div_line_reg {
+    height: 1px;
+    width: 100%;
+    max-width: 400px;
+    background: #F5F5F5;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
 .para_reg {
     color: var(--dark-h, #162222);
 
-/* Desktop/Body/Small */
-font-family: Afacad;
-font-size: 15px;
-font-style: normal;
-font-weight: 400;
-line-height: normal;
-margin-bottom: 0%;
+    /* Desktop/Body/Small */
+    font-family: "Afacad";
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 0%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 25px;
+    position: relative;
+    z-index: 2;
+    background-color: white;
+    text-align: center;
 }
+
+.reg_form {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 40px;
+}
+
 .sign_reg_para {
     color: var(--dark-h, #162222);
-text-align: center;
+    text-align: center;
 
-/* Desktop/Body/P */
-font-family: "Afacad";
-font-size: 18px;
-font-style: normal;
-font-weight: 400;
-line-height: normal;
-margin-bottom: 0%;
+    /* Desktop/Body/P */
+    font-family: "Afacad";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 0%;
 }
+
 .sign_reg_para a {
     color: var(--Functional-Info-Blue, #518CFF);
 
-/* Desktop/Body/P */
-font-family: "Afacad";
-font-size: 18px;
-font-style: normal;
-font-weight: 400;
-line-height: normal;
-text-decoration-line: underline;
-text-decoration-style: solid;
-text-decoration-skip-ink: none;
-text-decoration-thickness: auto;
-text-underline-offset: auto;
-text-underline-position: from-font;
-margin-bottom: 0%;
+    /* Desktop/Body/P */
+    font-family: "Afacad";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-decoration-line: underline;
+    text-decoration-style: solid;
+    text-decoration-skip-ink: none;
+    text-decoration-thickness: auto;
+    text-underline-offset: auto;
+    text-underline-position: from-font;
+    margin-bottom: 0%;
 }
+
 .register_div1_inner {
     display: flex;
     flex-direction: column;
     gap: 32px;
-    padding-top: 148px;
 }
+
 .heading_register {
     color: var(--dark-h, #162222);
-text-align: center;
-font-family: "Libre Baskerville";
-font-size: 39px;
-font-style: normal;
-font-weight: 400;
-line-height: normal;
-text-transform: capitalize;
-margin-bottom: 0%;
+    text-align: center;
+    font-family: "Libre Baskerville";
+    font-size: 39px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: capitalize;
+    margin-bottom: 0%;
 }
-.div_for_input{
+
+.div_for_input {
     display: flex;
     flex-direction: row;
-align-items: flex-start;
-gap: 8px;
-align-self: stretch;
+    align-items: flex-start;
+    gap: 8px;
+    align-self: stretch;
+    margin-top: 30px
 }
+
 .register_inner_div2 {
     display: flex;
-flex-direction: column;
-justify-content: center;
-align-items: center;
-gap: 16px;
-align-self: stretch;
+    gap: 16px;
+    flex-direction: column;
+}
+
+.img_robo_reg {
+    width: 305px;
+    height: 77px;
+    align-self: center;
+}
+
+.login_div2 {
+    width: 46%;
+    background-image: url(../img/login_img.png);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    border-radius: 45px 0px 0px 45px;
+}
+
+.div_remeber_pass {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    align-self: stretch;
+}
+
+.forgotpass_para {
+    color: var(--Functional-Info-Blue, #518CFF);
+
+    /* Desktop/Body/P */
+    font-family: "Afacad";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 0%;
+}
+
+.reset_div2 {
+    width: 46%;
+    background-image: url(../img/reset_pass_bg.png);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    border-radius: 45px 0px 0px 45px;
+}
+
+.div_rest_pass_head_div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    align-self: stretch;
+}
+
+.para_reset_head {
+    color: var(--pine-p, #36574A);
+    text-align: center;
+
+    /* Desktop/Body/P */
+    font-family: "Afacad";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 0%;
+    width: 433px;
+}
+
+.modal_new {
+    width: 810px;
+}
+
+.div_modal_main {
+    display: flex;
+    padding: 40px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+    width: 100%;
+}
+
+.div1_inner_modal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+}
+
+.div_heading_modal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+}
+
+.div_check_modal {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 24px;
+    align-self: stretch;
+}
+
+.div_reg_main_modal {
+    display: flex;
+    padding: 40px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+}
+
+.div_reg_inner_modal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+}
+
+.modal_reg_heading {
+    color: var(--dark-h, #162222);
+    text-align: center;
+    font-family: "Baskerville";
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: capitalize;
+    margin-bottom: 0%;
+}
+
+.modal_reg_para {
+    color: var(--pine-p, #36574A);
+    text-align: center;
+
+    /* Desktop/Body/P */
+    font-family: "Afacad";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 0%;
+}
+
+.new_modal_reg {
+    width: 600px;
+}
+
+.div_error_main {
+    background-image: url(../img/error.png);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 787px;
+}
+
+.div_error_inner {
+    display: flex;
+    width: 498px;
+    padding-bottom: 80px;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+    margin-top: 520px;
+}
+
+.error_div1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    align-self: stretch;
+}
+
+.heading_error {
+    color: var(--Grayscale-White, #FFF);
+    text-align: center;
+
+    /* Desktop/H2 */
+    font-family: "Libre Baskerville";
+    font-size: 39px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: capitalize;
+    margin-bottom: 0%;
+}
+
+.para_error {
+    color: var(--cream-p, #FFF6E1);
+    text-align: center;
+
+    /* Desktop/Body/P */
+    font-family: "Afacad";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 0%;
+}
+
+.error_btn {
+    color: #fef6e1;
+    font-size: 40px;
+    font-weight: bold;
+    background-color: transparent;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.circle-icon {
+    width: 10px;
+    height: 10px;
+    border: 0.1px solid #fff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 7px 20px 33px;
+}
+
+.line_error {
+    height: 1px;
+    background-color: #fdf6e3;
+    width: 65%;
+    position: relative;
+    left: 56px;
+}
+
+.inner-dot {
+    width: 4px;
+    height: 4px;
+    background-color: #fff;
+    border-radius: 50%;
+}
+
+.para_error_div2 {
+    color: var(--cream-p, #FFF6E1);
+
+    /* Desktop/Body/CTA */
+    font-family: "Afacad";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-transform: capitalize;
+    margin-bottom: 0%;
+}
+
+.payment_successfull {
+    margin-top: 90px;
+}
+
+.main_PS {
+    background-image: url(../img/pay_sucess_bg.png);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    width: 100%;
+    padding: 104px 640px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+}
+
+.inner_PS {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+}
+
+.PS_div1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+}
+
+.heading_PS {
+    color: var(--dark-h, #162222);
+    text-align: center;
+
+    /* Desktop/H1 */
+    font-family: "Libre Baskerville";
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: capitalize;
+    margin-bottom: 0%;
+}
+
+.para_PS {
+    color: var(--pine-p, #36574A);
+    text-align: center;
+
+    /* Desktop/Body/P */
+    font-family: Afacad;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 0%;
+}
+
+.divPS_table {
+    border: 1px solid var(--Grayscale-500, #D0D0D0);
+    width: 750px;
+}
+
+.PS_table {
+    margin-bottom: 0%;
+}
+
+.PS_thead td {
+    background: var(--pine-p, #36574A);
+    padding: 16px 0px;
+    border-bottom: 1px solid var(--Neutral-Near-Black, #111);
+    color: var(--cream-p, #FFF6E1);
+    font-family: "Afacad";
+    font-size: 21px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin-bottom: 0%;
+}
+
+.PS_tbody td {
+    padding: 18px 0px;
+    color: var(--dark-h, #162222);
+    font-family: "Afacad";
+    font-size: 21px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin-bottom: 0%;
+
+}
+
+.PS_btn {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 16px;
+    align-self: stretch;
+}
+
+.PS_thead tr :last-child {
+    text-align: right;
+    padding-right: 24px;
+}
+.PS_tbody tr :last-child {
+    text-align: right;
+    padding-right: 24px;
+}
+.PS_thead tr :first-child {
+    padding-left: 24px;
+}
+
+.PS_tbody tr :first-child {
+    padding-left: 24px;
+}
+
+.divPS_table .table-striped>tbody>tr:nth-of-type(even)>td {
+    --bs-table-bg-type: #F9F9F9;
+}
+.divPS_table .table-striped>tbody>tr:nth-of-type(odd)>td {
+    --bs-table-bg-type: rgba(255, 255, 255, 1);
 }
 
 @media only screen and (max-width: 700px) {
@@ -327,6 +857,254 @@ align-self: stretch;
         align-self: stretch;
     }
 
+    .registe_maindiv {
+        display: flex;
+        flex-direction: column-reverse;
+
+    }
+
+    .register_div2 {
+        width: 100%;
+        height: 375px;
+        background-image: url(../img/Register_img.png);
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+        border-radius: 0px 0px 45px 45px;
+    }
+
+    .register_div1 {
+        width: 100%;
+        padding: 32px 24px;
+
+    }
+
+    .heading_register {
+        color: var(--dark-h, #162222);
+        text-align: center;
+        font-family: "Libre Baskerville";
+        font-size: 30px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        text-transform: capitalize;
+        margin-bottom: 0%;
+    }
+
+    .div_for_input {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8px;
+        align-self: stretch;
+    }
+
+    .reg_form {
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 24px;
+    }
+
+    .register {
+        margin-top: 72px;
+    }
+
+    .div_for_input {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 16px;
+        align-self: stretch;
+    }
+
+    .input_div_main {
+        background: transparent;
+        position: relative;
+        height: 38px;
+        width: 100%;
+        margin-top: 30px;
+        border-bottom: 1px solid #BA8B4A;
+    }
+
+    .register_div1_inner {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+    }
+
+    .login_div2 {
+        width: 100%;
+        height: 375px;
+        background-image: url(../img/login_img.png);
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+        border-radius: 0px 0px 45px 45px;
+    }
+
+    .para_reset_head {
+        color: var(--pine-p, #36574A);
+        text-align: center;
+        font-family: "Afacad";
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        margin-bottom: 0%;
+        width: 100%;
+    }
+
+    .reset_div2 {
+        width: 100%;
+        height: 375px;
+        background-image: url(../img/reset_pass_bg.png);
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+        border-radius: 0px 0px 45px 45px;
+    }
+
+    .div_modal_main {
+        display: flex;
+        padding: 32px 24px;
+        flex-direction: column;
+        align-items: center;
+        gap: 24px;
+        align-self: stretch;
+    }
+
+    .div1_inner_modal {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 16px;
+        align-self: stretch;
+    }
+
+    .div_heading_modal {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 8px;
+        align-self: stretch;
+    }
+
+    .heading_modal {
+        color: var(--dark-h, #162222);
+        text-align: center;
+
+        /* Desktop/H3 */
+        font-family: "Libre Baskerville";
+        font-size: 30px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        text-transform: capitalize;
+        margin-bottom: 0%;
+    }
+
+    .para_modal {
+        color: var(--pine-p, #36574A);
+        text-align: center;
+
+        /* Desktop/Body/P */
+        font-family: "Afacad";
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        margin-bottom: 0%;
+    }
+
+    .div_check_modal {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 24px;
+        align-self: stretch;
+    }
+
+    .c-checkbox_s2>.c-div_s2>label:before,
+    .c-checkbox_s2>.c-div_s2>.label:before {
+        top: 12px;
+        left: 8px;
+    }
+
+    .c-checkbox_s2 input[type='checkbox']~label:after,
+    .c-checkbox_s2 input[type='checkbox']~.label:after {
+        top: 12px;
+    }
+
+    .forgot_pass_sec {
+        margin-top: 73px;
+    }
+
+    .div_reg_main_modal {
+        display: flex;
+        padding: 32px 24px;
+        flex-direction: column;
+        align-items: center;
+        gap: 24px;
+        align-self: stretch;
+    }
+
+    .div_reg_inner_modal {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 8px;
+        align-self: stretch;
+    }
+
+    .div_reg_inner1_modal {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 16px;
+        align-self: stretch;
+    }
+
+    .modal_reg_heading {
+        color: var(--dark-h, #162222);
+        text-align: center;
+
+        /* Desktop/H3 */
+        font-family: "Libre Baskerville";
+        font-size: 30px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        text-transform: capitalize;
+        margin-bottom: 0%;
+    }
+
+    .modal_reg_para {
+        color: var(--pine-p, #36574A);
+        text-align: center;
+
+        /* Desktop/Body/P */
+        font-family: "Afacad";
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        margin-bottom: 0%;
+    }
+    .divPS_table {
+        border: 1px solid var(--Grayscale-500, #D0D0D0);
+        width: 375px;
+        overflow-x: auto;
+    }
+    .PS_table {
+        width: 750px;
+        margin-bottom: 0%;
+    }
+    .main_PS {
+       
+        padding: 24px 0px 
+        
+    }
 }
 
 @media only screen and (min-width: 780px) and (max-width:991px) {}
@@ -336,12 +1114,25 @@ align-self: stretch;
         padding-left: 55px;
         padding-right: 55px;
     }
+
+    .register_div1 {
+        padding: 148px 5px;
+        width: 54%;
+    }
+    .main_PS {
+        padding: 104px 155px
+    }
 }
 
 @media only screen and (min-width: 1152px) and (max-width:1279px) {
     .div2_term {
         padding-left: 55px;
         padding-right: 55px;
+    }
+
+    .register_div1 {
+        padding: 148px 22px;
+        width: 54%;
     }
 
 }
@@ -352,12 +1143,22 @@ align-self: stretch;
         padding-right: 55px;
     }
 
+    .register_div1 {
+        padding: 148px 57px;
+        width: 54%;
+    }
+
 }
 
 @media only screen and (min-width: 1349px) and (max-width:1439px) {
     .div2_term {
         padding-left: 55px;
         padding-right: 55px;
+    }
+
+    .register_div1 {
+        padding: 148px 76px;
+        width: 54%;
     }
 
 }
@@ -367,6 +1168,11 @@ align-self: stretch;
         padding-left: 105px;
         padding-right: 105px;
     }
+
+    .register_div1 {
+        padding: 148px 100px;
+        width: 54%;
+    }
 }
 
 @media only screen and (min-width: 1500px) and (max-width:1599px) {
@@ -374,12 +1180,22 @@ align-self: stretch;
         padding-left: 135px;
         padding-right: 135px;
     }
+
+    .register_div1 {
+        padding: 148px 100px;
+        width: 54%;
+    }
 }
 
 @media only screen and (min-width: 1600px) and (max-width:1699px) {
     .div2_term {
         padding-left: 185px;
         padding-right: 185px;
+    }
+
+    .register_div1 {
+        padding: 148px 143px;
+        width: 54%;
     }
 
 }

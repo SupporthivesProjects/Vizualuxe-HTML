@@ -525,7 +525,7 @@ footer.footer {
 
 
 .input_div_main {
-    background: var(--Grayscale-White, #FFF);
+    background: transparent;
     position: relative;
     height: 38px;
     width: 100%;
@@ -606,7 +606,7 @@ footer.footer {
     transform: translateX(0%);
 }
 .input_div_main_outer {
-    background: #FFFFFF;
+    background: transparent;
     height: 50px;
     padding-top: 12px;
 }
@@ -614,6 +614,52 @@ footer.footer {
     border: 1px solid var(--New-Primary-Green, #1BBC97);
   } */
 
+.eye_icon {
+    position: absolute;
+    z-index: 2;
+    right: 0px;
+    bottom: 12px;
+}
+
+.inp_drop_label {
+    color: var(--Grayscale-700, #656565);
+    text-overflow: ellipsis;
+    white-space: nowrap;
+
+    /* Desktop/Body/Small */
+    font-family: 'Afacad';
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 0px;
+}
+.input_select, .input_select:focus {
+    background: transparent;
+    position: relative;
+    height: 32px;
+    width: 100%;
+    border: 0px;
+    border-bottom: 1px solid #BA8B4A;
+    padding: 0px 0px 10px 0px;
+    border-radius: 0px;
+    color: var(--pine-p, #36574A);
+    font-family: Afacad;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    box-shadow: unset;
+    margin-top: -2px;
+    background-image: url(../img/select_icon_drop.png);
+    background-size: contain;
+    background-position: right 12px bottom 5px;
+    background-repeat: no-repeat;
+}
+.select_div_main {
+    position: relative;
+    height: 50px;
+}
 @media only screen and (max-width: 700px) {
     .desktop_header {
         display: none;
