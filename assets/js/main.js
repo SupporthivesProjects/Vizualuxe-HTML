@@ -134,3 +134,43 @@ function dashMoboDrop(droperId, roterId, changed_text, img_name) {
 
     }
 }
+
+
+
+
+
+
+
+
+
+
+document.querySelectorAll('.toggle-btn').forEach(button => {
+    const icon = button.querySelector('.icon');
+    const text = button.querySelector('.read-text');
+    const collapse = document.querySelector(button.getAttribute('data-bs-target'));
+  
+    const plusIconPath = button.getAttribute('data-plus');
+    const minusIconPath = button.getAttribute('data-minus');
+  
+    // ✅ INITIAL CHECK: Run this once on page load
+    if (collapse.classList.contains('show')) {
+      icon.setAttribute('src', minusIconPath);
+      text.textContent = 'Read Less';
+    } else {
+      icon.setAttribute('src', plusIconPath);
+      text.textContent = 'Read More';
+    }
+  
+    // ✅ Toggle on expand/collapse
+    collapse.addEventListener('show.bs.collapse', () => {
+      icon.setAttribute('src', minusIconPath);
+      text.textContent = 'Read Less';
+    });
+  
+    collapse.addEventListener('hide.bs.collapse', () => {
+      icon.setAttribute('src', plusIconPath);
+      text.textContent = 'Read More';
+    });
+  });
+  
+  
