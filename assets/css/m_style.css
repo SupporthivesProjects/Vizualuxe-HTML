@@ -121,9 +121,12 @@ section.dashboard_page {
     width: 42%;
 }
 .dash_right {
-    padding: 160.5px 80px 170.5px 80px;
+    padding: 114px 80px 114.5px 80px;
     background: linear-gradient(to right, #F9F9F9, #F7F7F7);
     width: 58%;
+}
+.account_tab {
+    padding-top: 46.5px;
 }
 .dash_right_inner {
     max-width: 754px;
@@ -537,10 +540,74 @@ form.dash_acc_form {
     border-top: 1px solid var(--Gray-200, #E4E7EC);
     margin-top: 32px;
 }
+.orht_text {
+    color: var(--dark-h, #162222);
 
+    /* Desktop/Body/P */
+    font-family: 'Afacad';
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 0px;
+}
+.btn_orht_link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    padding: 0px;
+    color: var(--Functional-Info-Blue, #518CFF);
 
+    /* Desktop/Body/CTA */
+    font-family: 'Afacad';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-transform: capitalize;
+}
+.orht_title {
+    color: var(--cream-p, #FFF6E1);
 
+    /* Desktop/Body/Large */
+    font-family: 'Afacad';
+    font-size: 21px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin-bottom: 0px;
+}
+.order_history_panel table.table thead tr th {
+    border-bottom: 1px solid var(--Neutral-Near-Black, #111);
+    background: var(--pine-p, #36574A);
+    padding-top: 16px;
+    padding-bottom: 16px;
+}
+.order_history_panel table.table thead tr th:first-child {
+    padding-left: 24px;
+}
+.order_history_panel table.table thead tr th:last-child {
+    padding-right: 24px;
+}
 
+.order_history_panel table.table tbody tr td {
+    padding-top: 17.5px;
+    padding-bottom: 17.5px;
+}
+.order_history_panel table.table tbody tr td:first-child {
+    padding-left: 24px;
+}
+.order_history_panel table.table tbody tr td:last-child {
+    padding-right: 24px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    max-width: 105px;
+}
+
+.order_history_panel table.table {
+    margin-bottom: 0px;
+}
 
 @media only screen and (max-width: 700px) {
     .mobile_none {
@@ -821,6 +888,44 @@ form.dash_acc_form {
         font-weight: 400;
         line-height: normal;
     }
+    .order_history_panel table.table {
+        margin-bottom: 0px;
+        min-width: 750px;
+    }
+    .swipr_text {
+        color: var(--Gold, #BA8B4A);
+    
+        /* Desktop/Sub */
+        font-family: 'Afacad';
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        text-transform: uppercase;
+        margin-bottom: 0px;
+    }
+    .div_swipe_line_l {
+        width: 19px;
+        height: 1px;
+        background: linear-gradient(90deg, rgba(242, 199, 152, 0.00) 0%, #BA9A4A 68.42%);
+    }
+    .div_swipe_line_r {
+        width: 19px;
+        height: 1px;
+        background: linear-gradient(90deg, rgba(242, 199, 152, 0.00) 0%, #BA9A4A 68.42%);
+        rotate: 180deg;
+    }
+    .sputnik {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 8px;
+        margin-bottom: 10px;
+    }
+    .account_tab {
+        padding-top: 0px;
+    }
 }
 
 @media only screen and (min-width: 780px) and (max-width:991px) {
@@ -839,7 +944,7 @@ form.dash_acc_form {
 @media only screen and (min-width: 1280px) and (max-width:1348px) {
     .main_input_div {
         width: 100%;
-        max-width: 270px;
+        max-width: 335px;
         padding: 8px 0px 16px 0px;
     }
     .cl1 {
@@ -862,12 +967,25 @@ form.dash_acc_form {
         align-items: flex-start;
         gap: 8px;
     }
+    .dash_left {
+        padding: 120px 22px 120px 0px;
+        width: 34%;
+    }
+    .dash_right {
+        padding: 160.5px 80px 170.5px 45px;
+        background: linear-gradient(to right, #F9F9F9, #F7F7F7);
+        width: 66%;
+    }
+    .dash_left_outer {
+        max-width: 337px;
+        margin-left: auto;
+    }
 }
 
 @media only screen and (min-width: 1349px) and (max-width:1439px) {
     .main_input_div {
         width: 100%;
-        max-width: 291px;
+        max-width: 335px;
         padding: 8px 0px 16px 0px;
     }
     .cl1 {
@@ -875,18 +993,48 @@ form.dash_acc_form {
         left: -45px;
         top: 0px;
     }
+    .dash_left {
+        padding: 120px 22px 120px 0px;
+        width: 34%;
+    }
+    .dash_right {
+        padding: 160.5px 80px 170.5px 80px;
+        background: linear-gradient(to right, #F9F9F9, #F7F7F7);
+        width: 66%;
+    }
+    .dash_left_outer {
+        max-width: 337px;
+        margin-left: auto;
+    }
 }
 
 @media only screen and (min-width: 1440px) and (max-width:1499px) {
     .main_input_div {
         width: 100%;
-        max-width: 317px;
+        max-width: 357px;
         padding: 8px 0px 16px 0px;
+    }
+    .dash_left {
+        padding: 120px 22px 120px 0px;
+        width: 34%;
+    }
+    .dash_right {
+        padding: 160.5px 80px 170.5px 80px;
+        background: linear-gradient(to right, #F9F9F9, #F7F7F7);
+        width: 66%;
+    }
+    .dash_left_outer {
+        max-width: 337px;
+        margin-left: auto;
     }
 }
 
 @media only screen and (min-width: 1500px) and (max-width:1599px) {
-    
+    .main_input_div {
+        width: 100%;
+        max-width: 335px;
+        padding: 8px 0px 16px 0px;
+    }
 }
 
 @media only screen and (min-width: 1600px) and (max-width:1699px) {
