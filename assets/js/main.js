@@ -198,6 +198,14 @@ $(document).ready(function () {
                 items: 3
             },
 
+            1279: {
+                items: 3,
+                loop: true,
+                autoplay: true,
+                autoplayTimeout: 3000,
+                autoplayHoverPause: false,
+            },
+
             1400: {
                 items: 4,
                 loop: true,
@@ -211,3 +219,34 @@ $(document).ready(function () {
         }
     })
 })
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+const fileInput = document.getElementById("document");
+    const fileNameLabel = document.getElementById("upload_filename");
+    const wrapper = document.getElementById("upload_wrapper");
+
+    fileInput.addEventListener("click", () => {
+      fileInput.value = ""; // reset for same file re-upload
+    });
+
+    fileInput.addEventListener("change", (e) => {
+      if (e.target.files.length > 0) {
+        fileNameLabel.textContent = e.target.files[0].name;
+        wrapper.classList.add("active");
+      } else {
+        fileNameLabel.textContent = "";
+        wrapper.classList.remove("active");
+      }
+    });

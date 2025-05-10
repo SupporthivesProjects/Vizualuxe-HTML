@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vizualuxe</title>
+
+    <!-- Bootstrap Styles Links -->
+    <link rel="stylesheet" href="./assets/dist/bootstrap/css/bootstrap.min.css">
+
+    <!-- Owl Carousel Links -->
+    <link rel="stylesheet" href="./assets/dist/owl-carousel/js/owl.carousel.js">
+
+    <!-- Google Fonts Link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Afacad:ital,wght@0,400..700;1,400..700&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap"
+        rel="stylesheet">
+
+    <!-- Style Sheets -->
+    <link rel="stylesheet" href="./assets/css/t_style.css">
+    <link rel="stylesheet" href="./assets/css/sk_style.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/css/m_style.css">
+
+</head>
+
+<body>
+
+    <header class="fixed-top">
+        <div class="header_top">
+            <div class="container desktop_header p-0">
+                <div class="header_main_container">
+                    <div class="header_left">
+                        <a href="./index.html">
+                            <img src="./assets/img/header_logo.svg" alt="" class="img-fluid header_logo">
+                        </a>
+                    </div>
+                    <div class="header_right">
+                        <button class="btn btn_header_link active">
+                            design resources
+                        </button>
+                        <button class="btn btn_header_link">
+                            Bespoke design packages
+                        </button>
+                        <button class="btn btn_header_link">
+                            Our Story
+                        </button>
+                        <button class="btn btn_header_link">
+                            Contact Us
+                        </button>
+                        <div class="header_spliter_bar"></div>
+                        <div class="currency_drop_container">
+                            <button class="btn btn_header_drop" onclick="justDrop('currency_drop', 'roter2', this)">
+                                GBP £
+
+                                <svg xmlns="http://www.w3.org/2000/svg" id="roter2" width="24" height="24"
+                                    viewBox="0 0 24 24" fill="none">
+                                    <path d="M18 9L12 15L6 9" stroke="#FFF6E1" stroke-width="2" />
+                                </svg>
+                                <img src="./assets/img/currency_bar.svg" alt="" class="img-fluid active_underline">
+                            </button>
+                            <div class="dropped_div d-none" id="currency_drop">
+                                <button class="btn btn_inner_drop active">GBP £</button>
+                                <button class="btn btn_inner_drop">GBP £</button>
+                                <button class="btn btn_inner_drop">GBP £</button>
+                                <button class="btn btn_inner_drop">GBP £</button>
+                                <button class="btn btn_inner_drop">GBP £</button>
+                                <button class="btn btn_inner_drop">GBP £</button>
+                            </div>
+                        </div>
+                        <div class="cart_drop_container">
+                            <button class="btn btn_header_link pos_rel" onclick="justDrop('cart_drop', 'roter5', this)">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none">
+                                    <path
+                                        d="M12 2.25C9.94043 2.25 8.25 3.94043 8.25 6V6.75H4.54688L4.5 7.45312L3.75 20.9531L3.70312 21.75H20.2969L20.25 20.9531L19.5 7.45312L19.4531 6.75H15.75V6C15.75 3.94043 14.0596 2.25 12 2.25ZM12 3.75C13.2422 3.75 14.25 4.75781 14.25 6V6.75H9.75V6C9.75 4.75781 10.7578 3.75 12 3.75ZM5.95312 8.25H8.25V10.5H9.75V8.25H14.25V10.5H15.75V8.25H18.0469L18.7031 20.25H5.29688L5.95312 8.25Z"
+                                        fill="#FFF6E1" />
+                                </svg>
+                                <div class="cart_circle">
+                                    <p class="cart_circle_text">3</p>
+                                </div>
+                                <img src="./assets/img/cart_bar.svg" alt="" class="img-fluid active_underline">
+                            </button>
+                            <div class="cart_dropper_div d-none" id="cart_drop">
+                                <h1 class="cart_title">Shopping Cart</h1>
+                                <div class="cart_item_outer">
+                                    <div class="cart_item">
+                                        <p class="cart_item_name">Blogging Traffic System</p>
+                                        <div class="cart_item_inner_right">
+                                            <p class="cart_item_qty">x1</p>
+                                            <div class="cart_item_inner_grp">
+                                                <p class="cart_item_price">£189.50</p>
+                                                <img src="./assets/img/cart_bin.svg" alt="" class="img-fluid cart_bin">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="cart_item">
+                                        <p class="cart_item_name">Blogging Traffic System</p>
+                                        <div class="cart_item_inner_right">
+                                            <p class="cart_item_qty">x1</p>
+                                            <div class="cart_item_inner_grp">
+                                                <p class="cart_item_price">£189.50</p>
+                                                <img src="./assets/img/cart_bin.svg" alt="" class="img-fluid cart_bin">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="cart_item">
+                                        <p class="cart_item_name">Blogging Traffic System</p>
+                                        <div class="cart_item_inner_right">
+                                            <p class="cart_item_qty">x1</p>
+                                            <div class="cart_item_inner_grp">
+                                                <p class="cart_item_price">£189.50</p>
+                                                <img src="./assets/img/cart_bin.svg" alt="" class="img-fluid cart_bin">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="cart_item">
+                                        <p class="cart_item_name">Blogging Traffic System</p>
+                                        <div class="cart_item_inner_right">
+                                            <p class="cart_item_qty">x1</p>
+                                            <div class="cart_item_inner_grp">
+                                                <p class="cart_item_price">£189.50</p>
+                                                <img src="./assets/img/cart_bin.svg" alt="" class="img-fluid cart_bin">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="cart_item">
+                                        <p class="cart_item_name">Blogging Traffic System</p>
+                                        <div class="cart_item_inner_right">
+                                            <p class="cart_item_qty">x1</p>
+                                            <div class="cart_item_inner_grp">
+                                                <p class="cart_item_price">£189.50</p>
+                                                <img src="./assets/img/cart_bin.svg" alt="" class="img-fluid cart_bin">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="cart_item">
+                                        <p class="cart_item_name">Blogging Traffic System</p>
+                                        <div class="cart_item_inner_right">
+                                            <p class="cart_item_qty">x1</p>
+                                            <div class="cart_item_inner_grp">
+                                                <p class="cart_item_price">£189.50</p>
+                                                <img src="./assets/img/cart_bin.svg" alt="" class="img-fluid cart_bin">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="cart_splitter"></div>
+                                <div class="cart_item">
+                                    <p class="cart_total_text">Subtotal</p>
+                                    <p class="cart_total_text">£379.00</p>
+                                </div>
+                                <div class="cart_btn_grp">
+                                    <button class="btn btn_global_trans w-100">Continue Shopping</button>
+                                    <button class="btn btn_global w-100">secure Checkout</button>
+                                </div>
+                                <button class="btn btn_cart_close" onclick="justDrop('cart_drop', 'roter5', this)">
+                                    <img src="./assets/img/cross_x_cart.svg" alt="" class="img-fluid">
+                                </button>
+                            </div>
+                        </div>
+                        <button class="btn btn_header_link">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none">
+                                <path
+                                    d="M12 3.75C9.1084 3.75 6.75 6.1084 6.75 9C6.75 10.8076 7.67285 12.4131 9.07031 13.3594C6.39551 14.5078 4.5 17.1621 4.5 20.25H6C6 18.082 7.14551 16.1953 8.85938 15.1406C9.36328 16.377 10.5908 17.25 12 17.25C13.4092 17.25 14.6367 16.377 15.1406 15.1406C16.8545 16.1953 18 18.082 18 20.25H19.5C19.5 17.1621 17.6045 14.5078 14.9297 13.3594C16.3271 12.4131 17.25 10.8076 17.25 9C17.25 6.1084 14.8916 3.75 12 3.75ZM12 5.25C14.0801 5.25 15.75 6.91992 15.75 9C15.75 11.0801 14.0801 12.75 12 12.75C9.91992 12.75 8.25 11.0801 8.25 9C8.25 6.91992 9.91992 5.25 12 5.25ZM12 14.25C12.6152 14.25 13.2012 14.3379 13.7578 14.5078C13.4971 15.2314 12.8174 15.75 12 15.75C11.1826 15.75 10.5029 15.2314 10.2422 14.5078C10.7988 14.3379 11.3848 14.25 12 14.25Z"
+                                    fill="#FFF6E1" />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="container mobile_header p-0">
+                <div class="header_mobo_main">
+                    <div class="header_mobo_left">
+                        <a href="./index.html">
+                            <img src="./assets/img/header_logo.svg" alt="" class="img-fluid">
+                        </a>
+                    </div>
+                    <div class="header_mobo_right">
+                        <div class="cart_menu">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none">
+                                <path
+                                    d="M12 2.25C9.94043 2.25 8.25 3.94043 8.25 6V6.75H4.54688L4.5 7.45312L3.75 20.9531L3.70312 21.75H20.2969L20.25 20.9531L19.5 7.45312L19.4531 6.75H15.75V6C15.75 3.94043 14.0596 2.25 12 2.25ZM12 3.75C13.2422 3.75 14.25 4.75781 14.25 6V6.75H9.75V6C9.75 4.75781 10.7578 3.75 12 3.75ZM5.95312 8.25H8.25V10.5H9.75V8.25H14.25V10.5H15.75V8.25H18.0469L18.7031 20.25H5.29688L5.95312 8.25Z"
+                                    fill="#FFF6E1" />
+                            </svg>
+                            <div class="cart_circle">
+                                <p class="cart_circle_text">3</p>
+                            </div>
+                        </div>
+                        <div class="account_btn">
+                            <button class="btn btn_header_link p-0">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none">
+                                    <path
+                                        d="M12 3.75C9.1084 3.75 6.75 6.1084 6.75 9C6.75 10.8076 7.67285 12.4131 9.07031 13.3594C6.39551 14.5078 4.5 17.1621 4.5 20.25H6C6 18.082 7.14551 16.1953 8.85938 15.1406C9.36328 16.377 10.5908 17.25 12 17.25C13.4092 17.25 14.6367 16.377 15.1406 15.1406C16.8545 16.1953 18 18.082 18 20.25H19.5C19.5 17.1621 17.6045 14.5078 14.9297 13.3594C16.3271 12.4131 17.25 10.8076 17.25 9C17.25 6.1084 14.8916 3.75 12 3.75ZM12 5.25C14.0801 5.25 15.75 6.91992 15.75 9C15.75 11.0801 14.0801 12.75 12 12.75C9.91992 12.75 8.25 11.0801 8.25 9C8.25 6.91992 9.91992 5.25 12 5.25ZM12 14.25C12.6152 14.25 13.2012 14.3379 13.7578 14.5078C13.4971 15.2314 12.8174 15.75 12 15.75C11.1826 15.75 10.5029 15.2314 10.2422 14.5078C10.7988 14.3379 11.3848 14.25 12 14.25Z"
+                                        fill="#FFF6E1" />
+                                </svg>
+                            </button>
+                        </div>
+
+                        <div class="hamburger_menu">
+                            <img src="./assets/img/hamburger_logo.svg" alt="" class="img-fluid">
+                        </div>
+                        <div class="hamburger_menu_close" style="display: none;">
+                            <img src="./assets/img/hamburger_close.svg" alt="" class="img-fluid">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="header_mobo_main_slide" style="display: none;">
+            <div class="header_main_mobo">
+                <button class="btn btn_header_link_mobo">
+                    Design Resources
+                </button>
+                <button class="btn btn_header_link_mobo active">
+                    Bespoke Design Packages
+                </button>
+                <button class="btn btn_header_link_mobo">
+                    Our Story
+                </button>
+                <button class="btn btn_header_link_mobo">
+                    Contact Us
+                </button>
+                <div class="currency_drop_container">
+                    <button class="btn btn_header_drop mx-auto"
+                        onclick="justDrop('currency_drop_mobo', 'roter4', this)">
+                        GBP £
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            id="roter4">
+                            <path d="M18 9L12 15L6 9" stroke="#162222" stroke-width="2" />
+                        </svg>
+                    </button>
+                    <div class="dropped_div d-none" id="currency_drop_mobo">
+                        <button class="btn btn_inner_drop active">GBP</button>
+                        <button class="btn btn_inner_drop">GBP</button>
+                        <button class="btn btn_inner_drop">GBP</button>
+                        <button class="btn btn_inner_drop">GBP</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="header_cart_mobo_main_slide" style="display: none;">
+            <button class="btn btn_cart_back" onclick="closeMobileCart()">
+                <img src="./assets/img/cart_back_icon.svg" alt="" class="img-fluid cart_back_icon">
+                Return to Menu
+            </button>
+            <div class="header_cart_main_mobo">
+                <h1 class="cart_title">Shopping Cart</h1>
+                <div class="cart_item_outer">
+                    <div class="cart_item">
+                        <p class="cart_item_name">Blogging Traffic System</p>
+                        <div class="cart_item_inner_right">
+                            <p class="cart_item_qty">x1</p>
+                            <div class="cart_item_inner_grp">
+                                <p class="cart_item_price">£189.50</p>
+                                <img src="./assets/img/cart_bin.svg" alt="" class="img-fluid cart_bin">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cart_item">
+                        <p class="cart_item_name">Blogging Traffic System</p>
+                        <div class="cart_item_inner_right">
+                            <p class="cart_item_qty">x1</p>
+                            <div class="cart_item_inner_grp">
+                                <p class="cart_item_price">£189.50</p>
+                                <img src="./assets/img/cart_bin.svg" alt="" class="img-fluid cart_bin">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cart_item">
+                        <p class="cart_item_name">Blogging Traffic System</p>
+                        <div class="cart_item_inner_right">
+                            <p class="cart_item_qty">x1</p>
+                            <div class="cart_item_inner_grp">
+                                <p class="cart_item_price">£189.50</p>
+                                <img src="./assets/img/cart_bin.svg" alt="" class="img-fluid cart_bin">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cart_item">
+                        <p class="cart_item_name">Blogging Traffic System</p>
+                        <div class="cart_item_inner_right">
+                            <p class="cart_item_qty">x1</p>
+                            <div class="cart_item_inner_grp">
+                                <p class="cart_item_price">£189.50</p>
+                                <img src="./assets/img/cart_bin.svg" alt="" class="img-fluid cart_bin">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cart_item">
+                        <p class="cart_item_name">Blogging Traffic System</p>
+                        <div class="cart_item_inner_right">
+                            <p class="cart_item_qty">x1</p>
+                            <div class="cart_item_inner_grp">
+                                <p class="cart_item_price">£189.50</p>
+                                <img src="./assets/img/cart_bin.svg" alt="" class="img-fluid cart_bin">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cart_item">
+                        <p class="cart_item_name">Blogging Traffic System</p>
+                        <div class="cart_item_inner_right">
+                            <p class="cart_item_qty">x1</p>
+                            <div class="cart_item_inner_grp">
+                                <p class="cart_item_price">£189.50</p>
+                                <img src="./assets/img/cart_bin.svg" alt="" class="img-fluid cart_bin">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="cart_splitter"></div>
+                <div class="cart_item">
+                    <p class="cart_total_text">Subtotal</p>
+                    <p class="cart_total_text">£379.00</p>
+                </div>
+                <div class="cart_btn_grp">
+                    <button class="btn btn_global_trans w-100">Continue Shopping</button>
+                    <button class="btn btn_global w-100">secure Checkout</button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section>
+        <section class="os_1">
+            <video class="bg-image d-lg-block d-md-block d-none" loop="" muted="" autoplay=""
+                style="object-fit: cover;">
+                <source src="./assets/img/bs_vid.mp4" type="video/mp4">
+            </video>
+            <video class="bg-image d-lg-none d-md-none d-block" loop="" muted="" autoplay="" style="object-fit: cover;">
+                <source src="./assets/img/bs_mob.mp4" type="video/mp4">
+            </video>
+            <div class="container">
+                <div class="second_video_os">
+                    <h1 class="os_tt">Web Design That Fits Your Brand</h1>
+                    <p class="os_pp">Lorem ipsum dolor sit amet consectetur. Sit hendrerit elit iaculis eget neque id
+                        cras rhoncus nunc. Sit ullamcorper sagittis sit praesent et adipiscing congue quis nisl. Nunc id
+                        suspendisse tortor eget at orci.</p>
+                        <button class="btn btn_animated_global2 for_now2">
+                            <span class="icon2"></span>
+                            submit your design request
+                            <span class="underline2"></span>
+                        </button>
+                        <img src="./assets/img/os_scroll.svg" alt="" class="img-fluid mobile_none">
+                    </div>
+                    
+                </div>
+            </div>
+
+        </section>
+
+        <section class="os_3">
+            <video class="bg-image d-lg-block d-md-block d-none" loop="" muted="" autoplay=""
+                style="object-fit: cover;">
+                <source src="./assets/img/bs2_vid.mp4" type="video/mp4">
+            </video>
+            <video class="bg-image d-lg-none d-md-none d-block" loop="" muted="" autoplay="" style="object-fit: cover;">
+                <source src="./assets/img/bs2_mob.mp4" type="video/mp4">
+            </video>
+
+            <div class="second_vid_os3">
+                <div class="tt_sec also_margin">
+                    <img src="./assets/img/left_svg.svg" alt="" class="img-fluid">
+                    <p class="small_con_pp">More Than Just Designers</p>
+                    <img src="./assets/img/right_svg.svg" alt="" class="img-fluid">
+                </div>
+                <h1 class="os3_tt">We’re Creative Partners in Your Brand’s Growth</h1>
+                <p class="os3_pp">Lorem ipsum dolor sit amet consectetur. Sit hendrerit elit iaculis eget neque id cras rhoncus nunc. Sit ullamcorper sagittis sit praesent et adipiscing congue quis nisl. Nunc id suspendisse tortor eget at orci..</p>
+            </div>
+        </section>
+
+
+
+        <section class="lastbespoke">
+            <div class="container cus_pad">
+                <div class="second_form_section">
+                    <div class="form_1">
+                        <div class="tt_sec">
+                            <img src="./assets/img/left_svg.svg" alt="" class="img-fluid">
+                            <p class="small_con_pp">Service request form</p>
+                            <img src="./assets/img/right_svg.svg" alt="" class="img-fluid">
+                        </div>
+                        
+                        <h1 class="contact_tt">Select a service</h1>
+                        <p class="contact_pp">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mattis semper quis nunc amet aliquam lacus, risus,<br> tempor amet. Gravida tristique fames bibendum pellentesque. Dolor sem ultricies consectetur viverra. </p>
+                    </div>
+                    <form>
+                        <div class="form_2">
+                            <div class="single_cell">
+                                <div class="inpp_divv">
+                                    <div class="input_div_main_outer">
+                                        <div class="input_div_main">
+                                            <input type="text" class="input_global" name="text" autocomplete="off" required />
+                                            <label for="text" class="label-name">
+                                            <span class="content-name">
+                                                Full Name
+                                            </span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>  
+                                <div class="inpp_divv">
+                                    <div class="input_div_main_outer">
+                                        <div class="input_div_main">
+                                            <input type="text" class="input_global" name="text" autocomplete="off" required />
+                                            <label for="text" class="label-name">
+                                            <span class="content-name">
+                                               Email Address
+                                            </span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>  
+                                
+                            </div>
+                            <div class="single_cell">
+                                <div class="inpp_divv">
+                                    <div class="select_div_main_outer">
+                                        <div class="select_div_main">
+                                            <p class="inp_drop_label">Select Service</p>
+                                            <select class="form-select input_select" aria-label="Default select example">
+                                                <option selected>Open this select menu</option>
+                                                <option value="1">User Interface</option>
+                                                <option value="2">User Experience</option>
+                                                <option value="3">Illustration</option>
+                                                <option value="3">E-commerce set up</option>
+                                                
+                                                <option value="3">A/B Testing</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>  
+                                <div class="inpp_divv">
+                                    <div class="upload_div_main_outer">
+                                        <div class="upload_div_main" id="upload_wrapper">
+                                          <input type="file" class="upload_input" id="document" name="document" />
+                                          <label for="document" class="label-name">
+                                            <span class="upload-title">Upload brief</span>
+                                            <span class="upload-filename" id="upload_filename"></span>
+                                          </label>
+                                          <div style="position: absolute; right: 0px;">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                                <path d="M4.5 2.25V21.75H19.5V7.19971L19.2744 6.97559L14.7744 2.47559L14.5503 2.25H4.5ZM6 3.75H13.5V8.25H18V20.25H6V3.75ZM15 4.80029L16.9497 6.75H15V4.80029ZM12 9.75L9 12.75H11.25V16.5H12.75V12.75H15L12 9.75ZM9 17.25V18.75H15V17.25H9Z" fill="#656565"/>
+                                              </svg>
+                                          </div>
+                                        </div>
+                                      </div>
+                                      
+                                      
+                                      
+                                      
+                                </div>  
+                                
+                            </div>
+                           
+                            <div class="last_form">
+                                <div class="c-checkbox">
+                                    <div class="c-div">
+                                        <label class="d-flex justify-content-center justify-content-lg-start">
+                                            <input type="checkbox" id="terms" name="terms">
+                                            <label for="terms"></label>
+                                        </label>
+                                    </div>
+                                    <div class="c-text">
+                                        <p class="login_strong">By ticking this box, you agree to the <span
+                                                class="blue_text">Terms & Conditions</span> & <span class="blue_text">Privacy
+                                                Policy</span></p>
+                                    </div>
+                                </div>
+                                <img src="./assets/img/robot.png" alt="" class="img-fluid">
+                                <button class="btn btn_global particular_width">Submit your Query</button>  
+                            </div>
+                        </div>
+                    </form>
+                    
+                </div>
+            </div>
+        </section>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer_main">
+                <div class="footer_top">
+                    <div class="footer_top_left">
+                        <a href="">
+                            <img src="./assets/img/footer_logo.svg" alt="" class="img-fluid footer_logo">
+                        </a>
+                    </div>
+                    <div class="footer_top_center">
+                        <button class="btn btn_footer_links">design resources</button>
+                        <button class="btn btn_footer_links">Bespoke design packages</button>
+                        <button class="btn btn_footer_links">Our Story</button>
+                        <button class="btn btn_footer_links">Contact Us</button>
+                        <button class="btn btn_footer_links">Terms</button>
+                        <button class="btn btn_footer_links">Privacy</button>
+                    </div>
+                    <div class="footer_top_right">
+                        <button class="btn btn_footer_links">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="9" height="17" viewBox="0 0 9 17" fill="none">
+                                <path d="M8.00781 9.5L8.45219 6.60437H5.67375V4.72531C5.67375 3.93313 6.06188 3.16094 7.30625 3.16094H8.56937V0.695625C8.56937 0.695625 7.42313 0.5 6.32719 0.5C4.03906 0.5 2.54344 1.88688 2.54344 4.3975V6.60437H0V9.5H2.54344V16.5H5.67375V9.5H8.00781Z" fill="#FFF6E1"/>
+                            </svg>
+                        </button>
+                        <button class="btn btn_footer_links">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17" fill="none">
+                                <path d="M8.48533 2.03017C10.6166 2.03017 10.8449 2.03017 11.6822 2.10629C12.4433 2.10629 12.9 2.25852 13.1284 2.41075C13.5089 2.56298 13.7373 2.71521 14.0417 3.01967C14.3462 3.32413 14.4984 3.55248 14.6507 3.93306C14.7268 4.23752 14.879 4.61809 14.9551 5.37925C15.0312 6.21652 15.0312 6.44486 15.0312 8.57609C15.0312 10.7073 15.0312 10.9357 14.9551 11.7729C14.9551 12.5341 14.8029 12.9908 14.6507 13.2191C14.4984 13.5997 14.3462 13.828 14.0417 14.1325C13.7373 14.437 13.5089 14.5892 13.1284 14.7414C12.8239 14.8175 12.4433 14.9698 11.6822 15.0459C10.8449 15.0459 10.6166 15.122 8.48533 15.122C6.3541 15.122 6.12575 15.122 5.28848 15.0459C4.52733 15.0459 4.07064 14.8937 3.8423 14.7414C3.46172 14.5892 3.23338 14.437 2.92891 14.1325C2.62445 13.828 2.47222 13.5997 2.31999 13.2191C2.24387 12.9147 2.09165 12.5341 2.01553 11.7729C1.93942 10.9357 1.93941 10.7073 1.93941 8.57609C1.93941 6.44486 1.93942 6.21652 2.01553 5.37925C2.01553 4.61809 2.16776 4.1614 2.31999 3.93306C2.47222 3.55248 2.62445 3.32413 2.92891 3.01967C3.23338 2.71521 3.46172 2.56298 3.8423 2.41075C4.14676 2.33464 4.52733 2.18241 5.28848 2.10629C6.12575 2.03017 6.3541 2.03017 8.48533 2.03017ZM8.48533 0.583984C6.3541 0.583984 6.04964 0.583984 5.21237 0.660099C4.37511 0.736215 3.76618 0.81233 3.30949 1.04068C2.77668 1.26902 2.31999 1.49737 1.93941 1.95406C1.55884 2.41075 1.25438 2.86744 1.02603 3.32413C0.797686 3.85694 0.721571 4.38975 0.645456 5.22702C0.569341 6.06428 0.569336 6.36875 0.569336 8.49997C0.569336 10.6312 0.569341 10.9357 0.645456 11.7729C0.721571 12.6102 0.797686 13.2191 1.02603 13.6758C1.25438 14.2086 1.48272 14.6653 1.93941 15.0459C2.39611 15.5026 2.8528 15.7309 3.30949 15.9593C3.8423 16.1876 4.37511 16.2637 5.21237 16.3398C6.04964 16.416 6.3541 16.416 8.48533 16.416C10.6166 16.416 10.921 16.416 11.7583 16.3398C12.5955 16.2637 13.2045 16.1876 13.6612 15.9593C14.194 15.7309 14.6507 15.5026 15.0312 15.0459C15.4879 14.5892 15.7163 14.1325 15.9446 13.6758C16.173 13.143 16.2491 12.6102 16.3252 11.7729C16.4013 10.9357 16.4013 10.6312 16.4013 8.49997C16.4013 6.36875 16.4013 6.06428 16.3252 5.22702C16.2491 4.38975 16.173 3.78083 15.9446 3.32413C15.7163 2.79133 15.4879 2.33464 15.0312 1.95406C14.5745 1.49737 14.1179 1.26902 13.6612 1.04068C13.1284 0.81233 12.5955 0.736215 11.7583 0.660099C10.921 0.583984 10.6166 0.583984 8.48533 0.583984Z" fill="#FFF6E1"/>
+                                <path d="M8.48535 4.46582C6.2019 4.46582 4.37512 6.29259 4.37512 8.57605C4.37512 10.8595 6.2019 12.6863 8.48535 12.6863C10.7688 12.6863 12.5956 10.8595 12.5956 8.57605C12.5956 6.29259 10.7688 4.46582 8.48535 4.46582ZM8.48535 11.164C7.03916 11.164 5.82132 9.94612 5.82132 8.49993C5.82132 7.05374 7.03916 5.8359 8.48535 5.8359C9.93154 5.8359 11.1494 7.05374 11.1494 8.49993C11.1494 10.0222 9.93154 11.164 8.48535 11.164Z" fill="#FFF6E1"/>
+                                <path d="M13.6612 4.31372C13.6612 4.84652 13.2046 5.30322 12.6718 5.30322C12.1389 5.30322 11.6823 4.84652 11.6823 4.31372C11.6823 3.78091 12.1389 3.32422 12.6718 3.32422C13.2807 3.32422 13.6612 3.78091 13.6612 4.31372Z" fill="#FFF6E1"/>
+                            </svg>
+                    </div>
+                </div>
+                <div class="footer_splittre"></div>
+                <div class="footer_bottom">
+                    <div class="footer_bottom_left">
+                        <p class="footer_text">Help@Vizualuxe.Co</p>
+                        <p class="footer_text">+111 234 567 890</p>
+                        <p class="footer_text">100 Edenbridge Road, Birmingham, United Kingdom, B28 8PR. </p>
+                    </div>
+                    <div class="footer_bottom_right">
+                        <img src="./assets/img/mastercard.svg" alt="" class="img-fluid footer_master_card">
+                        <p class="footer_text">© 2025 Vizualuxe.com All rights reserved.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+
+
+
+    <!-- JQuery CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- Bootstrap JS Links -->
+    <script src="./assets/dist/bootstrap/js/bootstrap.popper.min.js"></script>
+    <script src="./assets/dist/bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- Owl Carousel JS Links -->
+    <script src="./assets/dist/owl-carousel/js/owl.carousel.js"></script>
+
+    <!-- JS Link -->
+    <script src="./assets/js/main.js"></script>
+
+</body>
+
+</html>
