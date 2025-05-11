@@ -329,6 +329,8 @@
     </header>
 
     <section>
+
+        
         <section class="os_1">
             <video class="bg-image d-lg-block d-md-block d-none" loop="" muted="" autoplay=""
                 style="object-fit: cover;">
@@ -490,7 +492,49 @@
             <img src="./assets/img/Digital Elegance.svg" alt="" class="img-fluid digital mobile_none">
         </section>
 
-        
+        <section class="skew_section">
+            <div class="skew_s_main">
+                <div class="skew_left_video">
+                    <video class="mobile_none" loop="" muted="" autoplay="">
+                        <source src="./assets/img/sksdl_vid.mp4" type="video/mp4">
+                    </video>
+                    
+                    <img src="./assets/img/skew_img.png" alt="" class="img-fluid desktop_none skew_bottom_mobo_image">
+                </div>
+    
+                <div class="skew_s_content_main">
+                    <div class="spar">
+                        <div class="div_spar_line_l"></div>
+                        <p class="spar_text">Our Process, Our Mindset</p>
+                        <div class="div_spar_line_r"></div>
+                    </div>
+    
+                    <h1 class="skew_s_title">Design That's Tailored,<br> Thoughtful and Tested</h1>
+    
+                    <p class="skew_s_subtitle">
+                        Lorem ipsum dolor sit amet consectetur. Pellentesque eget lorem facilisi ante. Amet turpis ac enim dictum in sit ipsum. Neque sagittis tellus donec nulla nisl ullamcorper. Massa fermentum nulla eleifend pharetra sed risus pharetra. Feugiat etiam diam nec id.
+                        <br><br>
+                        Et volutpat sit diam non ornare. Erat cursus purus faucibus quam cursus odio quam nunc. Eget a bibendum quisque consequat commodo fusce. Magna enim amet praesent massa volutpat a mattis eget. Massa feugiat odio imperdiet sodales in lacinia tristique lacus. Varius ut diam.
+                    </p>
+    
+                    <button class="btn btn_animated_global">
+                        <span class="icon"></span>
+                        Discover the vizualuxe Difference
+                        <span class="underline"></span>
+                    </button>                
+                </div>
+    
+                <div class="skew_right_video">
+                    <video class="mobile_none" loop="" muted="" autoplay="">
+                        <source src="./assets/img/sksdr_vid.mp4" type="video/mp4">
+                    </video>
+                    
+                    <video class="desktop_none" loop="" muted="" autoplay="">
+                        <source src="./assets/img/sksmt_vid.mp4" type="video/mp4">
+                    </video>
+                </div>
+            </div>
+        </section>
 
         <section class="os_6">
             <div class="inos6">
@@ -843,7 +887,16 @@
 
     <!-- JS Link -->
     <script src="./assets/js/main.js"></script>
-
+    <script>
+        $(document).ready(function () {
+            if (screen.width > 700) {
+                const elementr = document.querySelector('.skew_right_video video');
+                const video_right_height = elementr.offsetHeight;
+                $(".skew_s_main").css('min-height', video_right_height + 'px');
+                $(".skew_s_content_main").css('min-height', video_right_height + 'px');
+            } 
+        });
+    </script>
 </body>
 
 </html>
