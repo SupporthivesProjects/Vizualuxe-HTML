@@ -1055,6 +1055,164 @@ input#input_qty[type=number]::-webkit-outer-spin-button {
 .pds2_card.active .linger .arrow_linger {
     rotate: -90deg;
 }
+.ohd_body {
+    padding: 24px;
+}
+.ohd_cont {
+    border-radius: 0px;
+}
+.ohd_dial {
+    max-width: 1050px;
+}
+.odh_mod_bottom .order_history_panel {
+    max-width: 635px;
+}
+.gd_text {
+    color: var(--cream-p, #FFF6E1);
+
+    /* Desktop/Body/Large */
+    font-family: 'Afacad';
+    font-size: 21px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin-bottom: 0px;
+}
+.green_div {
+    background: var(--pine-p, #36574A);
+    padding: 12px 24px;
+    width: 100%;
+}
+.order_history_panel_pop table.table thead tr th {
+    padding: 12px 24px;
+}
+.order_history_panel_pop table.table tbody tr td {
+    padding: 12px 24px;
+}
+.order_history_panel_pop table.table {
+    margin: 0px;
+}
+.orhtp_title {
+    color: var(--dark-h, #162222);
+
+    /* Desktop/Body/P */
+    font-family: 'Afacad';
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-bottom: 0px;
+}
+.orht_textp {
+    color: var(--pine-p, #36574A);
+
+    /* Desktop/Body/P */
+    font-family: 'Afacad';
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 0px;
+}
+.order_history_panel_pop_table {
+    max-width: 635px;
+    border: 1px solid var(--Grayscale-400, #F4F4F4);
+    width: 100%;
+}
+.white_div {
+    border-top: 1px solid var(--Grayscale-500, #D0D0D0);
+    padding: 12px 24px;
+}
+.white_div_text_l {
+    color: var(--dark-h, #162222);
+
+    /* Desktop/Body/P */
+    font-family: 'Afacad';
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 0px;
+}
+.white_div_text_r {
+    color: var(--pine-p, #36574A);
+    text-align: right;
+
+    /* Desktop/Body/P */
+    font-family: 'Afacad';
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 0px;
+}
+.order_detail_chart {
+    width: 50%;
+    max-width: 343px;
+    border: 1px solid var(--Grayscale-400, #F4F4F4);
+}
+.order_detail_chart2 {
+    width: 48%;
+    border: 1px solid var(--Grayscale-400, #F4F4F4);
+}
+.order_history_panel_pop {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 24px 22px;
+}
+.odh_mod_top_text {
+    color: var(--dark-h, #162222);
+    font-family: 'Afacad';
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: capitalize;
+    margin-bottom: 0px;
+}
+.ohd_right_status_title {
+    color: var(--dark-h, #162222);
+    text-align: center;
+
+    /* Desktop/Body/Small */
+    font-family: 'Afacad';
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 0px;
+}
+.ohd_right_status_main_box {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 8px;
+    max-width: 115px;
+}
+.ohd_right_status {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+}
+.odh_mod_top {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 32px;
+}
+
+
+
+
+
+
 
 @media only screen and (max-width: 700px) {
     .mobile_none {
@@ -1715,6 +1873,51 @@ input#input_qty[type=number]::-webkit-outer-spin-button {
     }
     .bespoke_tab_section_mobile {
         padding-top: 25px;
+    }
+    .order_detail_chart, .order_detail_chart2 {
+        width: 100%;
+        max-width: unset;
+        border: 1px solid var(--Grayscale-400, #F4F4F4);
+    }
+    .order_history_panel_pop_table {
+        background: var(--pine-p, #36574A);
+    }
+    .odh_mod_top {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: stretch;
+        margin-bottom: 32px;
+        gap: 16px;
+    }
+    .odh_mod_top_text {
+        color: var(--dark-h, #162222);
+
+        /* Desktop/Body/Large */
+        font-family: 'Afacad';
+        font-size: 21px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+    }
+    .ohd_right_status_title {
+        color: var(--dark-h, #162222);
+        text-align: center;
+        font-family: 'Afacad';
+        font-size: 10px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+    .ohd_right_status {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 4px;
+    }
+    .ohd_dial {
+        margin: 0px;
     }
 }
 
