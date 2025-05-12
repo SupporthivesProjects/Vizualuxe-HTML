@@ -71,19 +71,48 @@ $("#document").on("change", function(e){
   
 
 $(document).ready(function () {
-    $('.owl-carousel').owlCarousel({
+    $('#pds2').owlCarousel({
         loop:false,
         margin: 28,
         nav:false,
         dots: false,
         responsive:{
             0:{
-                loop: false,
-                items:1,
+                loop: true,
+                items:1.2,
                 nav: true,
+                dots: true,
+                dotsEach: 1,
                 navText: [
-                    "<span class='btn btn_owl'><svg xmlns='http://www.w3.org/2000/svg' width='14' height='14' viewBox='0 0 14 14' fill='none'><path d='M13 7H1M1 7L7 1M1 7L7 13' stroke='#FCFCFD' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/></svg></span>",
-                    "<span class='btn btn_owl'><svg xmlns='http://www.w3.org/2000/svg' width='14' height='14' viewBox='0 0 14 14' fill='none'><path d='M1 7H13M13 7L7 1M13 7L7 13' stroke='#FCFCFD' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/></svg></span>"
+                    "<span class='btn btn_owl'><svg xmlns='http://www.w3.org/2000/svg' width='16' height='27' viewBox='0 0 16 27' fill='none'><path d='M13.3135 24.627L1.99977 13.3132L13.3135 1.99954' stroke='#BA8B4A' stroke-width='4' stroke-linecap='round' stroke-linejoin='round'/></svg></span>",
+                    "<span class='btn btn_owl'><svg xmlns='http://www.w3.org/2000/svg' width='16' height='27' viewBox='0 0 16 27' fill='none'><path d='M2.68652 2L14.0002 13.3137L2.68652 24.6274' stroke='#BA8B4A' stroke-width='4' stroke-linecap='round' stroke-linejoin='round'/></svg></span>"
+                ],
+            },
+            600:{
+                items:3
+            },
+            1000:{
+                items:5
+            }
+        }
+    })
+
+    $('#pds3').owlCarousel({
+        loop:false,
+        margin: 24,
+        nav:false,
+        dots: false,
+        responsive:{
+            0:{
+                loop: true,
+                items:1.08,
+                nav: true,
+                dots: true,
+                dotsEach: 1,
+                margin: 16,
+                navText: [
+                    "<span class='btn btn_owl'><svg xmlns='http://www.w3.org/2000/svg' width='16' height='27' viewBox='0 0 16 27' fill='none'><path d='M13.3135 24.627L1.99977 13.3132L13.3135 1.99954' stroke='#BA8B4A' stroke-width='4' stroke-linecap='round' stroke-linejoin='round'/></svg></span>",
+                    "<span class='btn btn_owl'><svg xmlns='http://www.w3.org/2000/svg' width='16' height='27' viewBox='0 0 16 27' fill='none'><path d='M2.68652 2L14.0002 13.3137L2.68652 24.6274' stroke='#BA8B4A' stroke-width='4' stroke-linecap='round' stroke-linejoin='round'/></svg></span>"
                 ],
             },
             600:{
@@ -91,21 +120,13 @@ $(document).ready(function () {
             },
             1000:{
                 items:4
+            },
+            1349:{
+                items:5
             }
         }
     })
 })
-
-// const togglePassword = document.querySelector('#togglePassword');
-//   const password = document.querySelector('#id_password');
-
-//   togglePassword.addEventListener('click', function (e) {
-//     // toggle the type attribute
-//     const type = password.getAttribute('type') === 'password' ? 'text' : 'password';
-//     password.setAttribute('type', type);
-//     // toggle the eye slash icon
-//     this.classList.toggle('fa-eye-slash');
-// });
 
 function togglePassword(input_id, input_eye_image) {
     const inputField = document.getElementById(input_id);
@@ -132,5 +153,20 @@ function dashMoboDrop(droperId, roterId, changed_text, img_name) {
         $("#dashtc").text(changed_text);
         $("#dashMoboDrop").attr("src", img_src);
 
+    }
+}
+function addQty(inp_id) {
+    const x = document.getElementById(inp_id);
+    let currentValue = parseInt(x.value) || 0;
+    if (currentValue < 10) {
+        x.value = currentValue + 1;
+    }
+    
+}
+function subQty(inp_id) {
+    const x = document.getElementById(inp_id);
+    let currentValue = parseInt(x.value) || 0;
+    if (currentValue > 0) {
+        x.value = currentValue - 1;
     }
 }
