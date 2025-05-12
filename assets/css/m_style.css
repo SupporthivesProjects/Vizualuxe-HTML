@@ -907,6 +907,155 @@ input#input_qty[type=number]::-webkit-outer-spin-button {
 .pds2_right .btn_animated_global {
     margin-left: auto;
 }
+.linger_text {
+    color: var(--pine-p, #36574A);
+
+    /* Desktop/Body/P */
+    font-family: 'Afacad';
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 0px;
+}
+.linger {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+.bsp_tab_btn_div .pds2_card {
+    padding: 0px 22px 24px 22px;
+    width: 100%;
+}
+.bsp_tab_btn_div .pds2_card .linger .arrow_linger {
+    rotate: 0deg;
+    transition: all 0.3s ease;
+}
+.bsp_tab_btn_div .pds2_card:hover .linger .arrow_linger {
+    rotate: -90deg;
+    transition: all 0.3s ease;
+}
+.bsp_tab_btn_div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 21px;
+}
+
+.bsp_tab_top_div {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: stretch;
+    gap: 48px;
+    padding-top: 64px;
+    padding-bottom: 64px;
+}
+.bespoke_tab_section {
+    background: #FAFAFA;
+    position: relative;
+}
+.down_arrow {
+    position: absolute;
+    left: 50%;
+    bottom: 0px;
+    transform: translate(-50%, 25px);
+}
+.bsptp_title {
+    color: var(--dark-h, #162222);
+
+    /* Desktop/H2 */
+    font-family: "Libre Baskerville";
+    font-size: 39px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: capitalize;
+    margin-bottom: 0px;
+}
+.bsptp_subtitle {
+    color: var(--pine-p, #36574A);
+
+    /* Desktop/Body/P */
+    font-family: 'Afacad';
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 0px;
+}
+.bsp_tab_l_inner {
+    max-width: 554px;
+    margin-left: auto;
+    margin-right: 74px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 24px;
+}
+.bsp_tab_panel_tab {
+    display: flex;
+    flex-direction: row;
+    align-content: flex-start;
+    justify-content: center;
+    align-items: stretch;
+}
+.bsp_tab_l {
+    width: 100%;
+    padding-top: 77px;
+    padding-bottom: 212px;
+}
+.bsp_tab_r {
+    width: 100%;
+}
+.bsp_tab_l {
+    background: url(../img/bspl.png);
+    background-size: cover;
+    background-position: right bottom;
+    background-repeat: no-repeat;
+}
+.bspri1 {
+    background: url(../img/bspri1.png);
+    background-size: cover;
+    background-position: left bottom;
+    background-repeat: no-repeat;
+}
+.bspri2 {
+    background: url(../img/bspri2.png);
+    background-size: cover;
+    background-position: left bottom;
+    background-repeat: no-repeat;
+}
+.bspri3 {
+    background: url(../img/bspri3.png);
+    background-size: cover;
+    background-position: left bottom;
+    background-repeat: no-repeat;
+}
+.bspri4 {
+    background: url(../img/bspri4.png);
+    background-size: cover;
+    background-position: left bottom;
+    background-repeat: no-repeat;
+}
+.bspri5 {
+    background: url(../img/bspri5.png);
+    background-size: cover;
+    background-position: left bottom;
+    background-repeat: no-repeat;
+}
+.pds2_card.active {
+    opacity: 0.5;
+    background: linear-gradient(to bottom, transparent 14%, #D0D0D0 14%);    
+}
+.pds2_card.active .linger .arrow_linger {
+    rotate: -90deg;
+}
+
 @media only screen and (max-width: 700px) {
     .mobile_none {
         display: none;
@@ -1518,6 +1667,54 @@ input#input_qty[type=number]::-webkit-outer-spin-button {
         align-items: center;
         margin-top: 24px;
         margin-right: 24px;
+    }
+    .bsp_ts_card .pds2_card {
+        padding: 0px 22px 24px 22px;
+        background: linear-gradient(to bottom, transparent 14%, #F4F4F4 14%);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 18px;
+        max-width: unset;
+    }
+    .bsp_ts_card .pds2_card .pds2_img {
+        max-width: 97px;
+        margin-bottom: 3px;
+    }
+    .bsp_ts_mobo_card_subtitile {
+        color: var(--pine-p, #36574A);
+        text-align: center;
+
+        /* Desktop/Body/P */
+        font-family: 'Afacad';
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        margin-bottom: 24px;
+    }
+    .bsp_ts_mobo_card_titile {
+        color: #162222;
+        text-align: center;
+
+        /* Desktop/H4 */
+        font-family: "Libre Baskerville";
+        font-size: 25px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        text-transform: capitalize;
+        margin-bottom: 24px;
+    }
+    .bsp_ts_card {
+        padding: 0px 24px;
+    }
+    .bspim {
+        margin-bottom: 24px;
+    }
+    .bespoke_tab_section_mobile {
+        padding-top: 25px;
     }
 }
 
