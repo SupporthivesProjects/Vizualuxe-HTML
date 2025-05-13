@@ -35,11 +35,12 @@ function closeMobileCart() {
         $(".hamburger_menu_close").fadeOut("slow");
     }
 }
+
 function justDrop(droperId, roterId, element) {
     const theId = document.getElementById(droperId);
     const theId2 = document.getElementById(roterId);
 
-    
+
     if (theId.classList.contains('d-none')) {
         theId.classList.remove('d-none');
         element.classList.add("active")
@@ -65,10 +66,79 @@ function field_box_file() {
     console.log('me');
     document.getElementById('document').click();
 }
-$("#document").on("change", function(e){
+$("#document").on("change", function (e) {
     document.getElementById('upload_placeholder').innerHTML = e.target.files[0].name;
 })
-  
+
+
+
+function togglePassword(input_id, input_eye_image) {
+    const inputField = document.getElementById(input_id);
+    const inputFieldType = inputField.getAttribute('type');
+    if (inputFieldType === "password") {
+        inputField.setAttribute('type', 'text');
+        input_eye_image.src = "./assets/img/open_eye.svg"
+    } else {
+        inputField.setAttribute('type', 'password');
+        input_eye_image.src = "./assets/img/close_eye.svg"
+    }
+}
+
+function dashMoboDrop(droperId, roterId, changed_text, img_name) {
+    const theId = document.getElementById(droperId);
+    const theId2 = document.getElementById(roterId);
+    let img_src = "./assets/img/" + img_name + ".png";
+
+    if (theId.classList.contains('d-none')) {
+        theId.classList.remove('d-none');
+        theId2.style.rotate = '180deg';
+    } else {
+        theId.classList.add('d-none');
+        theId2.style.rotate = '0deg';
+        $("#dashtc").text(changed_text);
+        $("#dashMoboDrop").attr("src", img_src);
+
+    }
+}
+
+
+
+
+
+
+
+
+
+
+document.querySelectorAll('.toggle-btn').forEach(button => {
+    const icon = button.querySelector('.icon');
+    const text = button.querySelector('.read-text');
+    const collapse = document.querySelector(button.getAttribute('data-bs-target'));
+
+    const plusIconPath = button.getAttribute('data-plus');
+    const minusIconPath = button.getAttribute('data-minus');
+
+    // ✅ INITIAL CHECK: Run this once on page load
+    if (collapse.classList.contains('show')) {
+        icon.setAttribute('src', minusIconPath);
+        text.textContent = 'Read Less';
+    } else {
+        icon.setAttribute('src', plusIconPath);
+        text.textContent = 'Read More';
+    }
+
+    // ✅ Toggle on expand/collapse
+    collapse.addEventListener('show.bs.collapse', () => {
+        icon.setAttribute('src', minusIconPath);
+        text.textContent = 'Read Less';
+    });
+
+    collapse.addEventListener('hide.bs.collapse', () => {
+        icon.setAttribute('src', plusIconPath);
+        text.textContent = 'Read More';
+    });
+});
+
 
 $(document).ready(function () {
     $('#pds2').owlCarousel({
@@ -115,8 +185,8 @@ $(document).ready(function () {
                     "<span class='btn btn_owl'><svg xmlns='http://www.w3.org/2000/svg' width='16' height='27' viewBox='0 0 16 27' fill='none'><path d='M2.68652 2L14.0002 13.3137L2.68652 24.6274' stroke='#BA8B4A' stroke-width='4' stroke-linecap='round' stroke-linejoin='round'/></svg></span>"
                 ],
             },
-            600:{
-                items:3
+            600: {
+                items: 3
             },
             1000:{
                 items:4
