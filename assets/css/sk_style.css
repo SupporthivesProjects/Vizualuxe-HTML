@@ -517,6 +517,10 @@ input[type=radio] {
     align-items: center;
     gap: 24px;
     width: 100%;
+    position: relative;
+}
+.mod_dia {
+    max-width: 808px;
 }
 
 .div1_inner_modal {
@@ -840,7 +844,11 @@ img.img_PS_bottom {
 
 /*--------------------------- Code for Optimization -------------------------------------*/
 
-
+.close_modal {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+}
 @media only screen and (max-width: 700px) {
     .mobile_none {
         display: none;
