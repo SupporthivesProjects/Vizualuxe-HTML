@@ -24,6 +24,6 @@ git remote add origin https://github.com/SupporthivesProjects/Vizualuxe-HTML.git
 
 
 ● Pages Assigned :-<br>
-↳ Mehul:- Header, Footer, Product Listing, Product Details, Bespoke Design Package, Dashboard<br>
+↳ Mehul:- Header, Footer, Product Listing, Product Details, Bespoke Design Package, Account Details, Billing, Order History, Order Details<br>
 ↳ Sakshi:- Terms & Condition, Error, Register, Login, Reset Password, Forgot Password, Payment Success, Payment Failure,<br>
-↳ Tirthak:- Home, Our Story, Contact, Checkout
+↳ Tirthak:- Home, Our Story, Contact, Checkout, Bespoke Design Packag
