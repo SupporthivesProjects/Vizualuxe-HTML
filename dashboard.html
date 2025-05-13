@@ -1,0 +1,1098 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vizualuxe</title>
+
+    <!-- Bootstrap Styles Links -->
+    <link rel="stylesheet" href="./assets/dist/bootstrap/css/bootstrap.min.css">
+
+    <!-- Owl Carousel Links -->
+    <link rel="stylesheet" href="./assets/dist/owl-carousel/js/owl.carousel.css">
+
+    <!-- Google Fonts Link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Afacad:ital,wght@0,400..700;1,400..700&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap"
+        rel="stylesheet">
+
+    <!-- Style Sheets -->
+    <link rel="stylesheet" href="./assets/css/t_style.css">
+    <link rel="stylesheet" href="./assets/css/sk_style.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/css/m_style.css">
+
+
+    <style>
+        .header_top {
+            background: var(--dark-h, #162222);
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <header class="fixed-top">
+        <div class="header_top">
+            <div class="container desktop_header p-0">
+                <div class="header_main_container">
+                    <div class="header_left">
+                        <a href="./index.html">
+                            <img src="./assets/img/header_logo.svg" alt="" class="img-fluid header_logo">
+                        </a>
+                    </div>
+                    <div class="header_right">
+                        <button class="btn btn_header_link active">
+                            design resources
+                        </button>
+                        <button class="btn btn_header_link">
+                            Bespoke design packages
+                        </button>
+                        <button class="btn btn_header_link">
+                            Our Story
+                        </button>
+                        <button class="btn btn_header_link">
+                            Contact Us
+                        </button>
+                        <div class="header_spliter_bar"></div>
+                        <div class="currency_drop_container">
+                            <button class="btn btn_header_drop" onclick="justDrop('currency_drop', 'roter2', this)">
+                                GBP £
+
+                                <svg xmlns="http://www.w3.org/2000/svg" id="roter2" width="24" height="24"
+                                    viewBox="0 0 24 24" fill="none">
+                                    <path d="M18 9L12 15L6 9" stroke="#FFF6E1" stroke-width="2" />
+                                </svg>
+                                <img src="./assets/img/currency_bar.svg" alt="" class="img-fluid active_underline">
+                            </button>
+                            <div class="dropped_div d-none" id="currency_drop">
+                                <button class="btn btn_inner_drop active">GBP £</button>
+                                <button class="btn btn_inner_drop">GBP £</button>
+                                <button class="btn btn_inner_drop">GBP £</button>
+                                <button class="btn btn_inner_drop">GBP £</button>
+                                <button class="btn btn_inner_drop">GBP £</button>
+                                <button class="btn btn_inner_drop">GBP £</button>
+                            </div>
+                        </div>
+                        <div class="cart_drop_container">
+                            <button class="btn btn_header_link pos_rel" onclick="justDrop('cart_drop', 'roter5', this)">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none">
+                                    <path
+                                        d="M12 2.25C9.94043 2.25 8.25 3.94043 8.25 6V6.75H4.54688L4.5 7.45312L3.75 20.9531L3.70312 21.75H20.2969L20.25 20.9531L19.5 7.45312L19.4531 6.75H15.75V6C15.75 3.94043 14.0596 2.25 12 2.25ZM12 3.75C13.2422 3.75 14.25 4.75781 14.25 6V6.75H9.75V6C9.75 4.75781 10.7578 3.75 12 3.75ZM5.95312 8.25H8.25V10.5H9.75V8.25H14.25V10.5H15.75V8.25H18.0469L18.7031 20.25H5.29688L5.95312 8.25Z"
+                                        fill="#FFF6E1" />
+                                </svg>
+                                <div class="cart_circle">
+                                    <p class="cart_circle_text">3</p>
+                                </div>
+                                <img src="./assets/img/cart_bar.svg" alt="" class="img-fluid active_underline">
+                            </button>
+                            <div class="cart_dropper_div d-none" id="cart_drop">
+                                <h1 class="cart_title">Shopping Cart</h1>
+                                <div class="cart_item_outer">
+                                    <div class="cart_item">
+                                        <p class="cart_item_name">Blogging Traffic System</p>
+                                        <div class="cart_item_inner_right">
+                                            <p class="cart_item_qty">x1</p>
+                                            <div class="cart_item_inner_grp">
+                                                <p class="cart_item_price">£189.50</p>
+                                                <img src="./assets/img/cart_bin.svg" alt="" class="img-fluid cart_bin">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="cart_item">
+                                        <p class="cart_item_name">Blogging Traffic System</p>
+                                        <div class="cart_item_inner_right">
+                                            <p class="cart_item_qty">x1</p>
+                                            <div class="cart_item_inner_grp">
+                                                <p class="cart_item_price">£189.50</p>
+                                                <img src="./assets/img/cart_bin.svg" alt="" class="img-fluid cart_bin">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="cart_item">
+                                        <p class="cart_item_name">Blogging Traffic System</p>
+                                        <div class="cart_item_inner_right">
+                                            <p class="cart_item_qty">x1</p>
+                                            <div class="cart_item_inner_grp">
+                                                <p class="cart_item_price">£189.50</p>
+                                                <img src="./assets/img/cart_bin.svg" alt="" class="img-fluid cart_bin">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="cart_item">
+                                        <p class="cart_item_name">Blogging Traffic System</p>
+                                        <div class="cart_item_inner_right">
+                                            <p class="cart_item_qty">x1</p>
+                                            <div class="cart_item_inner_grp">
+                                                <p class="cart_item_price">£189.50</p>
+                                                <img src="./assets/img/cart_bin.svg" alt="" class="img-fluid cart_bin">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="cart_item">
+                                        <p class="cart_item_name">Blogging Traffic System</p>
+                                        <div class="cart_item_inner_right">
+                                            <p class="cart_item_qty">x1</p>
+                                            <div class="cart_item_inner_grp">
+                                                <p class="cart_item_price">£189.50</p>
+                                                <img src="./assets/img/cart_bin.svg" alt="" class="img-fluid cart_bin">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="cart_item">
+                                        <p class="cart_item_name">Blogging Traffic System</p>
+                                        <div class="cart_item_inner_right">
+                                            <p class="cart_item_qty">x1</p>
+                                            <div class="cart_item_inner_grp">
+                                                <p class="cart_item_price">£189.50</p>
+                                                <img src="./assets/img/cart_bin.svg" alt="" class="img-fluid cart_bin">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="cart_splitter"></div>
+                                <div class="cart_item">
+                                    <p class="cart_total_text">Subtotal</p>
+                                    <p class="cart_total_text">£379.00</p>
+                                </div>
+                                <div class="cart_btn_grp">
+                                    <button class="btn btn_global_trans w-100">Continue Shopping</button>
+                                    <button class="btn btn_global w-100">secure Checkout</button>
+                                </div>
+                                <button class="btn btn_cart_close" onclick="justDrop('cart_drop', 'roter5', this)">
+                                    <img src="./assets/img/cross_x_cart.svg" alt="" class="img-fluid">
+                                </button>
+                            </div>
+                        </div>
+                        <button class="btn btn_header_link">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none">
+                                <path
+                                    d="M12 3.75C9.1084 3.75 6.75 6.1084 6.75 9C6.75 10.8076 7.67285 12.4131 9.07031 13.3594C6.39551 14.5078 4.5 17.1621 4.5 20.25H6C6 18.082 7.14551 16.1953 8.85938 15.1406C9.36328 16.377 10.5908 17.25 12 17.25C13.4092 17.25 14.6367 16.377 15.1406 15.1406C16.8545 16.1953 18 18.082 18 20.25H19.5C19.5 17.1621 17.6045 14.5078 14.9297 13.3594C16.3271 12.4131 17.25 10.8076 17.25 9C17.25 6.1084 14.8916 3.75 12 3.75ZM12 5.25C14.0801 5.25 15.75 6.91992 15.75 9C15.75 11.0801 14.0801 12.75 12 12.75C9.91992 12.75 8.25 11.0801 8.25 9C8.25 6.91992 9.91992 5.25 12 5.25ZM12 14.25C12.6152 14.25 13.2012 14.3379 13.7578 14.5078C13.4971 15.2314 12.8174 15.75 12 15.75C11.1826 15.75 10.5029 15.2314 10.2422 14.5078C10.7988 14.3379 11.3848 14.25 12 14.25Z"
+                                    fill="#FFF6E1" />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="container mobile_header p-0">
+                <div class="header_mobo_main">
+                    <div class="header_mobo_left">
+                        <a href="./index.html">
+                            <img src="./assets/img/header_logo.svg" alt="" class="img-fluid">
+                        </a>
+                    </div>
+                    <div class="header_mobo_right">
+                        <div class="cart_menu">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none">
+                                <path
+                                    d="M12 2.25C9.94043 2.25 8.25 3.94043 8.25 6V6.75H4.54688L4.5 7.45312L3.75 20.9531L3.70312 21.75H20.2969L20.25 20.9531L19.5 7.45312L19.4531 6.75H15.75V6C15.75 3.94043 14.0596 2.25 12 2.25ZM12 3.75C13.2422 3.75 14.25 4.75781 14.25 6V6.75H9.75V6C9.75 4.75781 10.7578 3.75 12 3.75ZM5.95312 8.25H8.25V10.5H9.75V8.25H14.25V10.5H15.75V8.25H18.0469L18.7031 20.25H5.29688L5.95312 8.25Z"
+                                    fill="#FFF6E1" />
+                            </svg>
+                            <div class="cart_circle">
+                                <p class="cart_circle_text">3</p>
+                            </div>
+                        </div>
+                        <div class="account_btn">
+                            <button class="btn btn_header_link p-0">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none">
+                                    <path
+                                        d="M12 3.75C9.1084 3.75 6.75 6.1084 6.75 9C6.75 10.8076 7.67285 12.4131 9.07031 13.3594C6.39551 14.5078 4.5 17.1621 4.5 20.25H6C6 18.082 7.14551 16.1953 8.85938 15.1406C9.36328 16.377 10.5908 17.25 12 17.25C13.4092 17.25 14.6367 16.377 15.1406 15.1406C16.8545 16.1953 18 18.082 18 20.25H19.5C19.5 17.1621 17.6045 14.5078 14.9297 13.3594C16.3271 12.4131 17.25 10.8076 17.25 9C17.25 6.1084 14.8916 3.75 12 3.75ZM12 5.25C14.0801 5.25 15.75 6.91992 15.75 9C15.75 11.0801 14.0801 12.75 12 12.75C9.91992 12.75 8.25 11.0801 8.25 9C8.25 6.91992 9.91992 5.25 12 5.25ZM12 14.25C12.6152 14.25 13.2012 14.3379 13.7578 14.5078C13.4971 15.2314 12.8174 15.75 12 15.75C11.1826 15.75 10.5029 15.2314 10.2422 14.5078C10.7988 14.3379 11.3848 14.25 12 14.25Z"
+                                        fill="#FFF6E1" />
+                                </svg>
+                            </button>
+                        </div>
+
+                        <div class="hamburger_menu">
+                            <img src="./assets/img/hamburger_logo.svg" alt="" class="img-fluid">
+                        </div>
+                        <div class="hamburger_menu_close" style="display: none;">
+                            <img src="./assets/img/hamburger_close.svg" alt="" class="img-fluid">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="header_mobo_main_slide" style="display: none;">
+            <div class="header_main_mobo">
+                <button class="btn btn_header_link_mobo">
+                    Design Resources
+                </button>
+                <button class="btn btn_header_link_mobo active">
+                    Bespoke Design Packages
+                </button>
+                <button class="btn btn_header_link_mobo">
+                    Our Story
+                </button>
+                <button class="btn btn_header_link_mobo">
+                    Contact Us
+                </button>
+                <div class="currency_drop_container">
+                    <button class="btn btn_header_drop mx-auto"
+                        onclick="justDrop('currency_drop_mobo', 'roter4', this)">
+                        GBP £
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            id="roter4">
+                            <path d="M18 9L12 15L6 9" stroke="#162222" stroke-width="2" />
+                        </svg>
+                    </button>
+                    <div class="dropped_div d-none" id="currency_drop_mobo">
+                        <button class="btn btn_inner_drop active">GBP</button>
+                        <button class="btn btn_inner_drop">GBP</button>
+                        <button class="btn btn_inner_drop">GBP</button>
+                        <button class="btn btn_inner_drop">GBP</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="header_cart_mobo_main_slide" style="display: none;">
+            <button class="btn btn_cart_back" onclick="closeMobileCart()">
+                <img src="./assets/img/cart_back_icon.svg" alt="" class="img-fluid cart_back_icon">
+                Return to Menu
+            </button>
+            <div class="header_cart_main_mobo">
+                <h1 class="cart_title">Shopping Cart</h1>
+                <div class="cart_item_outer">
+                    <div class="cart_item">
+                        <p class="cart_item_name">Blogging Traffic System</p>
+                        <div class="cart_item_inner_right">
+                            <p class="cart_item_qty">x1</p>
+                            <div class="cart_item_inner_grp">
+                                <p class="cart_item_price">£189.50</p>
+                                <img src="./assets/img/cart_bin.svg" alt="" class="img-fluid cart_bin">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cart_item">
+                        <p class="cart_item_name">Blogging Traffic System</p>
+                        <div class="cart_item_inner_right">
+                            <p class="cart_item_qty">x1</p>
+                            <div class="cart_item_inner_grp">
+                                <p class="cart_item_price">£189.50</p>
+                                <img src="./assets/img/cart_bin.svg" alt="" class="img-fluid cart_bin">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cart_item">
+                        <p class="cart_item_name">Blogging Traffic System</p>
+                        <div class="cart_item_inner_right">
+                            <p class="cart_item_qty">x1</p>
+                            <div class="cart_item_inner_grp">
+                                <p class="cart_item_price">£189.50</p>
+                                <img src="./assets/img/cart_bin.svg" alt="" class="img-fluid cart_bin">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cart_item">
+                        <p class="cart_item_name">Blogging Traffic System</p>
+                        <div class="cart_item_inner_right">
+                            <p class="cart_item_qty">x1</p>
+                            <div class="cart_item_inner_grp">
+                                <p class="cart_item_price">£189.50</p>
+                                <img src="./assets/img/cart_bin.svg" alt="" class="img-fluid cart_bin">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cart_item">
+                        <p class="cart_item_name">Blogging Traffic System</p>
+                        <div class="cart_item_inner_right">
+                            <p class="cart_item_qty">x1</p>
+                            <div class="cart_item_inner_grp">
+                                <p class="cart_item_price">£189.50</p>
+                                <img src="./assets/img/cart_bin.svg" alt="" class="img-fluid cart_bin">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cart_item">
+                        <p class="cart_item_name">Blogging Traffic System</p>
+                        <div class="cart_item_inner_right">
+                            <p class="cart_item_qty">x1</p>
+                            <div class="cart_item_inner_grp">
+                                <p class="cart_item_price">£189.50</p>
+                                <img src="./assets/img/cart_bin.svg" alt="" class="img-fluid cart_bin">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="cart_splitter"></div>
+                <div class="cart_item">
+                    <p class="cart_total_text">Subtotal</p>
+                    <p class="cart_total_text">£379.00</p>
+                </div>
+                <div class="cart_btn_grp">
+                    <button class="btn btn_global_trans w-100">Continue Shopping</button>
+                    <button class="btn btn_global w-100">secure Checkout</button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="dashboard_page">
+        <div class="dashboard_main">
+            <img src="./assets/img/cl1.png" alt="" class="img-fluid cl1">
+            <img src="./assets/img/cl2.png" alt="" class="img-fluid cl2">
+            <div class="dash_left">
+                <div class="dash_left_outer">
+                    <div class="dash_left_inner">
+                        <div class="dash_content">
+                            <h1 class="dash_title">Welcome Back <br class="desktop_none">John Smith</h1>
+                            <p class="dash_subtitle">Hello <span>John Smith</span> (not John Smith? <a href="">Log out</a>)</p>
+                        </div>
+                        <p class="dash_subtitle mo_text_center">From your dashboard, update account
+                            info, password, billing, and view past orders.</p>
+                        <div class="dash_tab_btn_div mobile_none" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                            
+                                <button class="btn btn_dash active" id="v-pills-home-tab" data-bs-toggle="pill" data-bs-target="#v-pills-home" type="button" role="tab" aria-controls="v-pills-home" aria-selected="true">
+                                    Account Details
+                                    <img src="./assets/img/di1.png" alt="" class="img-fluid dash_btn_logo">
+                                </button>
+                                <button class="btn btn_dash" id="v-pills-profile-tab" data-bs-toggle="pill" data-bs-target="#v-pills-profile" type="button" role="tab" aria-controls="v-pills-profile" aria-selected="false">
+                                    Billing Details
+                                    <img src="./assets/img/di2.png" alt="" class="img-fluid dash_btn_logo">
+                                </button>
+                                <button class="btn btn_dash" id="v-pills-disabled-tab" data-bs-toggle="pill" data-bs-target="#v-pills-disabled" type="button" role="tab" aria-controls="v-pills-disabled" aria-selected="false">
+                                    Order history
+                                    <img src="./assets/img/di3.png" alt="" class="img-fluid dash_btn_logo">
+                                </button>
+                                <button class="btn btn_dash">
+                                    Sign out
+                                    <img src="./assets/img/di4.png" alt="" class="img-fluid dash_btn_logo">
+                                </button>
+                                
+                        </div>
+                        <div class="mob_dash_tab_drop desktop_none" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                            <button class="btn btn_dash_menu_drop" onclick="justDrop('account_dash_drop', 'roter6', this)">
+                                <div class="d-flex gap-3 align-items-center">
+                                    <img src="./assets/img/di1.png" alt="" class="img-fluid dash_btn_logo" id="dashMoboDrop">
+                                    <p class="dash_tc" id="dashtc">Account Details</p>
+                                </div>
+                                <svg xmlns="http://www.w3.org/2000/svg" id="roter6" width="24" height="24"
+                                    viewBox="0 0 24 24" fill="none">
+                                    <path d="M18 9L12 15L6 9" stroke="#162222" stroke-width="2" />
+                                </svg>
+                                <img src="./assets/img/currency_bar.svg" alt="" class="img-fluid active_underline">
+                            </button>
+                            <div class="dropped_div_dash_menu d-none" id="account_dash_drop">
+                                <button class="btn btn_dash active" id="v-pills-home-tab" data-bs-toggle="pill" data-bs-target="#v-pills-home" type="button" role="tab" aria-controls="v-pills-home" aria-selected="true" onclick="dashMoboDrop('account_dash_drop', 'roter6', 'Account Details', 'di1')">
+                                    <img src="./assets/img/di1.png" alt="" class="img-fluid dash_btn_logo">
+                                    Account Details
+                                </button>
+                                <button class="btn btn_dash" id="v-pills-profile-tab" data-bs-toggle="pill" data-bs-target="#v-pills-profile" type="button" role="tab" aria-controls="v-pills-profile" aria-selected="false" onclick="dashMoboDrop('account_dash_drop', 'roter6', 'Billing Details', 'di2')">
+                                    <img src="./assets/img/di2.png" alt="" class="img-fluid dash_btn_logo">
+                                    Billing Details
+                                </button>
+                                <button class="btn btn_dash" id="v-pills-disabled-tab" data-bs-toggle="pill" data-bs-target="#v-pills-disabled" type="button" role="tab" aria-controls="v-pills-disabled" aria-selected="false" onclick="dashMoboDrop('account_dash_drop', 'roter6', 'Order history', 'di3')">
+                                    <img src="./assets/img/di3.png" alt="" class="img-fluid dash_btn_logo">
+                                    Order history
+                                </button>
+                                <button class="btn btn_dash">
+                                    <img src="./assets/img/di4.png" alt="" class="img-fluid dash_btn_logo">
+                                    Sign out
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="dash_right">
+                <div class="dash_right_inner">
+                    <div class="tab-content" id="v-pills-tabContent">
+                        <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab" tabindex="0">
+                            <div class="account_tab">
+                                <form class="dash_acc_form">
+                                    <div class="account_input_div">
+                                        <div class="main_input_div">
+                                            <div class="input_div_main_outer">
+                                                <div class="input_div_main">
+                                                    <input type="text" class="input_global" name="text" autocomplete="off" required />
+                                                    <label for="text" class="label-name">
+                                                        <span class="content-name">
+                                                            First Name
+                                                        </span>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="main_input_div">
+                                            <div class="input_div_main_outer">
+                                                <div class="input_div_main">
+                                                    <input type="text" class="input_global" name="text" autocomplete="off" required />
+                                                    <label for="text" class="label-name">
+                                                        <span class="content-name">
+                                                            Last Name
+                                                        </span>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="main_input_div">
+                                            <div class="input_div_main_outer">
+                                                <div class="input_div_main">
+                                                    <input type="text" class="input_global" name="text" autocomplete="off" required />
+                                                    <label for="text" class="label-name">
+                                                        <span class="content-name">
+                                                            Email Address
+                                                        </span>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="main_input_div">
+                                            <div class="input_div_main_outer">
+                                                <div class="input_div_main">
+                                                    <input type="text" class="input_global" name="text" autocomplete="off" required />
+                                                    <label for="text" class="label-name">
+                                                        <span class="content-name">
+                                                            Phone Number
+                                                        </span>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="main_input_div">
+                                            <div class="input_div_main_outer">
+                                                <div class="input_div_main">
+                                                    <input type="password" class="input_global" id="password_m1" name="text" autocomplete="off" required />
+                                                    <label for="text" class="label-name">
+                                                        <span class="content-name">
+                                                            Password
+                                                        </span>
+                                                    </label>
+                                                    <img src="./assets/img/close_eye.svg" alt="" type="button" class="img-fluid eye_icon" onclick="togglePassword('password_m1', this)">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="main_input_div">
+                                            <div class="input_div_main_outer">
+                                                <div class="input_div_main">
+                                                    <input type="password" class="input_global" id="password_m2" name="text" autocomplete="off" required />
+                                                    <label for="text" class="label-name">
+                                                        <span class="content-name">
+                                                            Confirm New Password
+                                                        </span>
+                                                    </label>
+                                                    <img src="./assets/img/close_eye.svg" alt="" type="button" class="img-fluid eye_icon" onclick="togglePassword('password_m2', this)">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button class="btn btn_global w-100">Update Account Details</button> 
+                                </form>  
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab" tabindex="0">
+                            <div class="account_tab">
+                                <form class="dash_acc_form">
+                                    <div class="account_input_div">
+                                        <div class="main_input_div">
+                                            <div class="input_div_main_outer">
+                                                <div class="input_div_main">
+                                                    <input type="text" class="input_global" name="text" autocomplete="off" required />
+                                                    <label for="text" class="label-name">
+                                                        <span class="content-name">
+                                                            Address Line 1
+                                                        </span>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="main_input_div">
+                                            <div class="input_div_main_outer">
+                                                <div class="input_div_main">
+                                                    <input type="text" class="input_global" name="text" autocomplete="off" required />
+                                                    <label for="text" class="label-name">
+                                                        <span class="content-name">
+                                                            Address Line 2
+                                                        </span>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="main_input_div">
+                                            <div class="input_div_main_outer">
+                                                <div class="input_div_main">
+                                                    <input type="text" class="input_global" name="text" autocomplete="off" required />
+                                                    <label for="text" class="label-name">
+                                                        <span class="content-name">
+                                                            City/Town
+                                                        </span>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="main_input_div">
+                                            <div class="input_div_main_outer">
+                                                <div class="input_div_main">
+                                                    <input type="text" class="input_global" name="text" autocomplete="off" required />
+                                                    <label for="text" class="label-name">
+                                                        <span class="content-name">
+                                                            Country/State/Province
+                                                        </span>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="main_input_div">
+                                            <div class="select_div_main_outer">
+                                                <div class="select_div_main">
+                                                    <p class="inp_drop_label">Country</p>
+                                                    <select class="form-select input_select" aria-label="Default select example">
+                                                        <option selected>Open this select menu</option>
+                                                        <option value="1">One</option>
+                                                        <option value="2">Two</option>
+                                                        <option value="3">Three</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="main_input_div">
+                                            <div class="input_div_main_outer">
+                                                <div class="input_div_main">
+                                                    <input type="text" class="input_global" name="text" autocomplete="off" required />
+                                                    <label for="text" class="label-name">
+                                                        <span class="content-name">
+                                                            Zip Code/Postal Code
+                                                        </span>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button class="btn btn_global w-100">Update Account Details</button> 
+                                </form>  
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="v-pills-disabled" role="tabpanel" aria-labelledby="v-pills-disabled-tab" tabindex="0">
+                            <div class="order_history_panel">
+                                <div class="sputnik desktop_none">
+                                    <div class="div_swipe_line_l"></div>
+                                    <p class="swipr_text">Swipe to scroll through the table</p>
+                                    <div class="div_swipe_line_r"></div>
+                                </div>
+                                <div class="table-responsive">
+                                <table class="table">
+                                    <thead>
+                                      <tr>
+                                        <th scope="col"><p class="orht_title">Order #</p></th>
+                                        <th scope="col"><p class="orht_title">Date</p></th>
+                                        <th scope="col"><p class="orht_title text-center">QTY</p></th>
+                                        <th scope="col"><p class="orht_title text-end">Total</p></th>
+                                        <th scope="col"><p class="orht_title"></p></th>
+                                      </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                <p class="orht_text">12345</p>
+                                            </td>
+                                            <td>
+                                                <p class="orht_text">01.12.2023</p>
+                                            </td>
+                                            <td>
+                                                <p class="orht_text text-center">x3</p>
+                                            </td>
+                                            <td>
+                                                <p class="orht_text text-end">£199.75</p>
+                                            </td>
+                                            <td>
+                                                <button class="btn btn_orht_link ms-auto" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                                    Order Details
+                                                    <img src="./assets/img/orhticon.svg" alt="" class="img-fluid orhticon">
+                                                </button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <p class="orht_text">12345</p>
+                                            </td>
+                                            <td>
+                                                <p class="orht_text">01.12.2023</p>
+                                            </td>
+                                            <td>
+                                                <p class="orht_text text-center">x3</p>
+                                            </td>
+                                            <td>
+                                                <p class="orht_text text-end">£199.75</p>
+                                            </td>
+                                            <td>
+                                                <button class="btn btn_orht_link ms-auto" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                                    Order Details
+                                                    <img src="./assets/img/orhticon.svg" alt="" class="img-fluid orhticon">
+                                                </button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <p class="orht_text">12345</p>
+                                            </td>
+                                            <td>
+                                                <p class="orht_text">01.12.2023</p>
+                                            </td>
+                                            <td>
+                                                <p class="orht_text text-center">x3</p>
+                                            </td>
+                                            <td>
+                                                <p class="orht_text text-end">£199.75</p>
+                                            </td>
+                                            <td>
+                                                <button class="btn btn_orht_link ms-auto" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                                    Order Details
+                                                    <img src="./assets/img/orhticon.svg" alt="" class="img-fluid orhticon">
+                                                </button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <p class="orht_text">12345</p>
+                                            </td>
+                                            <td>
+                                                <p class="orht_text">01.12.2023</p>
+                                            </td>
+                                            <td>
+                                                <p class="orht_text text-center">x3</p>
+                                            </td>
+                                            <td>
+                                                <p class="orht_text text-end">£199.75</p>
+                                            </td>
+                                            <td>
+                                                <button class="btn btn_orht_link ms-auto" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                                    Order Details
+                                                    <img src="./assets/img/orhticon.svg" alt="" class="img-fluid orhticon">
+                                                </button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <p class="orht_text">12345</p>
+                                            </td>
+                                            <td>
+                                                <p class="orht_text">01.12.2023</p>
+                                            </td>
+                                            <td>
+                                                <p class="orht_text text-center">x3</p>
+                                            </td>
+                                            <td>
+                                                <p class="orht_text text-end">£199.75</p>
+                                            </td>
+                                            <td>
+                                                <button class="btn btn_orht_link ms-auto" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                                    Order Details
+                                                    <img src="./assets/img/orhticon.svg" alt="" class="img-fluid orhticon">
+                                                </button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <p class="orht_text">12345</p>
+                                            </td>
+                                            <td>
+                                                <p class="orht_text">01.12.2023</p>
+                                            </td>
+                                            <td>
+                                                <p class="orht_text text-center">x3</p>
+                                            </td>
+                                            <td>
+                                                <p class="orht_text text-end">£199.75</p>
+                                            </td>
+                                            <td>
+                                                <button class="btn btn_orht_link ms-auto" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                                    Order Details
+                                                    <img src="./assets/img/orhticon.svg" alt="" class="img-fluid orhticon">
+                                                </button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <p class="orht_text">12345</p>
+                                            </td>
+                                            <td>
+                                                <p class="orht_text">01.12.2023</p>
+                                            </td>
+                                            <td>
+                                                <p class="orht_text text-center">x3</p>
+                                            </td>
+                                            <td>
+                                                <p class="orht_text text-end">£199.75</p>
+                                            </td>
+                                            <td>
+                                                <button class="btn btn_orht_link ms-auto" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                                    Order Details
+                                                    <img src="./assets/img/orhticon.svg" alt="" class="img-fluid orhticon">
+                                                </button>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                  </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Modal -->
+    <div class="modal fade order_history_modal" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog ohd_dial">
+            <div class="modal-content ohd_cont">
+                <div class="modal-body ohd_body">
+                    <div class="ohd_main">
+                        <div class="odh_mod_top">
+                            <p class="odh_mod_top_text">Order: #1234567</p>
+                            <div class="ohd_right_status">
+                                <div class="ohd_right_status_main_box">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="21" height="20" viewBox="0 0 21 20" fill="none">
+                                        <path d="M6.0625 3.125L5.86719 3.37891L3.875 6.03516V16.875H17.625V6.03516L15.6328 3.37891L15.4375 3.125H6.0625ZM6.6875 4.375H10.125V5.625H5.75L6.6875 4.375ZM11.375 4.375H14.8125L15.75 5.625H11.375V4.375ZM5.125 6.875H16.375V15.625H5.125V6.875ZM8.75781 8.125C8.41357 8.15674 8.15967 8.46436 8.19141 8.80859C8.22314 9.15283 8.53076 9.40674 8.875 9.375H12.625C12.8496 9.37744 13.0596 9.26025 13.1743 9.06494C13.2866 8.86963 13.2866 8.63037 13.1743 8.43506C13.0596 8.23975 12.8496 8.12256 12.625 8.125H8.875C8.85547 8.125 8.83594 8.125 8.81641 8.125C8.79688 8.125 8.77734 8.125 8.75781 8.125Z" fill="#162222"/>
+                                      </svg>
+                                    <p class="ohd_right_status_title">Order Placed</p>
+                                </div>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="26" height="50" viewBox="0 0 26 50" fill="none">
+                                    <path d="M25 1L1 49" stroke="#BA8B4A"/>
+                                  </svg>
+                                <div class="ohd_right_status_main_box">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="21" height="20" viewBox="0 0 21 20" fill="none">
+                                        <path d="M6.0625 3.125L5.86719 3.37891L3.875 6.03516V16.875H17.625V6.03516L15.6328 3.37891L15.4375 3.125H6.0625ZM6.6875 4.375H10.125V5.625H5.75L6.6875 4.375ZM11.375 4.375H14.8125L15.75 5.625H11.375V4.375ZM5.125 6.875H16.375V15.625H5.125V6.875ZM8.75781 8.125C8.41357 8.15674 8.15967 8.46436 8.19141 8.80859C8.22314 9.15283 8.53076 9.40674 8.875 9.375H12.625C12.8496 9.37744 13.0596 9.26025 13.1743 9.06494C13.2866 8.86963 13.2866 8.63037 13.1743 8.43506C13.0596 8.23975 12.8496 8.12256 12.625 8.125H8.875C8.85547 8.125 8.83594 8.125 8.81641 8.125C8.79688 8.125 8.77734 8.125 8.75781 8.125Z" fill="#162222"/>
+                                      </svg>
+                                    <p class="ohd_right_status_title">On Review</p>
+                                </div>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="26" height="50" viewBox="0 0 26 50" fill="none">
+                                    <path d="M25 1L1 49" stroke="#BA8B4A"/>
+                                  </svg>
+                                <div class="ohd_right_status_main_box">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="21" height="20" viewBox="0 0 21 20" fill="none">
+                                        <path d="M10.75 2.5C6.61426 2.5 3.25 5.86426 3.25 10C3.25 14.1357 6.61426 17.5 10.75 17.5C14.8857 17.5 18.25 14.1357 18.25 10C18.25 5.86426 14.8857 2.5 10.75 2.5ZM10.75 3.75C14.2095 3.75 17 6.54053 17 10C17 13.4595 14.2095 16.25 10.75 16.25C7.29053 16.25 4.5 13.4595 4.5 10C4.5 6.54053 7.29053 3.75 10.75 3.75ZM10.125 5V10.625H14.5V9.375H11.375V5H10.125Z" fill="#162222"/>
+                                      </svg>
+                                    <p class="ohd_right_status_title">Delivery Pending</p>
+                                </div>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="26" height="50" viewBox="0 0 26 50" fill="none">
+                                    <path d="M25 1L1 49" stroke="#BA8B4A"/>
+                                  </svg>
+                                <div class="ohd_right_status_main_box">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="21" height="20" viewBox="0 0 21 20" fill="none">
+                                        <path d="M16.4414 2.5C16.0068 2.5 15.4014 2.51953 14.7617 2.57812C13.4824 2.69775 12.0054 2.9126 11.0898 3.82812C10.3208 4.59717 8.73145 6.63818 7.26172 8.55469C6.97119 8.93311 6.9834 8.92578 6.71484 9.27734L5.64063 9.21875C4.84229 9.17725 4.07324 9.51416 3.57031 10.1367L2.26172 11.7383L1.61719 12.5586L2.63281 12.7539L4.68359 13.1641L7.08594 15.5664L7.49609 17.6172L7.71094 18.6328L8.51172 17.9883L10.1133 16.6797C10.7358 16.1768 11.0728 15.4077 11.0313 14.6094L10.9727 13.5547C11.3364 13.2788 11.3242 13.2861 11.7148 12.9883C13.6362 11.5161 15.6846 9.93652 16.4414 9.17969C17.3496 8.27148 17.5522 6.77246 17.6719 5.48828C17.7915 4.2041 17.7305 3.10547 17.7305 3.10547L17.7109 2.53906L17.1445 2.51953C17.1445 2.51953 16.876 2.5 16.4414 2.5ZM15.875 3.75C16.124 3.75 16.2998 3.76465 16.4805 3.76953C16.4878 4.1333 16.5024 4.51172 16.4219 5.37109C16.312 6.55518 15.9507 7.87354 15.543 8.28125C14.9863 8.83789 12.8672 10.5249 10.9531 11.9922C9.26123 13.2886 8.06983 14.1992 7.73047 14.4531L5.81641 12.5391C6.07275 12.1948 6.94922 10.9985 8.23828 9.31641C9.70313 7.40723 11.395 5.28076 11.9688 4.70703C12.396 4.27979 13.6997 3.91846 14.8789 3.80859C15.3062 3.76953 15.626 3.75 15.875 3.75ZM13.0234 5.95703C12.3252 5.95703 11.7734 6.52832 11.7734 7.22656C11.7734 7.92481 12.3252 8.49609 13.0234 8.49609C13.7217 8.49609 14.293 7.92481 14.293 7.22656C14.293 6.52832 13.7217 5.95703 13.0234 5.95703ZM5.5625 10.4688L5.79688 10.4883C5.4209 10.9863 4.80566 11.7847 4.72266 11.8945L3.88281 11.7188L4.52734 10.9375C4.77881 10.6274 5.16211 10.4468 5.5625 10.4688ZM4.13672 13.7109C3.60205 14.2456 3.29688 14.9854 3.08203 15.6055C2.86719 16.2256 2.76953 16.7383 2.76953 16.7383L2.57422 17.6562L3.49219 17.4805C3.49219 17.4805 3.99023 17.395 4.60547 17.1875C5.2207 16.98 5.96045 16.6724 6.51953 16.1133L5.64063 15.2344C5.36231 15.5127 4.81055 15.7568 4.3125 15.9375C4.50293 15.4175 4.78125 14.8267 5.01563 14.5898L4.13672 13.7109ZM9.76172 14.4531L9.78125 14.6875C9.80322 15.0879 9.64453 15.4712 9.33203 15.7227L8.53125 16.3672L8.35547 15.5273C8.46533 15.4468 9.26367 14.8267 9.76172 14.4531Z" fill="#656565"/>
+                                      </svg>
+                                    <p class="ohd_right_status_title">Order Delivered</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="odh_mod_bottom">
+                            <div class="order_history_panel_pop">
+                                <div class="order_history_panel_pop_table">
+                                    <div class="table-responsive">
+                                        <div class="green_div">
+                                            <p class="gd_text">Purchase Overview</p>
+                                        </div>
+                                        <table class="table">
+                                            <thead>
+                                            <tr>
+                                                <th scope="col"><p class="orhtp_title">#</p></th>
+                                                <th scope="col"><p class="orhtp_title">Product</p></th>
+                                                <th scope="col"><p class="orhtp_title text-center">Type</p></th>
+                                                <th scope="col"><p class="orhtp_title text-end">Qty</p></th>
+                                                <th scope="col"><p class="orhtp_title text-end">Price</p></th>
+                                            </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>
+                                                        <p class="orht_textp">1</p>
+                                                    </td>
+                                                    <td>
+                                                        <p class="orht_textp">01.12.2023</p>
+                                                    </td>
+                                                    <td>
+                                                        <p class="orht_textp text-center">video</p>
+                                                    </td>
+                                                    <td>
+                                                        <p class="orht_textp text-center">£199.75</p>
+                                                    </td>
+                                                    <td>
+                                                        <p class="orht_textp text-end">£199.75</p>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <p class="orht_textp">2</p>
+                                                    </td>
+                                                    <td>
+                                                        <p class="orht_textp">01.12.2023</p>
+                                                    </td>
+                                                    <td>
+                                                        <p class="orht_textp text-center">video</p>
+                                                    </td>
+                                                    <td>
+                                                        <p class="orht_textp text-center">£199.75</p>
+                                                    </td>
+                                                    <td>
+                                                        <p class="orht_textp text-end">£199.75</p>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <p class="orht_textp">3</p>
+                                                    </td>
+                                                    <td>
+                                                        <p class="orht_textp">01.12.2023</p>
+                                                    </td>
+                                                    <td>
+                                                        <p class="orht_textp text-center">video</p>
+                                                    </td>
+                                                    <td>
+                                                        <p class="orht_textp text-center">£199.75</p>
+                                                    </td>
+                                                    <td>
+                                                        <p class="orht_textp text-end">£199.75</p>
+                                                    </td>
+                                                </tr>
+                                                
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                                <div class="order_detail_chart">
+                                    <div class="green_div">
+                                        <p class="gd_text">Purchase Overview</p>
+                                    </div>
+                                    <div class="white_div">
+                                        <div class="row">
+                                            <div class="col-6">
+                                                <p class="white_div_text_l">Subtotal</p>
+                                            </div>
+                                            <div class="col-6">
+                                                <p class="white_div_text_r">$10.00</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="white_div">
+                                        <div class="row">
+                                            <div class="col-6">
+                                                <p class="white_div_text_l">Subtotal</p>
+                                            </div>
+                                            <div class="col-6">
+                                                <p class="white_div_text_r">$10.00</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="white_div">
+                                        <div class="row">
+                                            <div class="col-6">
+                                                <p class="white_div_text_l">Subtotal</p>
+                                            </div>
+                                            <div class="col-6">
+                                                <p class="white_div_text_r">$10.00</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="white_div">
+                                        <div class="row">
+                                            <div class="col-6">
+                                                <p class="white_div_text_l">Subtotal</p>
+                                            </div>
+                                            <div class="col-6">
+                                                <p class="white_div_text_r">$10.00</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="order_detail_chart2">
+                                    <div class="green_div">
+                                        <p class="gd_text">Order Information</p>
+                                    </div>
+                                    <div class="white_div">
+                                        <div class="row">
+                                            <div class="col-6">
+                                                <p class="white_div_text_l">Subtotal</p>
+                                            </div>
+                                            <div class="col-6">
+                                                <p class="white_div_text_r">$10.00</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="white_div">
+                                        <div class="row">
+                                            <div class="col-6">
+                                                <p class="white_div_text_l">Subtotal</p>
+                                            </div>
+                                            <div class="col-6">
+                                                <p class="white_div_text_r">$10.00</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="white_div">
+                                        <div class="row">
+                                            <div class="col-6">
+                                                <p class="white_div_text_l">Subtotal</p>
+                                            </div>
+                                            <div class="col-6">
+                                                <p class="white_div_text_r">$10.00</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="white_div">
+                                        <div class="row">
+                                            <div class="col-6">
+                                                <p class="white_div_text_l">Subtotal</p>
+                                            </div>
+                                            <div class="col-6">
+                                                <p class="white_div_text_r">$10.00</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="white_div">
+                                        <div class="row">
+                                            <div class="col-6">
+                                                <p class="white_div_text_l">Subtotal</p>
+                                            </div>
+                                            <div class="col-6">
+                                                <p class="white_div_text_r">$10.00</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="order_detail_chart2">
+                                    <div class="green_div">
+                                        <p class="gd_text">Order Information</p>
+                                    </div>
+                                    <div class="white_div">
+                                        <div class="row">
+                                            <div class="col-6">
+                                                <p class="white_div_text_l">Subtotal</p>
+                                            </div>
+                                            <div class="col-6">
+                                                <p class="white_div_text_r">$10.00</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="white_div">
+                                        <div class="row">
+                                            <div class="col-6">
+                                                <p class="white_div_text_l">Subtotal</p>
+                                            </div>
+                                            <div class="col-6">
+                                                <p class="white_div_text_r">$10.00</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="white_div">
+                                        <div class="row">
+                                            <div class="col-6">
+                                                <p class="white_div_text_l">Subtotal</p>
+                                            </div>
+                                            <div class="col-6">
+                                                <p class="white_div_text_r">$10.00</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="white_div">
+                                        <div class="row">
+                                            <div class="col-6">
+                                                <p class="white_div_text_l">Subtotal</p>
+                                            </div>
+                                            <div class="col-6">
+                                                <p class="white_div_text_r">$10.00</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="white_div">
+                                        <div class="row">
+                                            <div class="col-6">
+                                                <p class="white_div_text_l">Subtotal</p>
+                                            </div>
+                                            <div class="col-6">
+                                                <p class="white_div_text_r">$10.00</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer_main">
+                <div class="footer_top">
+                    <div class="footer_top_left">
+                        <a href="">
+                            <img src="./assets/img/footer_logo.svg" alt="" class="img-fluid footer_logo">
+                        </a>
+                    </div>
+                    <div class="footer_top_center">
+                        <button class="btn btn_footer_links">design resources</button>
+                        <button class="btn btn_footer_links">Bespoke design packages</button>
+                        <button class="btn btn_footer_links">Our Story</button>
+                        <button class="btn btn_footer_links">Contact Us</button>
+                        <button class="btn btn_footer_links">Terms</button>
+                        <button class="btn btn_footer_links">Privacy</button>
+                    </div>
+                    <div class="footer_top_right">
+                        <button class="btn btn_footer_links">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="9" height="17" viewBox="0 0 9 17" fill="none">
+                                <path d="M8.00781 9.5L8.45219 6.60437H5.67375V4.72531C5.67375 3.93313 6.06188 3.16094 7.30625 3.16094H8.56937V0.695625C8.56937 0.695625 7.42313 0.5 6.32719 0.5C4.03906 0.5 2.54344 1.88688 2.54344 4.3975V6.60437H0V9.5H2.54344V16.5H5.67375V9.5H8.00781Z" fill="#FFF6E1"/>
+                            </svg>
+                        </button>
+                        <button class="btn btn_footer_links">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17" fill="none">
+                                <path d="M8.48533 2.03017C10.6166 2.03017 10.8449 2.03017 11.6822 2.10629C12.4433 2.10629 12.9 2.25852 13.1284 2.41075C13.5089 2.56298 13.7373 2.71521 14.0417 3.01967C14.3462 3.32413 14.4984 3.55248 14.6507 3.93306C14.7268 4.23752 14.879 4.61809 14.9551 5.37925C15.0312 6.21652 15.0312 6.44486 15.0312 8.57609C15.0312 10.7073 15.0312 10.9357 14.9551 11.7729C14.9551 12.5341 14.8029 12.9908 14.6507 13.2191C14.4984 13.5997 14.3462 13.828 14.0417 14.1325C13.7373 14.437 13.5089 14.5892 13.1284 14.7414C12.8239 14.8175 12.4433 14.9698 11.6822 15.0459C10.8449 15.0459 10.6166 15.122 8.48533 15.122C6.3541 15.122 6.12575 15.122 5.28848 15.0459C4.52733 15.0459 4.07064 14.8937 3.8423 14.7414C3.46172 14.5892 3.23338 14.437 2.92891 14.1325C2.62445 13.828 2.47222 13.5997 2.31999 13.2191C2.24387 12.9147 2.09165 12.5341 2.01553 11.7729C1.93942 10.9357 1.93941 10.7073 1.93941 8.57609C1.93941 6.44486 1.93942 6.21652 2.01553 5.37925C2.01553 4.61809 2.16776 4.1614 2.31999 3.93306C2.47222 3.55248 2.62445 3.32413 2.92891 3.01967C3.23338 2.71521 3.46172 2.56298 3.8423 2.41075C4.14676 2.33464 4.52733 2.18241 5.28848 2.10629C6.12575 2.03017 6.3541 2.03017 8.48533 2.03017ZM8.48533 0.583984C6.3541 0.583984 6.04964 0.583984 5.21237 0.660099C4.37511 0.736215 3.76618 0.81233 3.30949 1.04068C2.77668 1.26902 2.31999 1.49737 1.93941 1.95406C1.55884 2.41075 1.25438 2.86744 1.02603 3.32413C0.797686 3.85694 0.721571 4.38975 0.645456 5.22702C0.569341 6.06428 0.569336 6.36875 0.569336 8.49997C0.569336 10.6312 0.569341 10.9357 0.645456 11.7729C0.721571 12.6102 0.797686 13.2191 1.02603 13.6758C1.25438 14.2086 1.48272 14.6653 1.93941 15.0459C2.39611 15.5026 2.8528 15.7309 3.30949 15.9593C3.8423 16.1876 4.37511 16.2637 5.21237 16.3398C6.04964 16.416 6.3541 16.416 8.48533 16.416C10.6166 16.416 10.921 16.416 11.7583 16.3398C12.5955 16.2637 13.2045 16.1876 13.6612 15.9593C14.194 15.7309 14.6507 15.5026 15.0312 15.0459C15.4879 14.5892 15.7163 14.1325 15.9446 13.6758C16.173 13.143 16.2491 12.6102 16.3252 11.7729C16.4013 10.9357 16.4013 10.6312 16.4013 8.49997C16.4013 6.36875 16.4013 6.06428 16.3252 5.22702C16.2491 4.38975 16.173 3.78083 15.9446 3.32413C15.7163 2.79133 15.4879 2.33464 15.0312 1.95406C14.5745 1.49737 14.1179 1.26902 13.6612 1.04068C13.1284 0.81233 12.5955 0.736215 11.7583 0.660099C10.921 0.583984 10.6166 0.583984 8.48533 0.583984Z" fill="#FFF6E1"/>
+                                <path d="M8.48535 4.46582C6.2019 4.46582 4.37512 6.29259 4.37512 8.57605C4.37512 10.8595 6.2019 12.6863 8.48535 12.6863C10.7688 12.6863 12.5956 10.8595 12.5956 8.57605C12.5956 6.29259 10.7688 4.46582 8.48535 4.46582ZM8.48535 11.164C7.03916 11.164 5.82132 9.94612 5.82132 8.49993C5.82132 7.05374 7.03916 5.8359 8.48535 5.8359C9.93154 5.8359 11.1494 7.05374 11.1494 8.49993C11.1494 10.0222 9.93154 11.164 8.48535 11.164Z" fill="#FFF6E1"/>
+                                <path d="M13.6612 4.31372C13.6612 4.84652 13.2046 5.30322 12.6718 5.30322C12.1389 5.30322 11.6823 4.84652 11.6823 4.31372C11.6823 3.78091 12.1389 3.32422 12.6718 3.32422C13.2807 3.32422 13.6612 3.78091 13.6612 4.31372Z" fill="#FFF6E1"/>
+                            </svg>
+                    </div>
+                </div>
+                <div class="footer_splittre"></div>
+                <div class="footer_bottom">
+                    <div class="footer_bottom_left">
+                        <p class="footer_text">Help@Vizualuxe.Co</p>
+                        <p class="footer_text">+111 234 567 890</p>
+                        <p class="footer_text">100 Edenbridge Road, Birmingham, United Kingdom, B28 8PR. </p>
+                    </div>
+                    <div class="footer_bottom_right">
+                        <img src="./assets/img/mastercard.svg" alt="" class="img-fluid footer_master_card">
+                        <p class="footer_text">© 2025 Vizualuxe.com All rights reserved.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+
+
+
+    <!-- JQuery CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- Bootstrap JS Links -->
+    <script src="./assets/dist/bootstrap/js/bootstrap.popper.min.js"></script>
+    <script src="./assets/dist/bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- Owl Carousel JS Links -->
+    <script src="./assets/dist/owl-carousel/js/owl.carousel.js"></script>
+
+    <!-- JS Link -->
+    <script src="./assets/js/main.js"></script>
+
+</body>
+
+</html>
