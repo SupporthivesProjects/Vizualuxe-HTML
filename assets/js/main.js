@@ -198,6 +198,53 @@ $(document).ready(function () {
     })
 })
 
+
+
+$(document).ready(function () {
+    $('#home_owl_slider').owlCarousel({
+        loop: false,
+        margin: 24,
+        dots: false,
+        nav: false,
+        responsive: {
+            0: {
+                loop: false,
+                items: 1,
+                margin: 16,
+                nav: true,
+                dots: true,
+                navText: [
+                    "<span class='btn btn_owl'><svg xmlns='http://www.w3.org/2000/svg' width='16' height='28' viewBox='0 0 16 28' fill='none'><path d='M13.3137 25.127L2.00001 13.8132L13.3137 2.49954' stroke='#BA8B4A' stroke-width='4' stroke-linecap='round' stroke-linejoin='round'/></svg></span>",
+                    "<span class='btn btn_owl'><svg xmlns='http://www.w3.org/2000/svg' width='16' height='28' viewBox='0 0 16 28' fill='none'><path d='M2.68628 2.5L14 13.8137L2.68628 25.1274' stroke='#BA8B4A' stroke-width='4' stroke-linecap='round' stroke-linejoin='round'/></svg></span>"
+                ],
+            },
+            600: {
+                items: 3
+            },
+
+            1279: {
+                items: 3,
+                loop: true,
+                autoplay: true,
+                autoplayTimeout: 3000,
+                autoplayHoverPause: false,
+            },
+
+            1400: {
+                items: 4,
+                loop: true,
+                autoplay: true,
+                autoplayTimeout: 3000,
+                autoplayHoverPause: false,
+            },
+            1700: {
+                items: 5
+            }
+        }
+    })
+})
+
+
 function togglePassword(input_id, input_eye_image) {
     const inputField = document.getElementById(input_id);
     const inputFieldType = inputField.getAttribute('type');
