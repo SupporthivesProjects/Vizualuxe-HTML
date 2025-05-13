@@ -14,13 +14,13 @@ git remote add origin https://github.com/SupporthivesProjects/Vizualuxe-HTML.git
 ● Team Members :- <br>
 ↳ UI Team:- Mehul, Tirthak, Sakshi Kadam<br>
 ↳ Integration Team:- <br>
-↳ QA Team:- <br>
+↳ QA Team:- Parth <br>
 
 
 ● Project Leads :-<br>
 ↳ UI Team:- Mehul<br>
 ↳ Integration Team:- <br>
-↳ QA Team:- <br>
+↳ QA Team:- Parth <br>
 
 
 ● Pages Assigned :-<br>
