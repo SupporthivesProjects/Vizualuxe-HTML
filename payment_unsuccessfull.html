@@ -25,12 +25,6 @@
     <link rel="stylesheet" href="./assets/css/main.css">
     <link rel="stylesheet" href="./assets/css/m_style.css">
 
-    <style>
-        .header_top {
-            background: var(--dark-h, #162222);
-        }
-    </style>
-
 </head>
 
 <body>
@@ -334,113 +328,149 @@
         </div>
     </header>
 
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-
-
-    <div class="container">
-
-        <button class="btn btn_global_trans">Continue Shopping</button>
-        <br>
-        <button class="btn btn_global">secure Checkout</button>
-        <br>
-        <div class="input_div_main_outer">
-            <div class="input_div_main">
-                <input type="text" class="input_global" name="text" autocomplete="off" required />
-                <label for="text" class="label-name">
-                    <span class="content-name">
-                        Your Text
-                    </span>
-                </label>
+    <section class="payment_successfull">
+        <div class="main_PS">
+            <div class="div_for_bg_PS mobile_none">
+                <img src="./assets/img/PS_top_bg_shape.png" alt="" class="img_PS_top">
+                <img src="./assets/img/PS_bottom_bg_shape.png" alt="" class="img_PS_bottom">
             </div>
-        </div>
-        <br>
-        <div class="input_div_main_outer">
-            <div class="input_div_main">
-                <input type="password" class="input_global" id="password" name="text" autocomplete="off" required />
-                <label for="text" class="label-name">
-                    <span class="content-name">
-                        Confirm New Password
-                    </span>
-                </label>
-                <img src="./assets/img/close_eye.svg" alt="" type="button" class="img-fluid eye_icon"
-                    onclick="togglePassword('password', this)">
+            <div class="inner_PS">
+                <div class="PS_div1">
+                    <h3 class="heading_PS">Payment unsuccessful</h3>
+                    <p class="para_PU">Something went wrong and the payment failed. Please try again. </p>
+                    <div class="line_PS_first desktop_none">
+                        <div class="PS_line_main">
+                            <img src="./assets/img/LinePS_left_mo.png" alt="" class="PS_left_line">
+                            <p class="para_PS_line">Swipe to scroll through the table</p>
+                            <img src="./assets/img/LinePS_right_mo.png" alt="" class="PS_right_line">
+                        </div>
+                    </div>
+                </div>
+                <div class="divPS_table">
+                    <table class="PS_table table table-striped">
+                        <thead class="PS_thead">
+                            <tr class="head_ps">
+                                <td>
+                                    <p class="para_table1">Product</p>
+                                </td>
+                                <td>
+                                    <p class="para_table1">Type</p>
+                                </td>
+                                <td>
+                                    <p class="para_table1">QTY</p>
+                                </td>
+                                <td>
+                                    <p class="para_table1">Total</p>
+                                </td>
+                            </tr>
+                        </thead>
+                        <tbody class="PS_tbody">
+                            <tr>
+                                <td>
+                                    <p class="para_table2">Blogging Traffic System</p>
+                                </td>
+                                <td>
+                                    <p class="para_table2">Template</p>
+                                </td>
+                                <td>
+                                    <p class="para_table2">2</p>
+                                </td>
+                                <td>
+                                    <p class="para_table2">£100.00</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <p class="para_table2">Blogging Traffic System</p>
+                                </td>
+                                <td>
+                                    <p class="para_table2">Template</p>
+                                </td>
+                                <td>
+                                    <p class="para_table2">2</p>
+                                </td>
+                                <td>
+                                    <p class="para_table2">£100.00</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <p class="para_table2">Blogging Traffic System</p>
+                                </td>
+                                <td>
+                                    <p class="para_table2">Template</p>
+                                </td>
+                                <td>
+                                    <p class="para_table2">2</p>
+                                </td>
+                                <td>
+                                    <p class="para_table2">£100.00</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <p class="para_table2">Blogging Traffic System</p>
+                                </td>
+                                <td>
+                                    <p class="para_table2">Template</p>
+                                </td>
+                                <td>
+                                    <p class="para_table2">2</p>
+                                </td>
+                                <td>
+                                    <p class="para_table2">£100.00</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <p class="para_table2">Blogging Traffic System</p>
+                                </td>
+                                <td>
+                                    <p class="para_table2">Template</p>
+                                </td>
+                                <td>
+                                    <p class="para_table2">2</p>
+                                </td>
+                                <td>
+                                    <p class="para_table2">£100.00</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <p class="para_table2">Blogging Traffic System</p>
+                                </td>
+                                <td>
+                                    <p class="para_table2">Template</p>
+                                </td>
+                                <td>
+                                    <p class="para_table2">2</p>
+                                </td>
+                                <td>
+                                    <p class="para_table2">£100.00</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>
+                                    <p class="para_table2">Total Paid:</p>
+                                </td>
+                                <td></td>
+                                <td>
+                                    <p class="para_table2">£700.00</p>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="PS_btn">
+                    <button class="btn btn_global_trans w-100">go back</button>
+                    <button class="btn btn_global_sk w-100 ">View Order details</button>
+                </div>
             </div>
-        </div>
-
-        <br>
-
-        <div class="select_div_main_outer">
-            <div class="select_div_main">
-                <p class="inp_drop_label">Country</p>
-                <select class="form-select input_select" aria-label="Default select example">
-                    <option selected>Open this select menu</option>
-                    <option value="1">One</option>
-                    <option value="2">Two</option>
-                    <option value="3">Three</option>
-                </select>
-            </div>
-        </div>
-
-        <br>
-
-
-        <div class="textarea_div_outer">
-            <div class="textarea_div_inner">
-                <textarea class="textarea_global" name="text" autocomplete="off" required></textarea>
-                <label for="text" class="textarea_label">
-                    <span class="textarea_label_content">Your Text</span>
-                </label>
-            </div>
-        </div>
-
-        <br>
-        <br>
-        <br>
-
-
-
-        <button class="btn btn_animated_global">
-            <span class="icon"></span>
-            Your Text
-            <span class="underline"></span>
-        </button>
-
-
-
-        <br>
-        <br>
-        <br>
         
 
-        <button class="btn btn_animated_global2">
-            <span class="icon2"></span>
-            Your Text
-            <span class="underline2"></span>
-        </button>
-
-
-
-    </div>
-
-
-
-
-
-
-
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
+        </div>
+    </section>
 
     <footer class="footer">
         <div class="container">
