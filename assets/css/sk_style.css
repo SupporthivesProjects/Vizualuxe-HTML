@@ -273,8 +273,6 @@ input[type=radio] {
 }
 
 .div2_term {
-    padding-left: 304px;
-    padding-right: 304px;
     padding-bottom: 64px;
     display: flex;
     flex-direction: column;
@@ -519,6 +517,7 @@ input[type=radio] {
     width: 100%;
     position: relative;
 }
+
 .mod_dia {
     max-width: 808px;
 }
@@ -535,6 +534,31 @@ input[type=radio] {
     flex-direction: column;
     align-items: center;
     gap: 8px;
+}
+
+.heading_modal {
+    color: var(--dark-h, #162222);
+    text-align: "center";
+    font-family: Baskerville;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: capitalize;
+    margin-bottom: 0%;
+}
+
+.para_modal {
+    color: var(--pine-p, #36574A);
+    text-align: center;
+
+    /* Desktop/Body/P */
+    font-family: "Afacad";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 0%;
 }
 
 .div_check_modal {
@@ -849,6 +873,7 @@ img.img_PS_bottom {
     right: 20px;
     top: 20px;
 }
+
 @media only screen and (max-width: 700px) {
     .mobile_none {
         display: none;
@@ -897,7 +922,7 @@ img.img_PS_bottom {
     .register_div2 {
         width: 100%;
         height: 375px;
-        background-image: url(../img/Register_img.png);
+        background-image: url(../img/register_mo_img.png);
         background-size: cover;
         background-position: center center;
         background-repeat: no-repeat;
@@ -928,6 +953,7 @@ img.img_PS_bottom {
         align-items: flex-start;
         gap: 8px;
         align-self: stretch;
+        margin-top: 0%;
     }
 
     .reg_form {
@@ -949,25 +975,27 @@ img.img_PS_bottom {
         align-self: stretch;
     }
 
-    .input_div_main {
-        background: transparent;
-        position: relative;
-        height: 38px;
-        width: 100%;
-        margin-top: 30px;
-        border-bottom: 1px solid #BA8B4A;
+    .c-checkbox>.c-div>label:before,
+    .c-checkbox>.c-div>.label:before {
+        top: 12px;
+        left: 8px;
+    }
+
+    .c-checkbox input[type='checkbox']~label:after,
+    .c-checkbox input[type='checkbox']~.label:after {
+        top: 12px;
     }
 
     .register_div1_inner {
         display: flex;
         flex-direction: column;
-        gap: 24px;
+        gap: 54px;
     }
 
     .login_div2 {
         width: 100%;
         height: 375px;
-        background-image: url(../img/login_img.png);
+        background-image: url(../img/login_mo_img.png);
         background-size: cover;
         background-position: center center;
         background-repeat: no-repeat;
@@ -989,7 +1017,7 @@ img.img_PS_bottom {
     .reset_div2 {
         width: 100%;
         height: 375px;
-        background-image: url(../img/reset_pass_bg.png);
+        background-image: url(../img/resetpass_mo_img.png);
         background-size: cover;
         background-position: center center;
         background-repeat: no-repeat;
@@ -1011,6 +1039,7 @@ img.img_PS_bottom {
         align-items: center;
         gap: 16px;
         align-self: stretch;
+        margin-bottom: 30px;
     }
 
     .div_heading_modal {
@@ -1046,6 +1075,14 @@ img.img_PS_bottom {
         font-weight: 400;
         line-height: normal;
         margin-bottom: 0%;
+    }
+
+    .for_pass_btn {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 16px;
+        align-self: stretch;
     }
 
     .div_check_modal {
@@ -1123,6 +1160,10 @@ img.img_PS_bottom {
         margin-bottom: 0%;
     }
 
+    .payment_successfull {
+        margin-top: 82px;
+    }
+
     .divPS_table {
         border: 1px solid var(--Grayscale-500, #D0D0D0);
         width: 375px;
@@ -1158,14 +1199,25 @@ img.img_PS_bottom {
         font-weight: 400;
         line-height: normal;
         text-transform: capitalize;
-        margin-bottom: 0%;
+        margin-bottom: 16px;
+    }
+
+    .para_PS {
+        color: var(--pine-p, #36574A);
+        text-align: center;
+        font-family: Afacad;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        margin-bottom: 32px;
     }
 
     .PS_div1 {
         display: flex;
         flex-direction: column;
         align-items: center;
-        gap: 24px;
+        gap: 0px;
         padding-left: 24px;
         padding-right: 24px;
     }
@@ -1245,10 +1297,6 @@ img.img_PS_bottom {
 @media only screen and (min-width: 780px) and (max-width:991px) {}
 
 @media only screen and (min-width: 992px) and (max-width: 1151px) {
-    .div2_term {
-        padding-left: 55px;
-        padding-right: 55px;
-    }
 
     .register_div1 {
         padding: 148px 5px;
@@ -1261,11 +1309,6 @@ img.img_PS_bottom {
 }
 
 @media only screen and (min-width: 1152px) and (max-width:1279px) {
-    .div2_term {
-        padding-left: 55px;
-        padding-right: 55px;
-    }
-
     .register_div1 {
         padding: 148px 22px;
         width: 54%;
@@ -1274,11 +1317,6 @@ img.img_PS_bottom {
 }
 
 @media only screen and (min-width: 1280px) and (max-width:1348px) {
-    .div2_term {
-        padding-left: 55px;
-        padding-right: 55px;
-    }
-
     .register_div1 {
         padding: 148px 57px;
         width: 54%;
@@ -1287,11 +1325,6 @@ img.img_PS_bottom {
 }
 
 @media only screen and (min-width: 1349px) and (max-width:1439px) {
-    .div2_term {
-        padding-left: 55px;
-        padding-right: 55px;
-    }
-
     .register_div1 {
         padding: 148px 76px;
         width: 54%;
@@ -1300,11 +1333,6 @@ img.img_PS_bottom {
 }
 
 @media only screen and (min-width: 1440px) and (max-width:1499px) {
-    .div2_term {
-        padding-left: 105px;
-        padding-right: 105px;
-    }
-
     .register_div1 {
         padding: 148px 100px;
         width: 54%;
@@ -1312,11 +1340,6 @@ img.img_PS_bottom {
 }
 
 @media only screen and (min-width: 1500px) and (max-width:1599px) {
-    .div2_term {
-        padding-left: 135px;
-        padding-right: 135px;
-    }
-
     .register_div1 {
         padding: 148px 100px;
         width: 54%;
@@ -1324,11 +1347,6 @@ img.img_PS_bottom {
 }
 
 @media only screen and (min-width: 1600px) and (max-width:1699px) {
-    .div2_term {
-        padding-left: 185px;
-        padding-right: 185px;
-    }
-
     .register_div1 {
         padding: 148px 143px;
         width: 54%;
