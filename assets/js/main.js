@@ -100,8 +100,8 @@ $(document).ready(function () {
     $('#pds3').owlCarousel({
         loop:false,
         margin: 24,
-        nav:false,
-        dots: false,
+        nav:true,
+        dots: true,
         responsive:{
             0:{
                 loop: true,
@@ -119,10 +119,26 @@ $(document).ready(function () {
                 items:3
             },
             1000:{
-                items:4
+                items:4,
+                loop: true,
+                nav: true,
+                dots: true,
+                dotsEach: 1,
+                navText: [
+                    "<span class='btn btn_owl'><svg xmlns='http://www.w3.org/2000/svg' width='16' height='27' viewBox='0 0 16 27' fill='none'><path d='M13.3135 24.627L1.99977 13.3132L13.3135 1.99954' stroke='#BA8B4A' stroke-width='4' stroke-linecap='round' stroke-linejoin='round'/></svg></span>",
+                    "<span class='btn btn_owl'><svg xmlns='http://www.w3.org/2000/svg' width='16' height='27' viewBox='0 0 16 27' fill='none'><path d='M2.68652 2L14.0002 13.3137L2.68652 24.6274' stroke='#BA8B4A' stroke-width='4' stroke-linecap='round' stroke-linejoin='round'/></svg></span>"
+                ],
             },
             1349:{
-                items:5
+                items:5,
+                loop: true,
+                nav: true,
+                dots: true,
+                dotsEach: 1,
+                navText: [
+                    "<span class='btn btn_owl'><svg xmlns='http://www.w3.org/2000/svg' width='16' height='27' viewBox='0 0 16 27' fill='none'><path d='M13.3135 24.627L1.99977 13.3132L13.3135 1.99954' stroke='#BA8B4A' stroke-width='4' stroke-linecap='round' stroke-linejoin='round'/></svg></span>",
+                    "<span class='btn btn_owl'><svg xmlns='http://www.w3.org/2000/svg' width='16' height='27' viewBox='0 0 16 27' fill='none'><path d='M2.68652 2L14.0002 13.3137L2.68652 24.6274' stroke='#BA8B4A' stroke-width='4' stroke-linecap='round' stroke-linejoin='round'/></svg></span>"
+                ],
             }
         }
     })
