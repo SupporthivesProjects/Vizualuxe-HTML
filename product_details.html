@@ -374,7 +374,7 @@
                                     </button>
                                 </div>
                             </div>
-                            <button class="btn btn_global_trans">Add to Cart</button>
+                            <button class="btn btn_global_trans" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">Add to Cart</button>
                         </div>
                     </div>
                 </div>
@@ -596,6 +596,34 @@
 
             <button class="btn btn_global_trans mx-auto">View All products</button>
         </div>
+
+
+        <!-- modal -->
+
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered custom-modal-width">
+              <div class="modal-content">
+                <img src="./assets/img/close_modal.svg" alt="" class="img-fluid close_modal " type="button" data-bs-dismiss="modal">
+                <div class="main_modal">
+                    <img src="./assets/img/modal_img.png" alt="" class="img-fluid modal_img">
+                    <div class="right_modal">
+                        <h1 class="modal_tt">Item has been<br> added to your cart!</h1>
+                        <div class="price_div">
+                            <p class="price_pp">Item Price:</p>
+                            <p class="price_pp">£379.00</p>
+                        </div>
+                        
+                        <div class="btn_div">
+                            <button class="btn btn_global_trans extra_width">Continue&nbsp;Shopping</button>
+                            
+                            <button class="btn btn_global extra_width">secure Checkout</button>
+                        </div>
+                    </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
     </section>
 
     <footer class="footer">
