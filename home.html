@@ -1,0 +1,885 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vizualuxe</title>
+
+    <!-- Bootstrap Styles Links -->
+    <link rel="stylesheet" href="./assets/dist/bootstrap/css/bootstrap.min.css">
+
+    <!-- Owl Carousel Links -->
+    <link rel="stylesheet" href="./assets/dist/owl-carousel/css/owl.carousel.css">
+
+    <!-- Google Fonts Link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Afacad:ital,wght@0,400..700;1,400..700&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap"
+        rel="stylesheet">
+
+    <!-- Style Sheets -->
+    <link rel="stylesheet" href="./assets/css/t_style.css">
+    <link rel="stylesheet" href="./assets/css/sk_style.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/css/m_style.css">
+
+</head>
+
+<body>
+
+    <header class="fixed-top">
+        <div class="header_top">
+            <div class="container desktop_header p-0">
+                <div class="header_main_container">
+                    <div class="header_left">
+                        <a href="./index.html">
+                            <img src="./assets/img/header_logo.svg" alt="" class="img-fluid header_logo">
+                        </a>
+                    </div>
+                    <div class="header_right">
+                        <button class="btn btn_header_link active">
+                            design resources
+                        </button>
+                        <button class="btn btn_header_link">
+                            Bespoke design packages
+                        </button>
+                        <button class="btn btn_header_link">
+                            Our Story
+                        </button>
+                        <button class="btn btn_header_link">
+                            Contact Us
+                        </button>
+                        <div class="header_spliter_bar"></div>
+                        <div class="currency_drop_container">
+                            <button class="btn btn_header_drop" onclick="justDrop('currency_drop', 'roter2', this)">
+                                GBP £
+
+                                <svg xmlns="http://www.w3.org/2000/svg" id="roter2" width="24" height="24"
+                                    viewBox="0 0 24 24" fill="none">
+                                    <path d="M18 9L12 15L6 9" stroke="#FFF6E1" stroke-width="2" />
+                                </svg>
+                                <img src="./assets/img/currency_bar.svg" alt="" class="img-fluid active_underline">
+                            </button>
+                            <div class="dropped_div d-none" id="currency_drop">
+                                <button class="btn btn_inner_drop active">GBP £</button>
+                                <button class="btn btn_inner_drop">GBP £</button>
+                                <button class="btn btn_inner_drop">GBP £</button>
+                                <button class="btn btn_inner_drop">GBP £</button>
+                                <button class="btn btn_inner_drop">GBP £</button>
+                                <button class="btn btn_inner_drop">GBP £</button>
+                            </div>
+                        </div>
+                        <div class="cart_drop_container">
+                            <button class="btn btn_header_link pos_rel" onclick="justDrop('cart_drop', 'roter5', this)">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none">
+                                    <path
+                                        d="M12 2.25C9.94043 2.25 8.25 3.94043 8.25 6V6.75H4.54688L4.5 7.45312L3.75 20.9531L3.70312 21.75H20.2969L20.25 20.9531L19.5 7.45312L19.4531 6.75H15.75V6C15.75 3.94043 14.0596 2.25 12 2.25ZM12 3.75C13.2422 3.75 14.25 4.75781 14.25 6V6.75H9.75V6C9.75 4.75781 10.7578 3.75 12 3.75ZM5.95312 8.25H8.25V10.5H9.75V8.25H14.25V10.5H15.75V8.25H18.0469L18.7031 20.25H5.29688L5.95312 8.25Z"
+                                        fill="#FFF6E1" />
+                                </svg>
+                                <div class="cart_circle">
+                                    <p class="cart_circle_text">3</p>
+                                </div>
+                                <img src="./assets/img/cart_bar.svg" alt="" class="img-fluid active_underline">
+                            </button>
+                            <div class="cart_dropper_div d-none" id="cart_drop">
+                                <h1 class="cart_title">Shopping Cart</h1>
+                                <div class="cart_item_outer">
+                                    <div class="cart_item">
+                                        <p class="cart_item_name">Blogging Traffic System</p>
+                                        <div class="cart_item_inner_right">
+                                            <p class="cart_item_qty">x1</p>
+                                            <div class="cart_item_inner_grp">
+                                                <p class="cart_item_price">£189.50</p>
+                                                <img src="./assets/img/cart_bin.svg" alt="" class="img-fluid cart_bin">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="cart_item">
+                                        <p class="cart_item_name">Blogging Traffic System</p>
+                                        <div class="cart_item_inner_right">
+                                            <p class="cart_item_qty">x1</p>
+                                            <div class="cart_item_inner_grp">
+                                                <p class="cart_item_price">£189.50</p>
+                                                <img src="./assets/img/cart_bin.svg" alt="" class="img-fluid cart_bin">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="cart_item">
+                                        <p class="cart_item_name">Blogging Traffic System</p>
+                                        <div class="cart_item_inner_right">
+                                            <p class="cart_item_qty">x1</p>
+                                            <div class="cart_item_inner_grp">
+                                                <p class="cart_item_price">£189.50</p>
+                                                <img src="./assets/img/cart_bin.svg" alt="" class="img-fluid cart_bin">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="cart_item">
+                                        <p class="cart_item_name">Blogging Traffic System</p>
+                                        <div class="cart_item_inner_right">
+                                            <p class="cart_item_qty">x1</p>
+                                            <div class="cart_item_inner_grp">
+                                                <p class="cart_item_price">£189.50</p>
+                                                <img src="./assets/img/cart_bin.svg" alt="" class="img-fluid cart_bin">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="cart_item">
+                                        <p class="cart_item_name">Blogging Traffic System</p>
+                                        <div class="cart_item_inner_right">
+                                            <p class="cart_item_qty">x1</p>
+                                            <div class="cart_item_inner_grp">
+                                                <p class="cart_item_price">£189.50</p>
+                                                <img src="./assets/img/cart_bin.svg" alt="" class="img-fluid cart_bin">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="cart_item">
+                                        <p class="cart_item_name">Blogging Traffic System</p>
+                                        <div class="cart_item_inner_right">
+                                            <p class="cart_item_qty">x1</p>
+                                            <div class="cart_item_inner_grp">
+                                                <p class="cart_item_price">£189.50</p>
+                                                <img src="./assets/img/cart_bin.svg" alt="" class="img-fluid cart_bin">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="cart_splitter"></div>
+                                <div class="cart_item">
+                                    <p class="cart_total_text">Subtotal</p>
+                                    <p class="cart_total_text">£379.00</p>
+                                </div>
+                                <div class="cart_btn_grp">
+                                    <button class="btn btn_global_trans w-100">Continue Shopping</button>
+                                    <button class="btn btn_global w-100">secure Checkout</button>
+                                </div>
+                                <button class="btn btn_cart_close" onclick="justDrop('cart_drop', 'roter5', this)">
+                                    <img src="./assets/img/cross_x_cart.svg" alt="" class="img-fluid">
+                                </button>
+                            </div>
+                        </div>
+                        <button class="btn btn_header_link">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none">
+                                <path
+                                    d="M12 3.75C9.1084 3.75 6.75 6.1084 6.75 9C6.75 10.8076 7.67285 12.4131 9.07031 13.3594C6.39551 14.5078 4.5 17.1621 4.5 20.25H6C6 18.082 7.14551 16.1953 8.85938 15.1406C9.36328 16.377 10.5908 17.25 12 17.25C13.4092 17.25 14.6367 16.377 15.1406 15.1406C16.8545 16.1953 18 18.082 18 20.25H19.5C19.5 17.1621 17.6045 14.5078 14.9297 13.3594C16.3271 12.4131 17.25 10.8076 17.25 9C17.25 6.1084 14.8916 3.75 12 3.75ZM12 5.25C14.0801 5.25 15.75 6.91992 15.75 9C15.75 11.0801 14.0801 12.75 12 12.75C9.91992 12.75 8.25 11.0801 8.25 9C8.25 6.91992 9.91992 5.25 12 5.25ZM12 14.25C12.6152 14.25 13.2012 14.3379 13.7578 14.5078C13.4971 15.2314 12.8174 15.75 12 15.75C11.1826 15.75 10.5029 15.2314 10.2422 14.5078C10.7988 14.3379 11.3848 14.25 12 14.25Z"
+                                    fill="#FFF6E1" />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="container mobile_header p-0">
+                <div class="header_mobo_main">
+                    <div class="header_mobo_left">
+                        <a href="./index.html">
+                            <img src="./assets/img/header_logo.svg" alt="" class="img-fluid">
+                        </a>
+                    </div>
+                    <div class="header_mobo_right">
+                        <div class="cart_menu">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none">
+                                <path
+                                    d="M12 2.25C9.94043 2.25 8.25 3.94043 8.25 6V6.75H4.54688L4.5 7.45312L3.75 20.9531L3.70312 21.75H20.2969L20.25 20.9531L19.5 7.45312L19.4531 6.75H15.75V6C15.75 3.94043 14.0596 2.25 12 2.25ZM12 3.75C13.2422 3.75 14.25 4.75781 14.25 6V6.75H9.75V6C9.75 4.75781 10.7578 3.75 12 3.75ZM5.95312 8.25H8.25V10.5H9.75V8.25H14.25V10.5H15.75V8.25H18.0469L18.7031 20.25H5.29688L5.95312 8.25Z"
+                                    fill="#FFF6E1" />
+                            </svg>
+                            <div class="cart_circle">
+                                <p class="cart_circle_text">3</p>
+                            </div>
+                        </div>
+                        <div class="account_btn">
+                            <button class="btn btn_header_link p-0">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none">
+                                    <path
+                                        d="M12 3.75C9.1084 3.75 6.75 6.1084 6.75 9C6.75 10.8076 7.67285 12.4131 9.07031 13.3594C6.39551 14.5078 4.5 17.1621 4.5 20.25H6C6 18.082 7.14551 16.1953 8.85938 15.1406C9.36328 16.377 10.5908 17.25 12 17.25C13.4092 17.25 14.6367 16.377 15.1406 15.1406C16.8545 16.1953 18 18.082 18 20.25H19.5C19.5 17.1621 17.6045 14.5078 14.9297 13.3594C16.3271 12.4131 17.25 10.8076 17.25 9C17.25 6.1084 14.8916 3.75 12 3.75ZM12 5.25C14.0801 5.25 15.75 6.91992 15.75 9C15.75 11.0801 14.0801 12.75 12 12.75C9.91992 12.75 8.25 11.0801 8.25 9C8.25 6.91992 9.91992 5.25 12 5.25ZM12 14.25C12.6152 14.25 13.2012 14.3379 13.7578 14.5078C13.4971 15.2314 12.8174 15.75 12 15.75C11.1826 15.75 10.5029 15.2314 10.2422 14.5078C10.7988 14.3379 11.3848 14.25 12 14.25Z"
+                                        fill="#FFF6E1" />
+                                </svg>
+                            </button>
+                        </div>
+
+                        <div class="hamburger_menu">
+                            <img src="./assets/img/hamburger_logo.svg" alt="" class="img-fluid">
+                        </div>
+                        <div class="hamburger_menu_close" style="display: none;">
+                            <img src="./assets/img/hamburger_close.svg" alt="" class="img-fluid">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="header_mobo_main_slide" style="display: none;">
+            <div class="header_main_mobo">
+                <button class="btn btn_header_link_mobo">
+                    Design Resources
+                </button>
+                <button class="btn btn_header_link_mobo active">
+                    Bespoke Design Packages
+                </button>
+                <button class="btn btn_header_link_mobo">
+                    Our Story
+                </button>
+                <button class="btn btn_header_link_mobo">
+                    Contact Us
+                </button>
+                <div class="currency_drop_container">
+                    <button class="btn btn_header_drop mx-auto"
+                        onclick="justDrop('currency_drop_mobo', 'roter4', this)">
+                        GBP £
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            id="roter4">
+                            <path d="M18 9L12 15L6 9" stroke="#162222" stroke-width="2" />
+                        </svg>
+                    </button>
+                    <div class="dropped_div d-none" id="currency_drop_mobo">
+                        <button class="btn btn_inner_drop active">GBP</button>
+                        <button class="btn btn_inner_drop">GBP</button>
+                        <button class="btn btn_inner_drop">GBP</button>
+                        <button class="btn btn_inner_drop">GBP</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="header_cart_mobo_main_slide" style="display: none;">
+            <button class="btn btn_cart_back" onclick="closeMobileCart()">
+                <img src="./assets/img/cart_back_icon.svg" alt="" class="img-fluid cart_back_icon">
+                Return to Menu
+            </button>
+            <div class="header_cart_main_mobo">
+                <h1 class="cart_title">Shopping Cart</h1>
+                <div class="cart_item_outer">
+                    <div class="cart_item">
+                        <p class="cart_item_name">Blogging Traffic System</p>
+                        <div class="cart_item_inner_right">
+                            <p class="cart_item_qty">x1</p>
+                            <div class="cart_item_inner_grp">
+                                <p class="cart_item_price">£189.50</p>
+                                <img src="./assets/img/cart_bin.svg" alt="" class="img-fluid cart_bin">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cart_item">
+                        <p class="cart_item_name">Blogging Traffic System</p>
+                        <div class="cart_item_inner_right">
+                            <p class="cart_item_qty">x1</p>
+                            <div class="cart_item_inner_grp">
+                                <p class="cart_item_price">£189.50</p>
+                                <img src="./assets/img/cart_bin.svg" alt="" class="img-fluid cart_bin">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cart_item">
+                        <p class="cart_item_name">Blogging Traffic System</p>
+                        <div class="cart_item_inner_right">
+                            <p class="cart_item_qty">x1</p>
+                            <div class="cart_item_inner_grp">
+                                <p class="cart_item_price">£189.50</p>
+                                <img src="./assets/img/cart_bin.svg" alt="" class="img-fluid cart_bin">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cart_item">
+                        <p class="cart_item_name">Blogging Traffic System</p>
+                        <div class="cart_item_inner_right">
+                            <p class="cart_item_qty">x1</p>
+                            <div class="cart_item_inner_grp">
+                                <p class="cart_item_price">£189.50</p>
+                                <img src="./assets/img/cart_bin.svg" alt="" class="img-fluid cart_bin">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cart_item">
+                        <p class="cart_item_name">Blogging Traffic System</p>
+                        <div class="cart_item_inner_right">
+                            <p class="cart_item_qty">x1</p>
+                            <div class="cart_item_inner_grp">
+                                <p class="cart_item_price">£189.50</p>
+                                <img src="./assets/img/cart_bin.svg" alt="" class="img-fluid cart_bin">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cart_item">
+                        <p class="cart_item_name">Blogging Traffic System</p>
+                        <div class="cart_item_inner_right">
+                            <p class="cart_item_qty">x1</p>
+                            <div class="cart_item_inner_grp">
+                                <p class="cart_item_price">£189.50</p>
+                                <img src="./assets/img/cart_bin.svg" alt="" class="img-fluid cart_bin">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="cart_splitter"></div>
+                <div class="cart_item">
+                    <p class="cart_total_text">Subtotal</p>
+                    <p class="cart_total_text">£379.00</p>
+                </div>
+                <div class="cart_btn_grp">
+                    <button class="btn btn_global_trans w-100">Continue Shopping</button>
+                    <button class="btn btn_global w-100">secure Checkout</button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section>
+        <section class="home_1">
+            <img src="./assets/img/scroll_svg.svg" alt="" class="img-fluid scroll_svg mobile_none">
+            <video class="bg-image d-lg-block d-md-block d-none" loop="" muted="" autoplay=""
+                style="object-fit: cover;">
+                <source src="./assets/img/home_vid.mp4" type="video/mp4">
+            </video>
+            <video class="bg-image d-lg-none d-md-none d-block" loop="" muted="" autoplay="" style="object-fit: cover;">
+                <source src="./assets/img/hom_mob.mp4" type="video/mp4">
+            </video>
+            <div class="container">
+                <div class="vid_text">
+                    <h1 class="hm_tt">Designed for<br>
+                        the Luxe-Minded</h1>
+                    <p class="hm_pp">
+                        Lorem ipsum dolor sit amet consectetur. Sit hendrerit elit iaculis eget neque id cras rhoncus
+                        nunc. Sit ullamcorper sagittis sit praesent et adipiscing congue quis nisl. Nunc id suspendisse
+                        tortor eget at orci.
+                    </p>
+                    <button class="btn btn_animated_global2">
+                        <span class="icon2"></span>
+                        Get Started
+                        <span class="underline2"></span>
+                    </button>
+            
+                </div>
+            </div>
+
+        </section>
+
+        <div class="sec2_mob desktop_none"></div>
+        <section class="home2">
+            <div class="container cus_pad3">
+                <div class="in_home2">
+                    <div class="tt_sec also_margin">
+                        <img src="./assets/img/left_svg.svg" alt="" class="img-fluid">
+                        <p class="small_con_pp">What we do</p>
+                        <img src="./assets/img/right_svg.svg" alt="" class="img-fluid">
+                    </div>
+                    <h1 class="hom2_tt">Designers of Impact,<br> Not Just Aesthetics</h1>
+                    <p class="hom2_pp">
+                        Lorem ipsum dolor sit amet consectetur. Pellentesque eget lorem facilisi ante. Amet turpis ac
+                        enim dictum in sit ipsum. Neque sagittis tellus donec nulla nisl ullamcorper. Massa fermentum
+                        nulla eleifend pharetra sed risus pharetra. Feugiat etiam diam nec id.
+                        <br>
+                        <br>
+                        Et volutpat sit diam non ornare. Erat cursus purus faucibus quam cursus odio quam nunc. Eget a
+                        bibendum quisque consequat commodo fusce. Magna enim amet praesent massa volutpat a mattis eget.
+                        Massa feugiat odio imperdiet sodales in lacinia tristique lacus. Varius ut diam rhoncus vel eu
+                        ornare tincidunt. Faucibus nam dapibus ac ornare. In amet eu nunc nulla porta.
+                    </p>
+                    <button class="btn btn_animated_global">
+                        <span class="icon"></span>
+                        Explore more about us
+                        <span class="underline"></span>
+                    </button>
+                </div>
+            </div>
+            <img src="./assets/img/bespoke designs.svg" alt="" class="img-fluid bespoke mobile_none">
+        </section>
+
+
+        <section class="home3">
+            <div class="in_home3">
+                <div class="tt_sec also_margin">
+                    <img src="./assets/img/left_svg.svg" alt="" class="img-fluid">
+                    <p class="small_con_pp">Design resources You’ll Love</p>
+                    <img src="./assets/img/right_svg.svg" alt="" class="img-fluid">
+                </div>
+                <h1 class="home3_tt">Our Most-Loved Digital Resources</h1>
+                <p class="home3_pp">Lorem ipsum dolor sit amet consectetur. Pellentesque eget lorem facilisi ante. Amet
+                    turpis ac enim dictum in sit ipsum. Neque sagittis tellus donec nulla nisl ullamcorper. </p>
+                    <button class="btn btn_animated_global">
+                        <span class="icon"></span>
+                        View all design resources
+                        <span class="underline"></span>
+                    </button>
+            </div>
+
+
+
+
+            <div class="owl_waladiv">
+                <div class="owl-carousel owl-theme" id="home_owl_slider">
+                    <div class="item">
+                        <div class="global_card">
+                            <img src="./assets/img/gc_img.png" alt="" class="img-fluid global_card_img">
+                            <p class="global_card_pre_title">E-Book1</p>
+                            <p class="global_card_title">Book Title Goes Here
+                                In Two Lines or Less</p>
+                            <p class="global_card_subtitle">Lorem ipsum dolor sit amet consectetur. Nunc vitae libero...</p>
+                            <p class="global_card_total">$48.89</p>
+                            <div class="gc_footer">
+                                <button class="btn btn_global_trans w-100">secure Checkout</button>
+                                <button class="btn btn_global">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25"
+                                        fill="none">
+                                        <path
+                                            d="M21.3256 6.01906C21.2552 5.93481 21.1672 5.86705 21.0677 5.82056C20.9682 5.77407 20.8598 5.74998 20.75 5.75H5.62625L5.16781 3.23187C5.10502 2.88625 4.92292 2.57363 4.65325 2.34851C4.38359 2.12339 4.04347 2.00005 3.69219 2H2C1.80109 2 1.61032 2.07902 1.46967 2.21967C1.32902 2.36032 1.25 2.55109 1.25 2.75C1.25 2.94891 1.32902 3.13968 1.46967 3.28033C1.61032 3.42098 1.80109 3.5 2 3.5H3.6875L6.08375 16.6522C6.15434 17.0422 6.32671 17.4067 6.58344 17.7087C6.22911 18.0397 5.97336 18.4623 5.84455 18.9298C5.71575 19.3972 5.71892 19.8912 5.85371 20.3569C5.98851 20.8226 6.24966 21.2419 6.60821 21.5683C6.96676 21.8947 7.4087 22.1154 7.88502 22.2059C8.36134 22.2965 8.85344 22.2533 9.30673 22.0813C9.76003 21.9092 10.1568 21.615 10.4531 21.2312C10.7494 20.8474 10.9336 20.389 10.9853 19.907C11.037 19.4249 10.9541 18.9379 10.7459 18.5H15.0041C14.8363 18.8513 14.7494 19.2357 14.75 19.625C14.75 20.1442 14.904 20.6517 15.1924 21.0834C15.4808 21.5151 15.8908 21.8515 16.3705 22.0502C16.8501 22.2489 17.3779 22.3008 17.8871 22.1996C18.3963 22.0983 18.864 21.8483 19.2312 21.4812C19.5983 21.114 19.8483 20.6463 19.9496 20.1371C20.0508 19.6279 19.9989 19.1001 19.8002 18.6205C19.6015 18.1408 19.265 17.7308 18.8334 17.4424C18.4017 17.154 17.8942 17 17.375 17H8.29719C8.12155 17 7.95149 16.9383 7.81665 16.8257C7.68182 16.7132 7.59077 16.5569 7.55937 16.3841L7.26219 14.75H18.1372C18.6641 14.7499 19.1743 14.5649 19.5788 14.2272C19.9833 13.8896 20.2564 13.4206 20.3506 12.9022L21.4906 6.63406C21.5099 6.52572 21.5051 6.41447 21.4766 6.30818C21.4481 6.2019 21.3966 6.10319 21.3256 6.01906ZM9.5 19.625C9.5 19.8475 9.43402 20.065 9.3104 20.25C9.18679 20.435 9.01109 20.5792 8.80552 20.6644C8.59995 20.7495 8.37375 20.7718 8.15552 20.7284C7.93729 20.685 7.73684 20.5778 7.5795 20.4205C7.42217 20.2632 7.31502 20.0627 7.27162 19.8445C7.22821 19.6262 7.25049 19.4 7.33563 19.1945C7.42078 18.9889 7.56498 18.8132 7.74998 18.6896C7.93499 18.566 8.1525 18.5 8.375 18.5C8.67337 18.5 8.95952 18.6185 9.17049 18.8295C9.38147 19.0405 9.5 19.3266 9.5 19.625ZM18.5 19.625C18.5 19.8475 18.434 20.065 18.3104 20.25C18.1868 20.435 18.0111 20.5792 17.8055 20.6644C17.6 20.7495 17.3738 20.7718 17.1555 20.7284C16.9373 20.685 16.7368 20.5778 16.5795 20.4205C16.4222 20.2632 16.315 20.0627 16.2716 19.8445C16.2282 19.6262 16.2505 19.4 16.3356 19.1945C16.4208 18.9889 16.565 18.8132 16.75 18.6896C16.935 18.566 17.1525 18.5 17.375 18.5C17.6734 18.5 17.9595 18.6185 18.1705 18.8295C18.3815 19.0405 18.5 19.3266 18.5 19.625ZM18.875 12.6341C18.8435 12.8074 18.7521 12.964 18.6166 13.0766C18.4812 13.1893 18.3105 13.2506 18.1344 13.25H6.98937L5.89906 7.25H19.8509L18.875 12.6341Z"
+                                            fill="white" />
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="global_card">
+                            <img src="./assets/img/gc_img.png" alt="" class="img-fluid global_card_img">
+                            <p class="global_card_pre_title">E-Book2</p>
+                            <p class="global_card_title">Book Title Goes Here
+                                In Two Lines or Less</p>
+                            <p class="global_card_subtitle">Lorem ipsum dolor sit amet consectetur. Nunc vitae libero...</p>
+                            <p class="global_card_total">$48.89</p>
+                            <div class="gc_footer">
+                                <button class="btn btn_global_trans w-100">secure Checkout</button>
+                                <button class="btn btn_global">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25"
+                                        fill="none">
+                                        <path
+                                            d="M21.3256 6.01906C21.2552 5.93481 21.1672 5.86705 21.0677 5.82056C20.9682 5.77407 20.8598 5.74998 20.75 5.75H5.62625L5.16781 3.23187C5.10502 2.88625 4.92292 2.57363 4.65325 2.34851C4.38359 2.12339 4.04347 2.00005 3.69219 2H2C1.80109 2 1.61032 2.07902 1.46967 2.21967C1.32902 2.36032 1.25 2.55109 1.25 2.75C1.25 2.94891 1.32902 3.13968 1.46967 3.28033C1.61032 3.42098 1.80109 3.5 2 3.5H3.6875L6.08375 16.6522C6.15434 17.0422 6.32671 17.4067 6.58344 17.7087C6.22911 18.0397 5.97336 18.4623 5.84455 18.9298C5.71575 19.3972 5.71892 19.8912 5.85371 20.3569C5.98851 20.8226 6.24966 21.2419 6.60821 21.5683C6.96676 21.8947 7.4087 22.1154 7.88502 22.2059C8.36134 22.2965 8.85344 22.2533 9.30673 22.0813C9.76003 21.9092 10.1568 21.615 10.4531 21.2312C10.7494 20.8474 10.9336 20.389 10.9853 19.907C11.037 19.4249 10.9541 18.9379 10.7459 18.5H15.0041C14.8363 18.8513 14.7494 19.2357 14.75 19.625C14.75 20.1442 14.904 20.6517 15.1924 21.0834C15.4808 21.5151 15.8908 21.8515 16.3705 22.0502C16.8501 22.2489 17.3779 22.3008 17.8871 22.1996C18.3963 22.0983 18.864 21.8483 19.2312 21.4812C19.5983 21.114 19.8483 20.6463 19.9496 20.1371C20.0508 19.6279 19.9989 19.1001 19.8002 18.6205C19.6015 18.1408 19.265 17.7308 18.8334 17.4424C18.4017 17.154 17.8942 17 17.375 17H8.29719C8.12155 17 7.95149 16.9383 7.81665 16.8257C7.68182 16.7132 7.59077 16.5569 7.55937 16.3841L7.26219 14.75H18.1372C18.6641 14.7499 19.1743 14.5649 19.5788 14.2272C19.9833 13.8896 20.2564 13.4206 20.3506 12.9022L21.4906 6.63406C21.5099 6.52572 21.5051 6.41447 21.4766 6.30818C21.4481 6.2019 21.3966 6.10319 21.3256 6.01906ZM9.5 19.625C9.5 19.8475 9.43402 20.065 9.3104 20.25C9.18679 20.435 9.01109 20.5792 8.80552 20.6644C8.59995 20.7495 8.37375 20.7718 8.15552 20.7284C7.93729 20.685 7.73684 20.5778 7.5795 20.4205C7.42217 20.2632 7.31502 20.0627 7.27162 19.8445C7.22821 19.6262 7.25049 19.4 7.33563 19.1945C7.42078 18.9889 7.56498 18.8132 7.74998 18.6896C7.93499 18.566 8.1525 18.5 8.375 18.5C8.67337 18.5 8.95952 18.6185 9.17049 18.8295C9.38147 19.0405 9.5 19.3266 9.5 19.625ZM18.5 19.625C18.5 19.8475 18.434 20.065 18.3104 20.25C18.1868 20.435 18.0111 20.5792 17.8055 20.6644C17.6 20.7495 17.3738 20.7718 17.1555 20.7284C16.9373 20.685 16.7368 20.5778 16.5795 20.4205C16.4222 20.2632 16.315 20.0627 16.2716 19.8445C16.2282 19.6262 16.2505 19.4 16.3356 19.1945C16.4208 18.9889 16.565 18.8132 16.75 18.6896C16.935 18.566 17.1525 18.5 17.375 18.5C17.6734 18.5 17.9595 18.6185 18.1705 18.8295C18.3815 19.0405 18.5 19.3266 18.5 19.625ZM18.875 12.6341C18.8435 12.8074 18.7521 12.964 18.6166 13.0766C18.4812 13.1893 18.3105 13.2506 18.1344 13.25H6.98937L5.89906 7.25H19.8509L18.875 12.6341Z"
+                                            fill="white" />
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="global_card">
+                            <img src="./assets/img/gc_img.png" alt="" class="img-fluid global_card_img">
+                            <p class="global_card_pre_title">E-Book3</p>
+                            <p class="global_card_title">Book Title Goes Here
+                                In Two Lines or Less</p>
+                            <p class="global_card_subtitle">Lorem ipsum dolor sit amet consectetur. Nunc vitae libero...</p>
+                            <p class="global_card_total">$48.89</p>
+                            <div class="gc_footer">
+                                <button class="btn btn_global_trans w-100">secure Checkout</button>
+                                <button class="btn btn_global">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25"
+                                        fill="none">
+                                        <path
+                                            d="M21.3256 6.01906C21.2552 5.93481 21.1672 5.86705 21.0677 5.82056C20.9682 5.77407 20.8598 5.74998 20.75 5.75H5.62625L5.16781 3.23187C5.10502 2.88625 4.92292 2.57363 4.65325 2.34851C4.38359 2.12339 4.04347 2.00005 3.69219 2H2C1.80109 2 1.61032 2.07902 1.46967 2.21967C1.32902 2.36032 1.25 2.55109 1.25 2.75C1.25 2.94891 1.32902 3.13968 1.46967 3.28033C1.61032 3.42098 1.80109 3.5 2 3.5H3.6875L6.08375 16.6522C6.15434 17.0422 6.32671 17.4067 6.58344 17.7087C6.22911 18.0397 5.97336 18.4623 5.84455 18.9298C5.71575 19.3972 5.71892 19.8912 5.85371 20.3569C5.98851 20.8226 6.24966 21.2419 6.60821 21.5683C6.96676 21.8947 7.4087 22.1154 7.88502 22.2059C8.36134 22.2965 8.85344 22.2533 9.30673 22.0813C9.76003 21.9092 10.1568 21.615 10.4531 21.2312C10.7494 20.8474 10.9336 20.389 10.9853 19.907C11.037 19.4249 10.9541 18.9379 10.7459 18.5H15.0041C14.8363 18.8513 14.7494 19.2357 14.75 19.625C14.75 20.1442 14.904 20.6517 15.1924 21.0834C15.4808 21.5151 15.8908 21.8515 16.3705 22.0502C16.8501 22.2489 17.3779 22.3008 17.8871 22.1996C18.3963 22.0983 18.864 21.8483 19.2312 21.4812C19.5983 21.114 19.8483 20.6463 19.9496 20.1371C20.0508 19.6279 19.9989 19.1001 19.8002 18.6205C19.6015 18.1408 19.265 17.7308 18.8334 17.4424C18.4017 17.154 17.8942 17 17.375 17H8.29719C8.12155 17 7.95149 16.9383 7.81665 16.8257C7.68182 16.7132 7.59077 16.5569 7.55937 16.3841L7.26219 14.75H18.1372C18.6641 14.7499 19.1743 14.5649 19.5788 14.2272C19.9833 13.8896 20.2564 13.4206 20.3506 12.9022L21.4906 6.63406C21.5099 6.52572 21.5051 6.41447 21.4766 6.30818C21.4481 6.2019 21.3966 6.10319 21.3256 6.01906ZM9.5 19.625C9.5 19.8475 9.43402 20.065 9.3104 20.25C9.18679 20.435 9.01109 20.5792 8.80552 20.6644C8.59995 20.7495 8.37375 20.7718 8.15552 20.7284C7.93729 20.685 7.73684 20.5778 7.5795 20.4205C7.42217 20.2632 7.31502 20.0627 7.27162 19.8445C7.22821 19.6262 7.25049 19.4 7.33563 19.1945C7.42078 18.9889 7.56498 18.8132 7.74998 18.6896C7.93499 18.566 8.1525 18.5 8.375 18.5C8.67337 18.5 8.95952 18.6185 9.17049 18.8295C9.38147 19.0405 9.5 19.3266 9.5 19.625ZM18.5 19.625C18.5 19.8475 18.434 20.065 18.3104 20.25C18.1868 20.435 18.0111 20.5792 17.8055 20.6644C17.6 20.7495 17.3738 20.7718 17.1555 20.7284C16.9373 20.685 16.7368 20.5778 16.5795 20.4205C16.4222 20.2632 16.315 20.0627 16.2716 19.8445C16.2282 19.6262 16.2505 19.4 16.3356 19.1945C16.4208 18.9889 16.565 18.8132 16.75 18.6896C16.935 18.566 17.1525 18.5 17.375 18.5C17.6734 18.5 17.9595 18.6185 18.1705 18.8295C18.3815 19.0405 18.5 19.3266 18.5 19.625ZM18.875 12.6341C18.8435 12.8074 18.7521 12.964 18.6166 13.0766C18.4812 13.1893 18.3105 13.2506 18.1344 13.25H6.98937L5.89906 7.25H19.8509L18.875 12.6341Z"
+                                            fill="white" />
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="global_card">
+                            <img src="./assets/img/gc_img.png" alt="" class="img-fluid global_card_img">
+                            <p class="global_card_pre_title">E-Book</p>
+                            <p class="global_card_title">Book Title Goes Here
+                                In Two Lines or Less</p>
+                            <p class="global_card_subtitle">Lorem ipsum dolor sit amet consectetur. Nunc vitae libero...</p>
+                            <p class="global_card_total">$48.89</p>
+                            <div class="gc_footer">
+                                <button class="btn btn_global_trans w-100">secure Checkout</button>
+                                <button class="btn btn_global">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25"
+                                        fill="none">
+                                        <path
+                                            d="M21.3256 6.01906C21.2552 5.93481 21.1672 5.86705 21.0677 5.82056C20.9682 5.77407 20.8598 5.74998 20.75 5.75H5.62625L5.16781 3.23187C5.10502 2.88625 4.92292 2.57363 4.65325 2.34851C4.38359 2.12339 4.04347 2.00005 3.69219 2H2C1.80109 2 1.61032 2.07902 1.46967 2.21967C1.32902 2.36032 1.25 2.55109 1.25 2.75C1.25 2.94891 1.32902 3.13968 1.46967 3.28033C1.61032 3.42098 1.80109 3.5 2 3.5H3.6875L6.08375 16.6522C6.15434 17.0422 6.32671 17.4067 6.58344 17.7087C6.22911 18.0397 5.97336 18.4623 5.84455 18.9298C5.71575 19.3972 5.71892 19.8912 5.85371 20.3569C5.98851 20.8226 6.24966 21.2419 6.60821 21.5683C6.96676 21.8947 7.4087 22.1154 7.88502 22.2059C8.36134 22.2965 8.85344 22.2533 9.30673 22.0813C9.76003 21.9092 10.1568 21.615 10.4531 21.2312C10.7494 20.8474 10.9336 20.389 10.9853 19.907C11.037 19.4249 10.9541 18.9379 10.7459 18.5H15.0041C14.8363 18.8513 14.7494 19.2357 14.75 19.625C14.75 20.1442 14.904 20.6517 15.1924 21.0834C15.4808 21.5151 15.8908 21.8515 16.3705 22.0502C16.8501 22.2489 17.3779 22.3008 17.8871 22.1996C18.3963 22.0983 18.864 21.8483 19.2312 21.4812C19.5983 21.114 19.8483 20.6463 19.9496 20.1371C20.0508 19.6279 19.9989 19.1001 19.8002 18.6205C19.6015 18.1408 19.265 17.7308 18.8334 17.4424C18.4017 17.154 17.8942 17 17.375 17H8.29719C8.12155 17 7.95149 16.9383 7.81665 16.8257C7.68182 16.7132 7.59077 16.5569 7.55937 16.3841L7.26219 14.75H18.1372C18.6641 14.7499 19.1743 14.5649 19.5788 14.2272C19.9833 13.8896 20.2564 13.4206 20.3506 12.9022L21.4906 6.63406C21.5099 6.52572 21.5051 6.41447 21.4766 6.30818C21.4481 6.2019 21.3966 6.10319 21.3256 6.01906ZM9.5 19.625C9.5 19.8475 9.43402 20.065 9.3104 20.25C9.18679 20.435 9.01109 20.5792 8.80552 20.6644C8.59995 20.7495 8.37375 20.7718 8.15552 20.7284C7.93729 20.685 7.73684 20.5778 7.5795 20.4205C7.42217 20.2632 7.31502 20.0627 7.27162 19.8445C7.22821 19.6262 7.25049 19.4 7.33563 19.1945C7.42078 18.9889 7.56498 18.8132 7.74998 18.6896C7.93499 18.566 8.1525 18.5 8.375 18.5C8.67337 18.5 8.95952 18.6185 9.17049 18.8295C9.38147 19.0405 9.5 19.3266 9.5 19.625ZM18.5 19.625C18.5 19.8475 18.434 20.065 18.3104 20.25C18.1868 20.435 18.0111 20.5792 17.8055 20.6644C17.6 20.7495 17.3738 20.7718 17.1555 20.7284C16.9373 20.685 16.7368 20.5778 16.5795 20.4205C16.4222 20.2632 16.315 20.0627 16.2716 19.8445C16.2282 19.6262 16.2505 19.4 16.3356 19.1945C16.4208 18.9889 16.565 18.8132 16.75 18.6896C16.935 18.566 17.1525 18.5 17.375 18.5C17.6734 18.5 17.9595 18.6185 18.1705 18.8295C18.3815 19.0405 18.5 19.3266 18.5 19.625ZM18.875 12.6341C18.8435 12.8074 18.7521 12.964 18.6166 13.0766C18.4812 13.1893 18.3105 13.2506 18.1344 13.25H6.98937L5.89906 7.25H19.8509L18.875 12.6341Z"
+                                            fill="white" />
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="global_card">
+                            <img src="./assets/img/gc_img.png" alt="" class="img-fluid global_card_img">
+                            <p class="global_card_pre_title">E-Book</p>
+                            <p class="global_card_title">Book Title Goes Here
+                                In Two Lines or Less</p>
+                            <p class="global_card_subtitle">Lorem ipsum dolor sit amet consectetur. Nunc vitae libero...</p>
+                            <p class="global_card_total">$48.89</p>
+                            <div class="gc_footer">
+                                <button class="btn btn_global_trans w-100">secure Checkout</button>
+                                <button class="btn btn_global">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25"
+                                        fill="none">
+                                        <path
+                                            d="M21.3256 6.01906C21.2552 5.93481 21.1672 5.86705 21.0677 5.82056C20.9682 5.77407 20.8598 5.74998 20.75 5.75H5.62625L5.16781 3.23187C5.10502 2.88625 4.92292 2.57363 4.65325 2.34851C4.38359 2.12339 4.04347 2.00005 3.69219 2H2C1.80109 2 1.61032 2.07902 1.46967 2.21967C1.32902 2.36032 1.25 2.55109 1.25 2.75C1.25 2.94891 1.32902 3.13968 1.46967 3.28033C1.61032 3.42098 1.80109 3.5 2 3.5H3.6875L6.08375 16.6522C6.15434 17.0422 6.32671 17.4067 6.58344 17.7087C6.22911 18.0397 5.97336 18.4623 5.84455 18.9298C5.71575 19.3972 5.71892 19.8912 5.85371 20.3569C5.98851 20.8226 6.24966 21.2419 6.60821 21.5683C6.96676 21.8947 7.4087 22.1154 7.88502 22.2059C8.36134 22.2965 8.85344 22.2533 9.30673 22.0813C9.76003 21.9092 10.1568 21.615 10.4531 21.2312C10.7494 20.8474 10.9336 20.389 10.9853 19.907C11.037 19.4249 10.9541 18.9379 10.7459 18.5H15.0041C14.8363 18.8513 14.7494 19.2357 14.75 19.625C14.75 20.1442 14.904 20.6517 15.1924 21.0834C15.4808 21.5151 15.8908 21.8515 16.3705 22.0502C16.8501 22.2489 17.3779 22.3008 17.8871 22.1996C18.3963 22.0983 18.864 21.8483 19.2312 21.4812C19.5983 21.114 19.8483 20.6463 19.9496 20.1371C20.0508 19.6279 19.9989 19.1001 19.8002 18.6205C19.6015 18.1408 19.265 17.7308 18.8334 17.4424C18.4017 17.154 17.8942 17 17.375 17H8.29719C8.12155 17 7.95149 16.9383 7.81665 16.8257C7.68182 16.7132 7.59077 16.5569 7.55937 16.3841L7.26219 14.75H18.1372C18.6641 14.7499 19.1743 14.5649 19.5788 14.2272C19.9833 13.8896 20.2564 13.4206 20.3506 12.9022L21.4906 6.63406C21.5099 6.52572 21.5051 6.41447 21.4766 6.30818C21.4481 6.2019 21.3966 6.10319 21.3256 6.01906ZM9.5 19.625C9.5 19.8475 9.43402 20.065 9.3104 20.25C9.18679 20.435 9.01109 20.5792 8.80552 20.6644C8.59995 20.7495 8.37375 20.7718 8.15552 20.7284C7.93729 20.685 7.73684 20.5778 7.5795 20.4205C7.42217 20.2632 7.31502 20.0627 7.27162 19.8445C7.22821 19.6262 7.25049 19.4 7.33563 19.1945C7.42078 18.9889 7.56498 18.8132 7.74998 18.6896C7.93499 18.566 8.1525 18.5 8.375 18.5C8.67337 18.5 8.95952 18.6185 9.17049 18.8295C9.38147 19.0405 9.5 19.3266 9.5 19.625ZM18.5 19.625C18.5 19.8475 18.434 20.065 18.3104 20.25C18.1868 20.435 18.0111 20.5792 17.8055 20.6644C17.6 20.7495 17.3738 20.7718 17.1555 20.7284C16.9373 20.685 16.7368 20.5778 16.5795 20.4205C16.4222 20.2632 16.315 20.0627 16.2716 19.8445C16.2282 19.6262 16.2505 19.4 16.3356 19.1945C16.4208 18.9889 16.565 18.8132 16.75 18.6896C16.935 18.566 17.1525 18.5 17.375 18.5C17.6734 18.5 17.9595 18.6185 18.1705 18.8295C18.3815 19.0405 18.5 19.3266 18.5 19.625ZM18.875 12.6341C18.8435 12.8074 18.7521 12.964 18.6166 13.0766C18.4812 13.1893 18.3105 13.2506 18.1344 13.25H6.98937L5.89906 7.25H19.8509L18.875 12.6341Z"
+                                            fill="white" />
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                   
+    
+                </div>
+            </div>
+           
+
+
+        </section>
+
+        <section class="skew_section">
+            <div class="skew_s_main">
+                <div class="skew_left_video">
+                    <video class="mobile_none" loop="" muted="" autoplay="">
+                        <source src="./assets/img/sksdl_vid.mp4" type="video/mp4">
+                    </video>
+                    
+                    <img src="./assets/img/vid_img.png" alt="" class="img-fluid desktop_none skew_bottom_mobo_image">
+                </div>
+    
+                <div class="skew_s_content_main">
+                    <div class="spar">
+                        <div class="div_spar_line_l"></div>
+                        <p class="spar_text">Let’s Collaborate</p>
+                        <div class="div_spar_line_r"></div>
+                    </div>
+    
+                    <h1 class="skew_s_title">When Templates Won’t <br>Cut It, We Step In</h1>
+    
+                    <p class="skew_s_subtitle">
+                        Lorem ipsum dolor sit amet consectetur. Pellentesque eget lorem facilisi ante. Amet turpis ac enim dictum in sit ipsum. Neque sagittis tellus donec nulla nisl ullamcorper. Massa fermentum nulla eleifend pharetra sed risus pharetra. Feugiat etiam diam nec id.
+                        <br><br>
+                        Et volutpat sit diam non ornare. Erat cursus purus faucibus quam cursus odio quam nunc. Eget a bibendum quisque consequat commodo fusce. Magna enim amet praesent massa volutpat a mattis eget. Massa feugiat odio imperdiet sodales in lacinia tristique lacus. Varius ut diam.
+                    </p>
+    
+                    <button class="btn btn_animated_global">
+                        <span class="icon"></span>
+                        Explore our Materials
+                        <span class="underline"></span>
+                    </button>                
+                </div>
+    
+                <div class="skew_right_video">
+                    <video class="mobile_none" loop="" muted="" autoplay="">
+                        <source src="./assets/img/home_halfvid.mp4" type="video/mp4">
+                    </video>
+                    
+                    <video class="desktop_none" loop="" muted="" autoplay="">
+                        <source src="./assets/img/home_halfvid_mob.mp4" type="video/mp4">
+                    </video>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="os_4">
+            <div class="os4_top ulta_mob">
+                <div class="right_os4top">
+                    <div class="square_div">
+                        <img src="./assets/img/float_svg.svg" alt="" class="img-fluid float_svg">
+                        <h1 class="sq_tt">
+                            User Interface
+                        </h1>
+                        <img src="./assets/img/line_sq.svg" alt="" class="img-fluid">
+                        <p class="sq_pp">Lorem ipsum dolor sit amet consectetur. Tincidunt platea et non mattis. Nec
+                            massa ultrices.</p>
+                    </div>
+                    <div class="square_div">
+                        <img src="./assets/img/float_2.svg" alt="" class="img-fluid float_svg">
+                        <h1 class="sq_tt">
+                            User Experience
+                        </h1>
+                        <img src="./assets/img/line_sq.svg" alt="" class="img-fluid">
+                        <p class="sq_pp">Lorem ipsum dolor sit amet consectetur. Tincidunt platea et non mattis. Nec
+                            massa ultrices.</p>
+                    </div>
+
+                </div>
+                <div class="left_os4top">
+                    <div class="tt_sec also_margin">
+                        <img src="./assets/img/left_svg.svg" alt="" class="img-fluid">
+                        <p class="small_con_pp">What we do</p>
+                        <img src="./assets/img/right_svg.svg" alt="" class="img-fluid">
+                    </div>
+                    <h1 class="left_tt22">Web Design That’s<br> Anything But Standard</h1>
+                    <p class="right_tt22">Lorem ipsum dolor sit amet consectetur. Dui quam quis turpis orci aliquam in
+                        sollicitudin ac est. Ultricies convallis vel turpis tristique.</p>
+                        <button class="btn btn_animated_global">
+                            <span class="icon"></span>
+                            Learn more about our Services
+                            <span class="underline"></span>
+                        </button>
+                
+                </div>
+
+            </div>
+
+            <div class="os4_bottom ulta_mob">
+
+                <div class="leftbg_bot">
+
+                    <div class="tt_sec also_margin">
+                        <img src="./assets/img/left_svg.svg" alt="" class="img-fluid">
+                        <p class="small_con_pp">Got a question?</p>
+                        <img src="./assets/img/right_svg.svg" alt="" class="img-fluid">
+                    </div>
+                    <h1 class="green_tt">Lets discuss your<br> design needs now</h1>
+                    <div class="emai_div">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="46" height="46" viewBox="0 0 46 46" fill="none">
+                            <path
+                                d="M30.7344 6.125C28.2003 6.125 25.8419 7.14521 24.1206 8.96771L12.6454 20.4347C10.2548 22.8239 8.9375 26.001 8.9375 29.3831V31.4375L11.7885 28.5865C11.9741 26.2578 12.9647 24.0924 14.6339 22.4232L26.1366 10.926C27.3488 9.64212 28.9822 8.9375 30.7344 8.9375C34.2233 8.9375 37.0625 11.7767 37.0625 15.2656C37.0625 17.0178 36.3572 18.6491 35.0438 19.8909L32.1873 22.7501L27.2188 24.4062H30.5311L25.1616 29.7786L20.1875 31.4375H23.4971C21.647 33.2487 19.2107 34.25 16.6169 34.25H13.7385L26.8068 21.1818L24.8182 19.1932L6.125 37.8865L8.11353 39.875L10.926 37.0625H16.6169C19.9976 37.0625 23.1761 35.7466 25.5653 33.3546L37.0021 21.9069C38.8555 20.1575 39.875 17.7997 39.875 15.2656C39.875 10.2256 35.7744 6.125 30.7344 6.125Z"
+                                fill="#BA8B4A" />
+                        </svg>
+                        <div>
+                            <p class="email_tt">
+                                Email:
+                            </p>
+                            <p class="email_pp">info@Vizualuxe.com</p>
+                        </div>
+                    </div>
+                </div>
+                <img src="./assets/img/green_con.svg" alt="" class="img-fluid green_con mobile_none">
+                <div class="right_os4top">
+                    <div class="square_div">
+                        <img src="./assets/img/float3.svg" alt="" class="img-fluid float_svg">
+                        <h1 class="sq_tt">
+                            Illustration
+                        </h1>
+                        <img src="./assets/img/line_sq.svg" alt="" class="img-fluid">
+                        <p class="sq_pp">Lorem ipsum dolor sit amet consectetur. Tincidunt platea et non mattis. Nec
+                            massa ultrices.</p>
+                    </div>
+                    <div class="square_div">
+                        <img src="./assets/img/float4.svg" alt="" class="img-fluid float_svg">
+                        <h1 class="sq_tt">
+                            E-commerce
+                        </h1>
+                        <img src="./assets/img/line_sq.svg" alt="" class="img-fluid">
+                        <p class="sq_pp">Lorem ipsum dolor sit amet consectetur. Tincidunt platea et non mattis. Nec
+                            massa ultrices.</p>
+                    </div>
+
+                </div>
+
+
+            </div>
+            <img src="./assets/img/Visual Precision.svg" alt="" class="img-fluid digital mobile_none">
+        </section>
+
+        
+    
+
+
+        <section>
+            <section class="home_last mobile_none">
+
+            </section>
+            <section class="contact_2">
+                <div class="container cus_pad">
+
+                    <div class="form_section no_border">
+                        <img src="./assets/img/home_down_icon.svg" alt="" class="img-fluid home_down_icon mobile_none">
+                        <div class="form_1">
+                            <div class="tt_sec">
+                                <img src="./assets/img/left_svg.svg" alt="" class="img-fluid">
+                                <p class="small_con_pp">Contact Us</p>
+                                <img src="./assets/img/right_svg.svg" alt="" class="img-fluid">
+                            </div>
+
+                            <h1 class="contact_tt for_dif_font">Your Next<br class="desktop_none"> Design Starts Here</h1>
+                            <p class="contact_pp">Help@Vizualuxe.Co, (+44) 123 4567 890<br>
+                                100 Edenbridge Road, Birmingham, United Kingdom, B28 8PR. </p>
+                        </div>
+                        <form>
+                            <div class="form_2">
+                                <div class="single_cell">
+                                    <div class="inpp_divv">
+                                        <div class="input_div_main_outer">
+                                            <div class="input_div_main">
+                                                <input type="text" class="input_global" name="text" autocomplete="off"
+                                                    required />
+                                                <label for="text" class="label-name">
+                                                    <span class="content-name">
+                                                        First Name
+                                                    </span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="inpp_divv">
+                                        <div class="input_div_main_outer">
+                                            <div class="input_div_main">
+                                                <input type="text" class="input_global" name="text" autocomplete="off"
+                                                    required />
+                                                <label for="text" class="label-name">
+                                                    <span class="content-name">
+                                                        Last Name
+                                                    </span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="single_cell">
+                                    <div class="inpp_divv">
+                                        <div class="input_div_main_outer">
+                                            <div class="input_div_main">
+                                                <input type="text" class="input_global" name="text" autocomplete="off"
+                                                    required />
+                                                <label for="text" class="label-name">
+                                                    <span class="content-name">
+                                                        Email Address
+                                                    </span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="inpp_divv">
+                                        <div class="input_div_main_outer">
+                                            <div class="input_div_main">
+                                                <input type="text" class="input_global" name="text" autocomplete="off"
+                                                    required />
+                                                <label for="text" class="label-name">
+                                                    <span class="content-name">
+                                                        Phone Number
+                                                    </span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="inpp_divv">
+                                    <div class="textarea_div_outer">
+                                        <div class="textarea_div_inner">
+                                            <textarea class="textarea_global" name="text" autocomplete="off"
+                                                required></textarea>
+                                            <label for="text" class="textarea_label">
+                                                <span class="textarea_label_content">Your Text</span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="last_form">
+                                    <div class="c-checkboxt">
+                                        <div class="c-div">
+                                            <label class="d-flex justify-content-center justify-content-lg-start">
+                                                <input type="checkbox" id="terms" name="terms">
+                                                <label for="terms"></label>
+                                            </label>
+                                        </div>
+                                        <div class="c-text">
+                                            <p class="login_strong">By ticking this box, you agree to the <span
+                                                    class="blue_text">Terms & Conditions</span> & <span
+                                                    class="blue_text">Privacy
+                                                    Policy</span></p>
+                                        </div>
+                                    </div>
+                                    <img src="./assets/img/robot.png" alt="" class="img-fluid">
+                                    <button class="btn btn_global particular_width">Submit your Query</button>
+                                </div>
+                            </div>
+                        </form>
+
+                    </div>
+                </div>
+
+
+            </section>
+
+        </section>
+
+
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer_main">
+                <div class="footer_top">
+                    <div class="footer_top_left">
+                        <a href="">
+                            <img src="./assets/img/footer_logo.svg" alt="" class="img-fluid footer_logo">
+                        </a>
+                    </div>
+                    <div class="footer_top_center">
+                        <button class="btn btn_footer_links">design resources</button>
+                        <button class="btn btn_footer_links">Bespoke design packages</button>
+                        <button class="btn btn_footer_links">Our Story</button>
+                        <button class="btn btn_footer_links">Contact Us</button>
+                        <button class="btn btn_footer_links">Terms</button>
+                        <button class="btn btn_footer_links">Privacy</button>
+                    </div>
+                    <div class="footer_top_right">
+                        <button class="btn btn_footer_links">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="9" height="17" viewBox="0 0 9 17"
+                                fill="none">
+                                <path
+                                    d="M8.00781 9.5L8.45219 6.60437H5.67375V4.72531C5.67375 3.93313 6.06188 3.16094 7.30625 3.16094H8.56937V0.695625C8.56937 0.695625 7.42313 0.5 6.32719 0.5C4.03906 0.5 2.54344 1.88688 2.54344 4.3975V6.60437H0V9.5H2.54344V16.5H5.67375V9.5H8.00781Z"
+                                    fill="#FFF6E1" />
+                            </svg>
+                        </button>
+                        <button class="btn btn_footer_links">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17"
+                                fill="none">
+                                <path
+                                    d="M8.48533 2.03017C10.6166 2.03017 10.8449 2.03017 11.6822 2.10629C12.4433 2.10629 12.9 2.25852 13.1284 2.41075C13.5089 2.56298 13.7373 2.71521 14.0417 3.01967C14.3462 3.32413 14.4984 3.55248 14.6507 3.93306C14.7268 4.23752 14.879 4.61809 14.9551 5.37925C15.0312 6.21652 15.0312 6.44486 15.0312 8.57609C15.0312 10.7073 15.0312 10.9357 14.9551 11.7729C14.9551 12.5341 14.8029 12.9908 14.6507 13.2191C14.4984 13.5997 14.3462 13.828 14.0417 14.1325C13.7373 14.437 13.5089 14.5892 13.1284 14.7414C12.8239 14.8175 12.4433 14.9698 11.6822 15.0459C10.8449 15.0459 10.6166 15.122 8.48533 15.122C6.3541 15.122 6.12575 15.122 5.28848 15.0459C4.52733 15.0459 4.07064 14.8937 3.8423 14.7414C3.46172 14.5892 3.23338 14.437 2.92891 14.1325C2.62445 13.828 2.47222 13.5997 2.31999 13.2191C2.24387 12.9147 2.09165 12.5341 2.01553 11.7729C1.93942 10.9357 1.93941 10.7073 1.93941 8.57609C1.93941 6.44486 1.93942 6.21652 2.01553 5.37925C2.01553 4.61809 2.16776 4.1614 2.31999 3.93306C2.47222 3.55248 2.62445 3.32413 2.92891 3.01967C3.23338 2.71521 3.46172 2.56298 3.8423 2.41075C4.14676 2.33464 4.52733 2.18241 5.28848 2.10629C6.12575 2.03017 6.3541 2.03017 8.48533 2.03017ZM8.48533 0.583984C6.3541 0.583984 6.04964 0.583984 5.21237 0.660099C4.37511 0.736215 3.76618 0.81233 3.30949 1.04068C2.77668 1.26902 2.31999 1.49737 1.93941 1.95406C1.55884 2.41075 1.25438 2.86744 1.02603 3.32413C0.797686 3.85694 0.721571 4.38975 0.645456 5.22702C0.569341 6.06428 0.569336 6.36875 0.569336 8.49997C0.569336 10.6312 0.569341 10.9357 0.645456 11.7729C0.721571 12.6102 0.797686 13.2191 1.02603 13.6758C1.25438 14.2086 1.48272 14.6653 1.93941 15.0459C2.39611 15.5026 2.8528 15.7309 3.30949 15.9593C3.8423 16.1876 4.37511 16.2637 5.21237 16.3398C6.04964 16.416 6.3541 16.416 8.48533 16.416C10.6166 16.416 10.921 16.416 11.7583 16.3398C12.5955 16.2637 13.2045 16.1876 13.6612 15.9593C14.194 15.7309 14.6507 15.5026 15.0312 15.0459C15.4879 14.5892 15.7163 14.1325 15.9446 13.6758C16.173 13.143 16.2491 12.6102 16.3252 11.7729C16.4013 10.9357 16.4013 10.6312 16.4013 8.49997C16.4013 6.36875 16.4013 6.06428 16.3252 5.22702C16.2491 4.38975 16.173 3.78083 15.9446 3.32413C15.7163 2.79133 15.4879 2.33464 15.0312 1.95406C14.5745 1.49737 14.1179 1.26902 13.6612 1.04068C13.1284 0.81233 12.5955 0.736215 11.7583 0.660099C10.921 0.583984 10.6166 0.583984 8.48533 0.583984Z"
+                                    fill="#FFF6E1" />
+                                <path
+                                    d="M8.48535 4.46582C6.2019 4.46582 4.37512 6.29259 4.37512 8.57605C4.37512 10.8595 6.2019 12.6863 8.48535 12.6863C10.7688 12.6863 12.5956 10.8595 12.5956 8.57605C12.5956 6.29259 10.7688 4.46582 8.48535 4.46582ZM8.48535 11.164C7.03916 11.164 5.82132 9.94612 5.82132 8.49993C5.82132 7.05374 7.03916 5.8359 8.48535 5.8359C9.93154 5.8359 11.1494 7.05374 11.1494 8.49993C11.1494 10.0222 9.93154 11.164 8.48535 11.164Z"
+                                    fill="#FFF6E1" />
+                                <path
+                                    d="M13.6612 4.31372C13.6612 4.84652 13.2046 5.30322 12.6718 5.30322C12.1389 5.30322 11.6823 4.84652 11.6823 4.31372C11.6823 3.78091 12.1389 3.32422 12.6718 3.32422C13.2807 3.32422 13.6612 3.78091 13.6612 4.31372Z"
+                                    fill="#FFF6E1" />
+                            </svg>
+                    </div>
+                </div>
+                <div class="footer_splittre"></div>
+                <div class="footer_bottom">
+                    <div class="footer_bottom_left">
+                        <p class="footer_text">Help@Vizualuxe.Co</p>
+                        <p class="footer_text">+111 234 567 890</p>
+                        <p class="footer_text">100 Edenbridge Road, Birmingham, United Kingdom, B28 8PR. </p>
+                    </div>
+                    <div class="footer_bottom_right">
+                        <img src="./assets/img/mastercard.svg" alt="" class="img-fluid footer_master_card">
+                        <p class="footer_text">© 2025 Vizualuxe.com All rights reserved.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+
+
+
+    <!-- JQuery CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- Bootstrap JS Links -->
+    <script src="./assets/dist/bootstrap/js/bootstrap.popper.min.js"></script>
+    <script src="./assets/dist/bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- Owl Carousel JS Links -->
+    <script src="./assets/dist/owl-carousel/js/owl.carousel.js"></script>
+
+    <!-- JS Link -->
+    <script src="./assets/js/main.js"></script>
+    <script>
+        $(document).ready(function () {
+            if (screen.width > 700) {
+                const elementr = document.querySelector('.skew_right_video video');
+                const video_right_height = elementr.offsetHeight;
+                $(".skew_s_main").css('min-height', video_right_height + 'px');
+                $(".skew_s_content_main").css('min-height', video_right_height + 'px');
+            } 
+        });
+    </script>
+
+</body>
+
+</html>
