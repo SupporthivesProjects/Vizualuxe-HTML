@@ -6,10 +6,6 @@
     display: block;
 }
 
-.header_top {
-    background: var(--dark-h, #162222);
-}
-
 .register {
     margin-top: 88px;
 }
