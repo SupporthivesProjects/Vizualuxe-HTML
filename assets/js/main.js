@@ -255,12 +255,3 @@ const fileInput = document.getElementById("document");
 
 
 
-
-    $(document).ready(function () {
-        if (screen.width > 700) {
-            const elementr = document.querySelector('.skew_right_video video');
-            const video_right_height = elementr.offsetHeight;
-            $(".skew_s_main").css('min-height', video_right_height + 'px');
-            $(".skew_s_content_main").css('min-height', video_right_height + 'px');
-        } 
-    });
