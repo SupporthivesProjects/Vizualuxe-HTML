@@ -917,7 +917,7 @@ img.img_PS_bottom {
 
     .register_div2 {
         width: 100%;
-        height: 375px;
+        height: 230px;
         background-image: url(../img/register_mo_img.png);
         background-size: cover;
         background-position: center center;
@@ -973,13 +973,13 @@ img.img_PS_bottom {
 
     .c-checkbox>.c-div>label:before,
     .c-checkbox>.c-div>.label:before {
-        top: 12px;
+        top: 0px;
         left: 8px;
     }
 
     .c-checkbox input[type='checkbox']~label:after,
     .c-checkbox input[type='checkbox']~.label:after {
-        top: 12px;
+        top: 0px;
     }
 
     .register_div1_inner {
@@ -990,7 +990,7 @@ img.img_PS_bottom {
 
     .login_div2 {
         width: 100%;
-        height: 375px;
+        height: 230px;
         background-image: url(../img/login_mo_img.png);
         background-size: cover;
         background-position: center center;
@@ -1012,7 +1012,7 @@ img.img_PS_bottom {
 
     .reset_div2 {
         width: 100%;
-        height: 375px;
+        height: 230px;
         background-image: url(../img/resetpass_mo_img.png);
         background-size: cover;
         background-position: center center;
