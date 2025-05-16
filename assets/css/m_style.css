@@ -51,6 +51,17 @@
     line-height: normal;
     text-decoration: none;
 }
+.dash_subtitle2 {
+    color: var(--pine-p, #36574A);
+
+    /* Desktop/Body/P */
+    font-family: 'Afacad';
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 0px;
+}
 .dash_left_inner {
     display: flex;
     flex-direction: column;
@@ -1314,10 +1325,14 @@ input#input_qty[type=number]::-webkit-outer-spin-button {
         text-align: center;
     }
     .dash_right {
-        padding: 0px 24px 24px 24px;
+        padding: 0px 0px 24px 0px;
         background: linear-gradient(to right, #F9F9F9, #F7F7F7);
         width: unset;
     }
+    #v-pills-home, #v-pills-profile {
+        padding: 0px 24px 0px 24px;
+    }
+
     .account_input_div {
         display: flex;
         flex-direction: row;
